@@ -98,6 +98,8 @@ body {
   font-size: 15px;
   line-height: 18px;
   color: #434343;
+  padding: 0;
+  margin: 0;
 }
 
 /* CONTAINER */
