@@ -101,7 +101,10 @@ body {
   padding: 0;
   margin: 0;
 }
-
+*:focus {
+  outline: 0;
+  box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4);
+}
 /* CONTAINER */
 .container {
   max-width: 1240px;
@@ -136,7 +139,21 @@ body {
   padding: 8px;
   box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
   margin-right: 17px;
-
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+  -moz-transform: scale(1.025);
+  -ms-transform: scale(1.025);
+  -o-transform: scale(1.025);
+}
+.logo:focus {
+  box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4);
 }
 /* EXCHANGE RATES */
 .exchange-rates {
@@ -181,6 +198,19 @@ body {
   height: 20px;
   border-radius: 50%;
   margin-right: 5px;
+}
+.search-button,
+.language-toggler, .telegram-sub {
+  transition: box-shadow 0.3s ease;
+  -webkit-transition: box-shadow 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease;
+  -ms-transition: box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+}
+.search-button:hover,
+.language-toggler:hover,
+.telegram-sub:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .language-toggler__wrapper {
   display: flex;
