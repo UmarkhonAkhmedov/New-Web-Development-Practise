@@ -105,6 +105,10 @@ body {
   outline: 0;
   box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4);
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* CONTAINER */
 .container {
   max-width: 1240px;
@@ -220,6 +224,9 @@ body {
   align-items: center;
   font-weight: bold;
 }
+.site-header__toggler {
+  display: none;
+}
 /* TELEGRAM SUB */
 .telegram-sub {
   display: flex;
@@ -253,6 +260,9 @@ body {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   margin-bottom: 18px;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 23px;
 }
 .sitenav__list {
   display: flex;
@@ -269,9 +279,6 @@ body {
 .sitenav__link {
   text-decoration: none;
   color: #515151;
-  font-size: 19px;
-  font-weight: 500;
-  line-height: 23px;
   transition: color 0.3 ease;
 }
 .sitenav__link:hover {
@@ -281,4 +288,168 @@ body {
 /* TOP BANNER */
 .top-banner__link {
   display: flex;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+  .site-header {
+    padding-top: 20px;
+  }
+  .site-header__logo {
+    margin-left: 0;
+  }
+  .site-header__top {
+    align-items: stretch;
+  }
+  .exchange-rates {
+    order: -1;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 850px) {
+  .site-header__top {
+    margin-bottom: 20px;
+  }
+  .exchange-rates {
+    line-height: 17px;
+    font-size: 14px;
+  }
+  .sitenav {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .site-nav__item {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+}
+@media (max-width: 750px) {
+  .page__body {
+    margin-top: 82px;
+  }
+  .site-header {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .site-header__top {
+    margin-bottom: 0;
+  }
+  .exchange-rates,
+  .search-button,
+  .language-toggler,
+  .telegram-sub,
+  .sitenav {
+    display: none;
+  }
+  .sitenav {
+    margin-bottom: 0;
+    transition: transform 0.3s ease;
+    transform: translateX(120%);
+    -webkit-transform: translateX(120%);
+    -moz-transform: translateX(120%);
+    -ms-transform: translateX(120%);
+    -o-transform: translateX(120%);
+}
+  .site-header__toggler {
+    position: relative;
+    z-index: 20;
+    display: block;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    -webkit-transition: box-shadow 0.3s ease;
+    -moz-transition: box-shadow 0.3s ease;
+    -ms-transition: box-shadow 0.3s ease;
+    -o-transition: box-shadow 0.3s ease;
+  }  
+  .site-header__toggler:focus {
+    box-shadow: 0 0 0 4px rgba(41, 80, 147, 0.4);
+  }
+  .top-banner {
+      display: none;
+  }
+  .sitenav--open {
+    display: none;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 65%;
+    border-radius: 0;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    animation: sitenav-slide-in 0.3 ease 1 forwards;
+    -webkit-animation: sitenav-slide-in 0.3 ease 1 forwards;
+}
+  .sitenav--open .sitenav__list {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    padding-top: 82px;
+}
+  .sitenav--open .sitenav__item {
+    margin: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    margin: 0 5px;
+  }
+  .sitenav--open .sitenav__item:not(:last-child) {
+    border-bottom: 1px solid #515151;
+  }
+  .sitenav--open .sitenav__item:active {
+    background-color: #295091;
+    color: #fff;
+  }
+  .sitenav--open .sitenav__link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+  .sitenav--open .sitenav__link:active {
+    color: #fff;
+  }
+  .sitenav--open .sitenav__item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 750px) {
+  .logo__img {
+    width: 220px;
+  }
+}
+
+/* KEYFRAMES */
+@keyframes sitenav-slide-in {
+  from {
+    transform: translateX(120%);
+  }
+  to {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
 }
