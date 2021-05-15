@@ -125,6 +125,7 @@ body {
   flex-wrap: wrap;
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 40px;
 }
 .site-header__actions {
   display: flex;
@@ -192,6 +193,7 @@ body {
   border-radius: 5px;
   background-color: #fff;
   margin-right: 24px;
+  cursor: pointer;
 }
 .language-toggler__img {
   width: 20px;
@@ -206,6 +208,7 @@ body {
   -moz-transition: box-shadow 0.3s ease;
   -ms-transition: box-shadow 0.3s ease;
   -o-transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 .search-button:hover,
 .language-toggler:hover,
@@ -238,4 +241,44 @@ body {
 }
 .telegram-sub__text {
   font-weight: 500;
+}
+
+/* SITENAV */
+.sitenav {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 18px;
+}
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  padding: 17px 12px;
+  margin: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.sitenav__item {
+  margin: 5px 15px;
+}
+
+.sitenav__link {
+  text-decoration: none;
+  color: #515151;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 23px;
+  transition: color 0.3 ease;
+}
+.sitenav__link:hover {
+  color: #295091;
+}
+
+/* TOP BANNER */
+.top-banner__link {
+  display: flex;
 }
