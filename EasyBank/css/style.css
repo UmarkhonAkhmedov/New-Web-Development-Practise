@@ -86,3 +86,60 @@ body {
 }
 
 /* 3. HEADER SECTION */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+.site-logo__link {
+  margin-right: auto;
+}
+.site-nav__list {
+  display: flex;
+}
+.site-nav__item {
+  display: block;
+  list-style-type: none;
+  font-size: 14px;
+  padding-right: 40px;
+  color: #9597A5;
+  cursor: pointer;
+}
+.site-nav__item:hover {
+  color: #2D314D;
+}
+.site-nav_link {
+  margin-left: auto;
+  font-size: 14px;
+  background: linear-gradient(150deg, #33D35E, #2AB6D9 80%);
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+
+.header-content {
+  background-color: #F2F2F2;
+}
+.header-content__info {
+  display: flex;
+}
+.header-content__info--background {
+  height: 700px;
+  width: 900px;
+  position: absolute;
+  top: 90px;
+  
+
+}
+.header-content__info--img {
+  height: 800px;
+  width: 600px;
+  position: relative;
+  
+  
+}
