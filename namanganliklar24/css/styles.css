@@ -260,6 +260,26 @@ img {
   font-weight: 500;
 }
 
+/* MAIN_CONTENT */
+.main-content {
+  flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* SITENAV */
 .sitenav {
   background-color: #fff;
@@ -569,7 +589,7 @@ img {
   }
 }
 @media (max-width: 500px) {
-  
+
 }
 
 /* KEYFRAMES */
