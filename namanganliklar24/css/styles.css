@@ -290,6 +290,45 @@ img {
   display: flex;
 }
 
+/* SITE-FOOTER */
+.site-footer {
+  background-color: #295093;
+  padding: 18px 0;
+  color: #fff;
+  font-style: 14px;
+  line-height: 17px;
+}
+.site-footer__top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.site-footer__logo {
+  margin-right: auto;
+  background-color: #133C82;
+  border-radius: 5px;
+  display: flex;
+  padding: 10px;
+}
+.site-footer__sub-text {
+  margin: 0;
+  margin-right: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
