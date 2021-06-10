@@ -18,7 +18,20 @@ a {
   align-items: center;
   justify-content: center;
 }
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+p {
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: .05rem;
 
+}
 /* HERO SECTION */
 #hero {
   background-image: url(./img/hero-bg.png);
@@ -38,7 +51,12 @@ a {
   opacity: 0.7;
   z-index: -1;
 }
-
+#hero .hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
 #hero h1 {
   display: block;
   width: fit-content;
@@ -100,8 +118,87 @@ a {
   background-color: crimson;
 }
 
-
 /* END HERO SECTION */
+
+/* SERVICE SECTION */
+#services .services {
+  flex-direction: column;
+  max-width: 1500px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#services .section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+#services .section-title span {
+  color: crimson;
+}
+#services .service-top p {
+  color: black;
+  
+}
+#services .service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+#services .service-item {
+  position: relative;
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url(./img/img-1.png);
+  background-size: cover;
+  margin: 10px 5%;
+  z-index: 1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+}
+#services .service-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: .8;
+  z-index: -1;
+}
+#services .service-bottom .icon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+#services .service-item h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#services .service-item p {
+  color: white;
+  text-align: left;
+}
+/* END SERVICE SECTION */
+
+
 
 
 
@@ -120,6 +217,6 @@ a {
   100%{
     color: white;
   }
-
 }
+
 /* END KEYFRAMES */
