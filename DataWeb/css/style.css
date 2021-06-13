@@ -36,6 +36,9 @@ a {
 ul {
   list-style-type: none;
 }
+p {
+  color: #fff;
+}
 
 /* 2. HEADER */
 .header {
@@ -46,11 +49,13 @@ ul {
   margin: auto;
   padding: 40px 0;
   align-items: center;
-} 
+}
+.logo__link {
+  margin-right: auto;
+}
 .logo {
   width: 147px;
   height: 36px;
-  margin-right: auto;
 }
 .header-list {
   display: flex;
@@ -63,11 +68,52 @@ ul {
 }
 .header-list__link {
   transition: color 0.3s ease;
-  -webkit-transition: color 0.3s ease;
-  -moz-transition: color 0.3s ease;
-  -ms-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
 }
 .header-list__link:hover {
   color: rgb(253, 212, 48);
+}
+.header-main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+.header-main__text {
+
+}
+.header-main__text h1 {
+  font-size: 63px;
+  color: #fff;
+  margin: 0;
+  padding: 10px 0;
+}
+.header-main__text h2 {
+  font-size: 41px;
+  margin: 0;
+  padding: 15px 0;
+  color: rgb(253, 212, 48);
+}
+.header-main__text p {
+  line-height: 1.8;
+  padding-bottom: 40px;
+}
+.header-main__text a {
+  width: 190px;
+  height: 50px;
+  background-color: white;
+  padding: 15px 45px;
+  color: black;
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+}
+.header-main__text a:hover {
+  background-color: black;
+  color: #fff;
+}
+.header-main__img {
+  width: 630px;
+  height: 560px;
 }
