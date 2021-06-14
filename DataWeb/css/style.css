@@ -143,3 +143,91 @@ p {
 .about__link:hover {
   background-color: rgb(12, 15, 56);
 }
+
+/* 4. SERVICE SECTION */
+.service {
+  background-color: rgb(12, 15, 56);
+  padding: 60px 0;
+  text-align: center;
+  margin: auto;
+  
+}
+.service__heading {
+  font-size: 44px;
+  margin: 0;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.service__text {
+  line-height: 1.8;
+  width: 600px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+.service-list {
+  display: flex;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+.service-list__item {
+  width: 340px;
+  height: 310px;
+  border: 2px solid #fff;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+.service-list__item:hover {
+  background-color: #6f42c1;
+}
+.service-list__item h2 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+}
+.service-list__item h2:hover {
+  opacity: 0.75;
+}
+.service-list__item h2 img {
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  padding-top: 18px;
+}
+.service-list__item h3 {
+  font-size: 22px;
+  color: #fff;
+}
+
+.service-list__item p {
+  line-height: 1.8;
+  font-size: 16px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+
+
+.service__link {
+  width: 190px;
+  height: 50px;
+  background-color: #fff;
+  padding: 15px 50px;
+  color: black;
+  transition: background-color 0.5s ease;
+}
+.service__link:hover {
+  background-color: #6610f2;
+}
