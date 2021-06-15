@@ -1,0 +1,40 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("/New-Web-Development-Practise/Landie/images/price__background.jpg");
+  background-size: cover;
+  text-align: center;
+  height: 700px;
+  margin-top: 50px;
+
+
+  p {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 50px;
+    color: #222F65;
+    margin-bottom: 0;
+    padding:  60px 0 10px 0;
+  }
+  h3 {
+    color: 37447E;
+    font-weight: 400;
+    font-size: $font-med;
+  }
+  h4 {
+    color: #5D6970;
+    font-size: $font-sm;
+    font-weight: 400;
+    padding-top: 40px;
+  }
+  a {
+    width: 200px;
+    height: 31px;
+    padding-top: 6px;
+  }
+
+}
