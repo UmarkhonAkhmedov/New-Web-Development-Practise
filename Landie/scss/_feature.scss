@@ -1,0 +1,52 @@
+.feature {
+  
+  &__one{
+    height: 740px;
+
+    &-content{
+      height: 400px;
+      padding-right: 20px;
+
+      ul {
+        margin-top: 70px;
+        
+        p {
+          font-size: $font-very-sm;
+        }
+      }
+    }
+  }
+
+  &__two {
+    height: 500px;
+    img {
+      flex: 1;
+      padding: 0px 50px;
+      
+    }
+    &-content {
+      flex: 1;
+      padding-left: 50px;
+    }
+  }
+
+  &__three {
+    height: 550px;
+    img {
+      flex: 1;
+      padding-right: 50px;
+      
+    }
+    &-content {
+      flex: 1;
+      padding-left: 40px;
+      
+      a {
+        width: 150px;
+        height: 32px;
+        padding-top: 7px;
+        font-size: $font-sm;
+      }
+    }
+  }
+}

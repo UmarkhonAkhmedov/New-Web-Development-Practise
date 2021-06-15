@@ -24,6 +24,10 @@ h1, h2, h3 {
   color: $darkBlue;
   
 }
+h2 {
+  font-size: $font-lg;
+  font-weight: 500;
+}
 p {
   line-height: 1.5;
 }
@@ -58,6 +62,7 @@ ul {
 
 // Buttons
 button, .button {
+  text-align: center;
   cursor: pointer;
   display: inline-block;
   background-color: $midnightExpress;
@@ -66,6 +71,7 @@ button, .button {
   padding: 0;
   font-weight: 500;
   transition: opacity 0.3 ease-in-out;
+  border-radius: 5px;
 
   &:hover {
     opacity: 0.75;
