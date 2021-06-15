@@ -70,9 +70,9 @@ button, .button {
   margin: 0;
   padding: 0;
   font-weight: 500;
-  transition: opacity 0.3 ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 5px;
-
+  
   &:hover {
     opacity: 0.75;
   }

@@ -86,8 +86,8 @@ button, .button {
   margin: 0;
   padding: 0;
   font-weight: 500;
-  -webkit-transition: opacity 0.3 ease-in-out;
-  transition: opacity 0.3 ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 5px;
 }
 
@@ -289,5 +289,71 @@ button:hover, .button:hover {
   width: 200px;
   height: 31px;
   padding-top: 6px;
+}
+
+.footer {
+  background-color: #E7ECFF;
+  padding: 60px 0 40px 0;
+}
+
+.footer__content h5 {
+  font-size: 14px;
+  color: #939EA4;
+  font-weight: 500;
+}
+
+.footer__content img {
+  width: 79px;
+  height: 38px;
+}
+
+.footer__content a {
+  width: 109px;
+  height: 26px;
+  font-size: 12px;
+  padding-top: 6px;
+}
+
+.footer__wrapper {
+  background-color: #CDD1D4;
+  height: 2px;
+  border: none;
+  opacity: 0.5;
+}
+
+.footer__nav {
+  margin-top: 30px;
+}
+
+.footer__nav-list a {
+  color: #929ECC;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__nav-list a:hover {
+  color: #091133;
+}
+
+.footer__nav-list a:not(:last-child) {
+  margin-right: 60px;
+}
+
+.footer__nav-icons a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__nav-icons a img {
+  width: 16px;
+  height: 16px;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+}
+
+.footer__nav-icons a img:hover {
+  color: red;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
