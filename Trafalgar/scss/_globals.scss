@@ -39,7 +39,7 @@ ul {
 // Spacing
 .container {
   max-width: 1600px;
-  padding: 0 190px;
+  padding: 0 150px;
   margin: 0 auto;
 }
 
@@ -59,8 +59,8 @@ ul {
 
 // Buttons
 button, .button {
+  display: inline-block;
   width: 200px;
-  height: 60px;
   text-align: center;
   cursor: pointer;
   background-color: $wildBlue;
@@ -69,7 +69,8 @@ button, .button {
   padding: 0;
   font-weight: 700;
   transition: opacity 0.3s ease-in-out;
-  border-radius: 5px;
+  border-radius: 30px;
+
   
   &:hover {
     opacity: 0.75;
