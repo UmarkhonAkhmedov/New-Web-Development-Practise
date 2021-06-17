@@ -7,23 +7,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png"  href="images/logo-white.svg">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Trafalgar Website</title>
 </head>
 <body>
   <!-- Header Section -->
   <header class="header">
     <div class="container">
-      <nav class="header__nav flex flex-jc-sb flex-ai-c">
-        <a href="index.html"><img src="images/logo.svg" alt="Website Logo"></a>
-        <ul class="flex">
+      <nav class="header__nav">
+        <a class="header__nav-link" href="index.html"><img src="images/logo.svg" alt="Website Logo"></a>
+        <ul class="header__nav-list">
           <li><a class="home" href="#">Home</a></li>
           <li><a href="#">Find a doctor</a></li>
           <li><a href="#">Apps</a></li>
           <li><a href="#">Testimonials</a></li>
           <li><a href="#">About us</a></li>
         </ul>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
       <!-- <section class="header__hero">
           <h1>Virtual healthcare 
