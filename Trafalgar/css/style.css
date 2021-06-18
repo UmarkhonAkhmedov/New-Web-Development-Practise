@@ -185,7 +185,7 @@ button, .button {
   text-align: center;
   width: 800px;
   margin: 0 auto;
-  font-size: var(--font-med)
+  font-sze: var(--font-med)
 }
 
 .service__list {
@@ -259,6 +259,9 @@ button, .button {
   }
 }
 @media (max-width: 1023px) {
+  h2 {
+    font-size: 28px;
+  }
   .container {
     padding: 0 70px;
   }
@@ -285,6 +288,13 @@ button, .button {
     flex-wrap: wrap;
     font-size: var(--font-lg);
   }
+  .service {
+    background-position: calc(50% - 400px) 5px, left calc(50% + 300px) top 803px;
+  }
+  .service__text {
+    width: 100%;
+    font-size: var(--font-sm)
+  }
 }
 
 @media (max-width: 639px) {
@@ -303,6 +313,10 @@ button, .button {
     display: flex;
     flex-wrap: wrap;
     font-size: var(--font-lg);
+  }
+  .service {
+    margin-top: 620px;
+    background-position: calc(50% - 400px) 5px, left calc(50% + 150px) top 1150px;
   }
 }
 
