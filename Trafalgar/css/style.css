@@ -169,8 +169,69 @@ button, .button {
 }
 .par {
   margin-top: 700px;
-
 }
+/* Service Section */
+.service {
+  margin-top: 700px;
+  background-repeat: no-repeat;
+  background-image: url(../images/Service-background.svg), url(../images/Service-element-rect.svg);
+  background-position: calc(50% - 400px) 5px, left calc(50% + 470px) top 473px;
+  background-size: 900px 750px, 120px 100px; 
+}
+.service__heading {
+  text-align: center;
+}
+.service__text {
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  font-size: var(--font-med)
+}
+
+.service__list {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  
+}
+.service__list-item {
+  background-color: var(--white);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
+  margin: 15px;
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+  border-radius: 20px;
+  padding: 40px 20px;
+  transition: all 0.5s ease;
+}
+.service__list-item:hover {
+  transform: scale(1.1);
+}
+.service__list-item h3 {
+  margin-top: 20px;
+}
+
+
+
+.service__link {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: var(--white);
+  color: var(--wildBlue);
+  border: 2px solid var(--wildBlue);
+  transition: all 0.3 ease;
+}
+.service__link:hover {
+  color: var(--white);
+  border-color: #7fb4fd;
+}
+
 
 
 
@@ -205,6 +266,7 @@ button, .button {
     display: none;
   } 
   .header__hero {
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -213,7 +275,7 @@ button, .button {
     background-size: 70px 100px, 400px 350px;
   }
   .header__content {
-    margin-top: 0px;
+    margin-top: 400px;
     width: 100%;
   }
   .header__content h1 {
@@ -230,11 +292,11 @@ button, .button {
     padding: 0 30px;
   }
   .header__hero {
-    background-position: calc(50% - 640px) 20px, right calc(50% + 10px) top 0px;
+    background-position: calc(50% - 640px) 20px, right calc(50% + 0px) top 0px;
     background-size: 70px 100px, 300px 250px;
   }
   .header__content {
-    margin-top: 0;
+    margin-top: 300px;
     width: 100%;
   }
   .header__content h1 {
