@@ -182,7 +182,7 @@ button, .button {
   text-align: center;
   width: 800px;
   margin: 0 auto;
-  font-sze: var(--font-med)
+  font-size: var(--font-med)
 }
 
 .service__list {
@@ -230,7 +230,6 @@ button, .button {
 /* Providers Section */
 .providers {
   margin-top: 150px;
-  padding-bottom: 100px;
 }
 .providers__wrapper {
   display: flex;
@@ -261,6 +260,51 @@ button, .button {
 .providers__link:hover {
   color: var(--white);
   border-color: #7fb4fd;
+}
+
+/* Download Section */
+.download {
+  background-image: url(../images/Service-element-rect.svg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 630px) bottom 450px;
+  background-size: 120px 100px; 
+}
+.download__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 200px;
+  align-items: center;
+}
+.download__content {
+  width: 350px;
+}
+.download__content h2 {
+  width: 300px;
+}
+.download__content hr {
+  margin: 30px 0;
+}
+.download__link {
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: var(--white);
+  color: var(--wildBlue);
+  border: 2px solid var(--wildBlue);
+  transition: all 0.3 ease;
+}
+.download__link:hover {
+  color: var(--white);
+  border-color: #7fb4fd;
+}
+.download__link-img {
+  height: 12px;
+  width: 20px;
+}
+.download__img img {
+  width: 600px;
+  height: 400px;
 }
 
 
