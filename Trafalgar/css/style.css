@@ -150,7 +150,6 @@ button, .button {
   background-image: url(../images/element-rect.svg), url(../images/hero.svg);
   background-position: calc(50% - 640px) 20px, left calc(50% + 300px) top 0px;
   background-size: 70px 100px, 600px 550px;
-  
 }
 
 .header__content  {
@@ -205,11 +204,43 @@ button, .button {
   .header__nav-list {
     display: none;
   } 
+  .header__hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-position: calc(50% - 640px) 20px, right calc(50% + 10px) top 0px;
+    background-size: 70px 100px, 400px 350px;
+  }
+  .header__content {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .header__content h1 {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--font-lg);
+  }
 }
 
 @media (max-width: 639px) {
   .container {
     padding: 0 30px;
+  }
+  .header__hero {
+    background-position: calc(50% - 640px) 20px, right calc(50% + 10px) top 0px;
+    background-size: 70px 100px, 300px 250px;
+  }
+  .header__content {
+    margin-top: 0;
+    width: 100%;
+  }
+  .header__content h1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--font-lg);
   }
 }
 
