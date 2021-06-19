@@ -491,6 +491,16 @@ button, .button {
     background-position: left calc(50% + 280px) bottom 140px;
     background-size: 120px 100px; 
   }
+  .testimonials__wrapper {
+    width: 100%;
+  }
+  .testimonials__wrapper h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .testimonials__content {
+    flex-wrap: wrap;
+  }
   
 }
 
@@ -518,5 +528,22 @@ button, .button {
   .download {
     background-position: left calc(50% + 200px) bottom 200px;
     background-size: 120px 100px; 
+  }
+  .testimonials__icon {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .testimonials__icon-circle {
+    margin: 0 5px;
+    width: 6px;
+    height: 6px;
+  }
+  .testimonials__icon-vector {
+    margin: 0 30px;
+    width: 22px;
+    height: 15px;
   }
 }
