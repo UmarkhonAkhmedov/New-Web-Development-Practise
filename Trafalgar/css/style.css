@@ -624,3 +624,16 @@ button, .button {
     height: 15px;
   }
 }
+@media (max-width: 400px) {
+  .article__item {
+    width: 100%;
+    
+  }
+  .article__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .article__img {
+    width: 100%;
+  }
+
+}
