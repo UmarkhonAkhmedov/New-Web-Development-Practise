@@ -485,7 +485,7 @@ button, .button {
   justify-content: space-between;
 }
 .footer__info {
-  width: 350px;
+  width: 320px;
 }
 .footer__img {
   display: flex;
@@ -510,7 +510,7 @@ button, .button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 600px;
+  width: 500px;
   
 }
 .footer__list-item h3 {
@@ -641,6 +641,18 @@ button, .button {
   .testimonials__content {
     flex-wrap: wrap;
   }
+  .footer__content {
+    justify-content: center;
+  }
+  .footer__list {
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .footer__list-item {
+    margin: 20px;
+  }
+  
   
 }
 
@@ -686,6 +698,16 @@ button, .button {
     width: 22px;
     height: 15px;
   }
+  .footer__img {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer__img span {
+    margin-right: 10px;
+  }
+  .footer__info {
+    text-align: center;
+  }
 }
 @media (max-width: 400px) {
   .article__item {
@@ -697,6 +719,13 @@ button, .button {
   }
   .article__img {
     width: 100%;
+  }
+  .footer__list {
+    text-align: center;
+  }
+  .footer__list-item {
+    width: 100%;
+    margin: 20px;
   }
 
 }
