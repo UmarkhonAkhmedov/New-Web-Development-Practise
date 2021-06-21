@@ -16,8 +16,7 @@
   --blue: #5a98d0;
   --white: #ffffff;
   --blueHam: #356ead;
-  --bluelinearstart: #98c3e8;
-  --bluelinearend: #98c3e8;
+  --bluelinearstart: #b3c2d0;
 
   /* Font Sizes */
   --font-very-sm: 14px;
@@ -25,7 +24,7 @@
   --font-med: 20px;
   --font-med-high: 28px;
   --font-lg: 36px;
-  --font-xlg: 64px;
+  --font-xlg: 48px;
 }
 html {
   font-size: 100%;
@@ -72,17 +71,21 @@ ul {
   padding: 0;
 }
 /* Spacing */
-.container {
+.container__header {
   max-width: 1366px;
-  padding: 0 0;
+  padding: 0 83px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container__body {
+  max-width: 1366px;
+  padding: 0 213px;
   margin: 0 auto;
   overflow: hidden;
 }
 /* Buttons */
 button,
 .button {
-  width: 220px;
-  height: 56px;
   text-align: center;
   cursor: pointer;
   display: inline-block;
@@ -90,9 +93,91 @@ button,
   color: var(--white);
   margin: 0;
   padding: 0;
+  font-weight: 400;
   transition: opacity 0.3s ease-in-out;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .button:hover {
   opacity: 0.75;
+}
+
+/* Header Section */
+.header {
+  
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.header__hamburger {
+  display: flex;
+  flex-direction: column;
+  width: 32px;
+  height: 32px;
+}
+.header__hamburger:hover {
+  opacity: 0.75;
+}
+.header__hamburger span {
+  width: 30px;
+  height: 4px;
+  margin: 2px;
+  background-color: var(--blueHam);
+}
+
+.hero {
+  padding-top: 100px;
+  padding-bottom: 190px;
+  background-image: url(../images/hero__background.svg), linear-gradient( 180deg,  var(--white) 70%, var(--bluelinearstart));
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 310px) bottom 30px, 0;
+
+}
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+}
+.hero h1 {
+  width: 510px;
+  color: var(--darkBlue);
+  font-size: var(--font-xlg);
+  font-weight: 700;
+}
+.hero p {
+  margin: 40px 0 70px 0;
+  width: 425px;
+}
+.hero a {
+  padding: 15px 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 1023px) {
+  .container__header {
+    padding: 0 60px;
+  }
+}
+@media only screen and (max-width: 623px) {
+  .container__header {
+    padding: 0 20px;
+  }
 }
