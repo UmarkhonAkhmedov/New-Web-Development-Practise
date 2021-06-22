@@ -359,7 +359,7 @@ button,
   padding-top: 15px;
 }
 .client__item-last {
-  background-color: #485e7c;
+  background-color: #426ba5;
 }
 .client__item-bottom {
   padding-top: 15px;
@@ -368,6 +368,120 @@ button,
   border-right: 2px solid rgb(194, 194, 194);
 }
 
+/* Footer Section */
+.footer {
+  margin-right: 96px;
+  background-color: var(--wildBlue);
+  padding-left: 213px;
+  padding-right: 197px;
+  border-top-right-radius: 150px;
+}
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+.footer__info-heading {
+  width: 460px;
+}
+.footer__info-heading h2 {
+  width: 317px;
+  font-size: var(--font-lg);
+  color: var(--white);
+  font-weight: 500;
+}
+.footer__info-heading p {
+  color: var(--white);
+}
+.footer__info a {
+  padding: 15px 75px;
+}
+.x-line {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  margin-left: -213px;
+  height: 2px;
+  background-color: rgb(194, 194, 194);
+  border: none;
+  opacity: 0.6;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+}
+.footer__list p {
+  color: var(--white);
+  opacity: 1;
+}
+.footer__list h3 {
+  color: var(--white);
+}
+.footer__list a {
+  color: var(--white);
+}
+.footer__content  span {
+  display: flex;
+}
+.footer__content-logo {
+  margin-bottom: 33px;
+}
+.footer__content-logo__img {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+.footer__content-logo__text {
+  width: 125px;
+  height: 46px;
+}
+.footer__content-all {
+  display: flex;
+  width: 299px;
+}
+.footer__content-all p {
+  font-weight: 400;
+  opacity: 0.8;
+  padding: 8px 0 0 20px;
+}
+.footer__content-all h5 {
+  font-size: var(--font-sm);
+  font-weight: 600;
+}
+
+.footer__item-links {
+  display: flex;
+  margin-top: 14px;
+}
+.footer__links h3 {
+  font-size: var(--font-med);
+  font-weight: 500;
+  padding-bottom: 35px;
+} 
+.footer__links ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+.footer__links ul li a {
+  font-weight: 400;
+  opacity: 0.8;
+}
+.footer__links ul li a:hover {
+  opacity: 1;
+}
+.footer__links-about {
+  width: 163px;
+  margin-right: 80px;
+}
+.footer__links-follow {
+  width: 97px;
+}
+.footer__reserved {
+  color: var(--white);
+  opacity: 0.4;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
 
 
 
