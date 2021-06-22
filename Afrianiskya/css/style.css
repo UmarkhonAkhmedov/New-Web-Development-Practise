@@ -235,6 +235,79 @@ button,
   height: 131px;
 }
 
+/* Project Section */
+.project {
+  padding-bottom: 150px;
+}
+.project__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project__info h2 {
+  margin-top: 25px;
+  width: 227px;
+  font-size: var(--font-lg);
+}
+.project__info p {
+  width: 540px;
+}
+.project__img-home {
+  margin: 80px 0;
+  width: 940px;
+  height: 417px;
+  background-image: url(../images/Project__home-background.png);
+  background-size: cover;
+  border-radius: 20px;
+  padding: 5px 60px 0 0;
+  text-align: right;
+  color: var(--white);
+}
+.project__img-home h4 {
+  font-size: var(--font-med-high);
+  font-weight: 400;
+}
+.project__img-home p {
+  opacity: 0.8;
+  color: var(--white);
+}
+.project__img {
+  display: flex;
+  justify-content: space-between;
+}
+.project__img-sparklite {
+  padding: 5px 0 0 32px;
+  width: 422px;
+  height: 417px;
+  background-image: url(../images/Project__sparklite-background.jpg);
+  background-size: cover;
+  color: var(--white);
+}
+.project__img-sparklite h4 {
+  font-size: var(--font-med-high);
+  font-weight: 400;
+}
+.project__img-sparklite p {
+  color: var(--white);
+  opacity: 0.8;
+}
+.project__img-car {
+  padding: 5px 0 0 32px;
+  width: 422px;
+  height: 417px;
+  background-image: url(../images/Project__car-background.jpg);
+  background-size: cover;
+  color: var(--white);
+}
+.project__img-car h4 {
+  font-size: var(--font-med-high);
+  font-weight: 400;
+}
+.project__img-car p {
+  color: var(--white);
+  opacity: 0.8;
+}
+
 
 
 
