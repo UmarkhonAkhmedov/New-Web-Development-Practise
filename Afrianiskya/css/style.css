@@ -53,7 +53,7 @@ h3 {
   margin-top: 0;
   font-weight: 600;
   line-height: 1.15;
-  color: var(--wildBlue);
+  color: var(--darkBlue);
 }
 
 p {
@@ -96,6 +96,7 @@ button,
   font-weight: 400;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
+  opacity: 1;
 }
 .button:hover {
   opacity: 0.75;
@@ -116,9 +117,10 @@ button,
   flex-direction: column;
   width: 32px;
   height: 32px;
+  transition: opacity 0.3s ease-in-out;
 }
 .header__hamburger:hover {
-  opacity: 0.75;
+  opacity: 0.5;
 }
 .header__hamburger span {
   width: 30px;
@@ -153,31 +155,101 @@ button,
   padding: 15px 48px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media Queries */
-@media only screen and (max-width: 1023px) {
-  .container__header {
-    padding: 0 60px;
-  }
+/* Features Section */
+.features {
+  padding-top: 180px;
+  padding-bottom: 50px;
 }
-@media only screen and (max-width: 623px) {
-  .container__header {
-    padding: 0 20px;
-  }
+.features h2 {
+  width: 358px;
+  font-size: var(--font-lg);
 }
+
+.features__list {
+  top: -135px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.features__item-left {
+  margin-right: 100px;
+  width: 380px;
+  height: 525px;
+  border-radius: 20px;
+  box-shadow: #a0c2e1 0px 10px 15px 0px;
+  padding: 48px;
+}
+.features__img-document {
+  width: 182px;
+  height: 132px;
+}
+.features__img-heading {
+  text-align: left;
+}
+.features__img-heading-margin {
+  margin-top: 60px;
+}
+.features__img-text {
+  margin-top: 20px;
+  text-align: left;
+}
+.features__link {
+  padding-top: 25px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: var(--font-very-sm);
+  cursor: pointer;
+}
+.features__link a {
+  margin-right: 20px;
+}
+
+.features__item-home {
+  width: 380px;
+  box-shadow: #a0c2e1 0px 10px 15px 0px;
+  margin-bottom: 100px;
+  height: 537px;
+  border-radius: 20px;
+  padding: 48px;
+}
+.features__img-applications {
+  width: 224px;
+  height: 197px;
+  position: relative;
+  top: -75px;
+}
+.features__item-product {
+  width: 380px;
+  box-shadow: #a0c2e1 0px 10px 15px 0px;
+  height: 525px;
+  border-radius: 20px;
+  padding: 48px;
+}
+.features__img-product {
+  width: 156px;
+  height: 131px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
