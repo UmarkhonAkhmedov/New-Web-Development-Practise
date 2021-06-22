@@ -108,29 +108,30 @@ button,
   align-items: center;
   padding-top: 30px;
 }
-.header__hamburger {
+.header__nav ul {
   display: flex;
-  flex-direction: column;
-  width: 32px;
-  height: 32px;
-  transition: opacity 0.3s ease-in-out;
 }
-.header__hamburger:hover {
-  opacity: 0.5;
+.header__nav ul li:not(:last-child){
+  margin-right: 70px;
 }
-.header__hamburger span {
-  width: 30px;
-  height: 4px;
-  margin: 2px;
-  background-color: var(--blueHam);
+.header__nav ul li a {
+  font-size: var(--font-sm);
+  color: var(--darkBlue);
+  opacity: 1;
+  transition: color 0.3s ease;
+}
+.header__nav ul li a:hover {
+  color: var(--blue);
 }
 
+
+
 .hero {
-  padding-top: 100px;
+  padding-top: 110px;
   padding-bottom: 190px;
   background-image: url(../images/hero__background.svg), linear-gradient( 180deg,  var(--white) 70%, var(--bluelinearstart));
   background-repeat: no-repeat;
-  background-position: left calc(50% + 310px) bottom 30px, 0;
+  background-position: left calc(50% + 310px) bottom 20px, 0;
 
 }
 .hero__content {
@@ -306,6 +307,8 @@ button,
 
 /* Client Section */
 .client {
+  margin: 0 auto;
+  max-width: 1366px;
   background-color: var(--blue);
   border-top-left-radius: 150px;
 }
@@ -370,6 +373,7 @@ button,
 
 /* Footer Section */
 .footer {
+  max-width: 1366px;
   margin-right: 96px;
   background-color: var(--wildBlue);
   padding-left: 213px;
@@ -483,8 +487,11 @@ button,
   padding-bottom: 50px;
 }
 
-
-
+/*  */
+/*  */
+/* Blog Page html */
+/*  */
+/*  */
 
 
 
