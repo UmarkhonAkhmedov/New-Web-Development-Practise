@@ -147,7 +147,8 @@ h1,
 h2, 
 h3 {
   font-family: "Inter", sans-serif;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   line-height: 1.15;
   color: var(--cyan);
@@ -155,6 +156,8 @@ h3 {
 }
 
 p {
+  padding: 0;
+  margin: 0;
   line-height: 1.5;
   color: var(--violet);
 }
@@ -199,20 +202,25 @@ ul {
 .button__transparent:hover {
   background-color: var(--orange);
   color: var(--white);
+  box-shadow: var(--orange) 0px 2px 40px -12px;
 }
 .button__orange {
   background-color: var(--orange);
   color: var(--white);
   border: 1px solid var(--orange);
+  box-shadow: var(--orange) 0px 2px 40px -12px;
 }
 .button__orange:hover {
   color: var(--orange);
   background-color: transparent;
+  box-shadow: none;
 }
 
 /* Header Section */
 .top {
-  background-image: linear-gradient(var(--headerlinearstart), var(--headerlinearend) 99%);
+  background-image: url("../images/hero__background.svg"), linear-gradient(var(--headerlinearstart), var(--headerlinearend) 99%);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 350px) top 220px, 0;
   min-height: 1500px;
 }
 .header__nav {
@@ -251,4 +259,59 @@ ul {
 .nav__buttons .button__transparent {
   margin-right: 20px;
 }
+
 /* Hero */
+.header__hero {
+  padding-top: 135px;
+}
+.hero {
+  width: 540px;
+}
+.hero h1 {
+  margin-bottom: 19px;
+  font-size: var(--font-xlg);
+}
+.hero p {
+  width: 468px;
+  font-size: var(--font-med);
+  margin-bottom: 15px;
+}
+.hero__links a {
+  padding: 15px 0;
+  width: 157px;
+  height: 46px;
+}
+.hero__links .button__orange {
+  margin-right: 20px;
+}
+.hero__video {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+}
+.hero__video-icon {
+  margin-right: 20px;
+  text-align: center;
+  background-color: #361C5D ;
+  padding: 15px 46px;
+  width: 140px;
+  height: 80px;
+}
+.hero__video-icon a img {
+  width: 48px;
+  height: 48px;
+}
+.hero__video-info p {
+  width: 380px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.hero__video-info .hero__video-info__top {
+  font-size: var(--font-sm);
+}
+.hero__video-info .hero__video-info__bottom {
+  margin-top: 5px;
+  font-size: var(--font-very-sm);
+  color: #6D6D78;
+}
