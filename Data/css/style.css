@@ -175,7 +175,7 @@ ul {
   max-width: 1440px;
   padding: 0 170px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Buttons */
@@ -218,9 +218,9 @@ ul {
 
 /* Header Section */
 .top {
-  background-image: url("../images/hero__background.svg"), linear-gradient(var(--headerlinearstart), var(--headerlinearend) 99%);
+  background-image: url("../images/hero__background.svg"), url("../images/choice__background.svg"), linear-gradient(var(--headerlinearstart), var(--headerlinearend) 99%);
   background-repeat: no-repeat;
-  background-position: left calc(50% + 350px) top 220px, 0;
+  background-position: left calc(50% + 350px) top 220px, right calc(50% + 1px) top 700px, 0;
   min-height: 1500px;
 }
 .header__nav {
@@ -315,3 +315,28 @@ ul {
   font-size: var(--font-very-sm);
   color: #6D6D78;
 }
+/* Brand Names */
+.header__brands {
+  margin-top: 105px;
+}
+
+.brands__list {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  align-items: center;
+  padding: 3px;
+}
+
+.brands__list li:not(:last-child) {
+  margin-right: 74px;
+}
+.brands__list li a img {
+  opacity: 0.3;
+  transition: all 0.3s ease-in-out;
+}
+.brands__list li a img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
