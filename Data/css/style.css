@@ -393,7 +393,6 @@ ul {
   background-image: url("../images/business__background.svg");
   background-repeat: no-repeat;
   background-position: right calc(50% + 540px) top 205px;
-  min-height: 1500px;
 }
 .business {
   display: flex;
@@ -456,6 +455,61 @@ ul {
   margin-bottom: 16px;
 }
 
+/* Project Section */
+.project-invest {
+  margin-top: 169px;
+  text-align: center;
+  min-height: 1000px;
+  background-image: url("../images/project__background.svg"), url("../images/invest__background.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 1px) top 70px, left calc(50% + 415px) top 660px;
+}
+.project h2 {
+  width: 770px;
+  margin: 0 auto 46px auto;
+}
+.project h2 span {
+  color: var(--orange);
+}
+.project a {
+  width: 164px;
+  height: 54px;
+  padding: 20px 0;
+}
+
+/* Invest Section */
+.invest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 450px;
+  padding-bottom: 140px;
+}
+.invest__info {
+  width: 470px;
+  text-align: left;
+}
+.invest__info h2 {
+  margin-bottom: 32px;
+}
+.invest__info h2 span {
+  color: var(--orange);
+}
+.invest__info p {
+  margin-bottom: 46px;
+}
+.invest__info a {
+  width: 155px;
+  height: 54px;
+  padding: 20px 0;
+}
+.invest__img {
+  margin-right: -20px;
+}
+.invest__img img {
+  width: 403px;
+  width: 414px;
+}
 
 
 
