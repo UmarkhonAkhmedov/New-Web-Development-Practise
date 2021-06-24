@@ -614,6 +614,7 @@ ul {
   margin-top: 94px;
   background-image: url("../images/footer__background.svg");
   background-repeat: no-repeat;
+  background-position: right calc(50% + 40px) top 1px;
 }
 .footer__img {
   display: flex;
@@ -635,10 +636,69 @@ ul {
 }
 .footer__icons li:hover {
   background-color: var(--orange);
+  box-shadow: var(--orange) 0px 2px 40px -12px;
 }
 .footer__icons li:not(:last-child){
   margin-right: 16px;
 }
+.footer__logo img {
+  width: 140px;
+  height: 32px;
+}
+.footer__main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 50px;
+  color: var(--white);
+}
+.footer__main-content__heading {
+  padding-bottom: 10px;
+}
+.footer__main-content__heading a {
+  font-family: "Inter";
+  font-weight: 700;
+  color: var(--white);
+  
+}
+.footer__main-content__item a {
+  font-family: "Inter";
+  font-weight: 400;
+  color: var(--white);
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+.footer__main-content__item a:hover {
+  color: var(--orange);
+}
+.footer__main-content li:not(:last-child), .footer__main-content li:first-child {
+  margin-bottom: 16px;
+}
+
+
+.footer__bottom {
+  margin-top: 128px;
+  padding-bottom: 90px;
+}
+.footer__bottom ul {
+  display: flex;
+  justify-content: center;
+}
+.footer__bottom ul li:not(:last-child){
+  margin-right: 32px;
+}
+
+.footer__bottom ul li a {
+  color: var(--grey);
+  font-family: "Inter";
+  font-size: var(--font-very-sm);
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+}
+.footer__bottom ul li a:hover {
+  color: var(--white);
+}
+
 
 
 
