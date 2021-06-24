@@ -64,6 +64,7 @@ ul {
   align-items: center;
   background-color: #ffffff;
   color: #57B3FE;
+  margin: 0 auto;
   text-align: center;
   cursor: pointer;
   font-size: 14px;
@@ -77,12 +78,17 @@ ul {
   background-color: #36BDFF;
 }
 
+.header__section {
+  min-height: 1570px;
+}
 .header__section .header {
   max-width: 1920px;
   margin: 0 auto;
   height: 1075px;
-  background-image: linear-gradient(230deg, #35D3FF, #A963FB);
-  border-radius: 0% 0% 50% 50%/20%;
+  background-image: url("../images/hero__background-top-right.svg"), url("../images/hero__circle-top-left.svg"), url("../images/hero__background-triangle.svg"), url("../images/hero__circle-big.svg"), linear-gradient(230deg, #35D3FF, #A963FB 70%);
+  background-repeat: no-repeat;
+  border-radius: 0% 0% 50% 50%/15%;
+  background-position: right calc(50% + 790px) bottom 800px, right calc(50% + 600px) bottom 80px, left calc(50% + 845px) bottom 845px, left calc(50% + 650px) top 430px, 0;
 }
 .header__section .header .navbar {
   display: flex;
@@ -102,6 +108,13 @@ ul {
 }
 .header__section .header .navbar__list > li > a {
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.header__section .header .navbar__list > li > a:hover {
+  color: #595E64;
+}
+.header__section .header .navbar__button {
+  margin: 0;
 }
 .header__section .header .hero {
   text-align: center;
@@ -111,8 +124,11 @@ ul {
   color: #ffffff;
   font-size: 68px;
 }
-.header__section .header .hero > h1 .hero__button {
-  margin: 0 auto;
-  justify-content: center;
-  text-align: center;
+.header__section .header .hero > p {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 28px 0 41px 0;
+}
+.header__section .header .hero img {
+  margin-top: 45px;
 }/*# sourceMappingURL=style.css.map */

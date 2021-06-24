@@ -1,11 +1,14 @@
 .header__section {
+  min-height: 1570px;
   
   .header {
     max-width: 1920px;
     margin: 0 auto;
     height: 1075px;
-    background-image: linear-gradient(230deg, $linearstart, $linearend);
-    border-radius: 0% 0% 50% 50% / 20%;
+    background-image: url("../images/hero__background-top-right.svg"), url("../images/hero__circle-top-left.svg"), url("../images/hero__background-triangle.svg"), url("../images/hero__circle-big.svg"), linear-gradient(230deg, $linearstart, $linearend 70%);
+    background-repeat: no-repeat;
+    border-radius: 0% 0% 50% 50% / 15%;
+    background-position: right calc(50% + 790px) bottom 800px, right calc(50% + 600px) bottom 80px, left calc(50% + 845px) bottom 845px, left calc(50% + 650px) top 430px, 0;
 
     .navbar {
       display: flex;
@@ -21,15 +24,22 @@
         display: flex;
 
         >li {
-
           &:not(:last-child) {
             margin-right: 32px;
           }
           
           >a {
             color: $white;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              color: $textblack;
+            }
           }
         } 
+      }
+      &__button {
+        margin: 0;
       }
     }
     .hero {
@@ -38,12 +48,14 @@
       >h1 {
         color: $white;
         font-size: $font-xlg;
-      
-      .hero__button {
-        margin: 0 auto;
-        justify-content: center;
-        text-align: center;
       }
+      >p {
+        color: $white;
+        font-size: $font-med;
+        margin: 28px 0 41px 0;
+      }
+      img {
+        margin-top: 45px;
       }
     }
   }
