@@ -511,6 +511,134 @@ ul {
   width: 414px;
 }
 
+/* Help Section */
+.help-reason {
+  background-image: url("../images/help__background.svg"), url("../images/reason__background.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 590px) bottom 600px, left calc(50% + 0px) top 620px;
+}
+.help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.help__img img {
+  width: 494px;
+  height: 446px;
+}
+.help__info {
+  width: 512px;
+  height: 290px;
+}
+.help__info h3 {
+  font-size: var(--font-med-med);
+  margin-bottom: 32px;
+}
+.help__heading-text {
+  margin-bottom: 48px;
+  width: 414px;
+}
+.help__list {
+  display: flex;
+  justify-content: space-between;
+}
+.help__item {
+  width: 224px;
+}
+
+.help__item span img {
+  width: 36px;
+  height: 36px;
+}
+.help__item h4 {
+  font-size: var(--font-sm-med);
+  color: var(--cyan);
+  margin: 0;
+  margin: 16px 0 8px 0;
+
+}
+/* Reason Section */
+.reason {
+  padding-top: 190px;
+  padding-bottom: 139px;
+}
+.reason__content {
+  z-index: 1;
+  margin: 0 auto;
+  width: 940px;
+  height: 324px;
+  background-color: #181A51;
+  text-align: center;
+}
+.reason__content h2 {
+  font-size: var(--font-med-high);
+  color: var(--orange);
+  padding: 50px 0 20px 0;
+}
+.reason__content p {
+  font-size: var(--font-sm);
+  width: 396px;
+  margin: 0 auto;
+}
+.reason__content span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 23px 0 16px 0;
+}
+.reason__content span input {
+  outline: none;
+  width: 288px;
+  height: 56px;
+  background-color: #454774;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.reason__content span input::placeholder {
+  padding: 18px 0 18px 16px;
+  color: var(--white);
+  opacity: 0.2;
+}
+.reason__content span a {
+  padding: 20px;
+  height: 56px;
+  width: 128px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Footer Section */
+.footer {
+  margin-top: 94px;
+  background-image: url("../images/footer__background.svg");
+  background-repeat: no-repeat;
+}
+.footer__img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
+}
+.footer__icons li {
+  padding: 7px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color: #262857;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.footer__icons li:hover {
+  background-color: var(--orange);
+}
+.footer__icons li:not(:last-child){
+  margin-right: 16px;
+}
 
 
 
