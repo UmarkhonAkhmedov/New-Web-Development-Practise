@@ -1,0 +1,50 @@
+.header__section {
+  
+  .header {
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 1075px;
+    background-image: linear-gradient(230deg, $linearstart, $linearend);
+    border-radius: 0% 0% 50% 50% / 20%;
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 60px 0 60px;
+      align-items: center;
+
+      &__logo {
+        width: 259px;
+        height: 61px;
+      }
+      &__list {
+        display: flex;
+
+        >li {
+
+          &:not(:last-child) {
+            margin-right: 32px;
+          }
+          
+          >a {
+            color: $white;
+          }
+        } 
+      }
+    }
+    .hero {
+      text-align: center;
+      margin-top: 104px;
+      >h1 {
+        color: $white;
+        font-size: $font-xlg;
+      
+      .hero__button {
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+      }
+      }
+    }
+  }
+}
