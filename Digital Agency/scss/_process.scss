@@ -1,0 +1,177 @@
+.process {
+  padding: 202px 0 175px 0;
+  background-image: 
+  url("../images/process__top-left.svg"),
+  url("../images/process__circle-right-bottom.svg"),
+  url("../images/process__circle-top-right.svg"),
+  url("../images/process__circle-top-right__lightblue.svg"),
+  url("../images/process__left-bottom.svg"),
+  url("../images/process__background-center.svg"),
+  linear-gradient(70deg, $linearstart, $linearend 80%);
+  background-repeat: no-repeat;
+  background-position: 
+  left calc(50% + 740px) top 840px, 
+  right calc(50% + 680px) bottom 1270px,
+  right calc(50% + 640px) top 1180px,
+  left calc(50% + 230px) top 1280px,
+  left calc(50% + 720px) bottom 1125px, 
+  left calc(50% + 100px) top 500px,
+  0;
+
+  &__heading {
+    text-align: center;
+
+    >h5 {
+      color: $white;
+    }
+
+    >h2 {
+      color: $white;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: $font-med;
+      margin: 0 auto;
+      width: 718px;
+      color: $white;
+      margin-bottom: 40px;
+    }
+
+  }
+
+  &__item {
+    margin: 0 auto 40px auto;
+    display: flex;
+    background-color: $white;
+    width: 1170px;
+    height: 323px;
+    justify-content: space-between;
+    border-radius: 15px;
+    
+  }
+
+  &__audit {
+    position: relative;
+    &-img {
+      &__green {
+        position: absolute;
+        top: 95px;
+        left: 15px;
+      }
+      &__violet {
+        position: absolute;
+        top: 15px;
+        left: 75px;
+      }
+      &__barchart {
+      
+        position: absolute;
+        top: 110px;
+        left: 250px;
+      }
+    }
+
+    &-info {
+      text-align: left;
+      margin-left: 570px;
+      padding-right: 70px;
+      margin-top: 70px;
+      >img {
+        margin-left: -20px;
+
+      }
+      >h3 {
+        margin-top: -10px;
+        font-size: $font-med-high;
+        font-weight: 700;
+      }
+      >p {
+        margin-top: 15px;
+      }
+    }
+
+  }
+
+  &__tracking {
+    position: relative;
+    &-img {
+      &__linegraph {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      &__barchart {
+        position: absolute;
+        top: 70px;
+        left: 230px;
+      }
+    }
+
+    &-info {
+      text-align: left;
+      margin-left: 570px;
+      padding-right: 70px;
+      margin-top: 70px;
+      >img {
+        margin-left: -20px;
+
+      }
+      >h3 {
+        margin-top: -10px;
+        font-size: $font-med-high;
+        font-weight: 700;
+      }
+      >p {
+        margin-top: 15px;
+      }
+    }
+
+  }
+
+  &__results {
+    position: relative;
+    &-img {
+      &__linegraph {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+      }
+      &__barchart {
+        position: absolute;
+        top: 85px;
+        left: 170px;
+      }
+      &__users {
+        position: absolute;
+        top: -5px;
+        left: 280px;
+      }
+    }
+
+    &-info {
+      text-align: left;
+      margin-left: 570px;
+      padding-right: 70px;
+      margin-top: 60px;
+      >img {
+        margin-left: -20px;
+
+      }
+      >h3 {
+        margin-top: -10px;
+        font-size: $font-med-high;
+        font-weight: 700;
+      }
+      >p {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 0 100px;
+  }
+}
