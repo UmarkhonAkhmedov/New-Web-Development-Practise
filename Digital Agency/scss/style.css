@@ -395,7 +395,7 @@ ul {
   width: 417px;
 }
 .working__content-info > h5 {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: #ffffff;
   opacity: 0.5;
 }
@@ -434,4 +434,69 @@ ul {
   position: absolute;
   top: 20px;
   left: 210px;
+}
+
+.footer {
+  background-color: #0D0D0D;
+  min-height: 241px;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 84px;
+}
+.footer__content-logo {
+  cursor: pointer;
+  width: 176px;
+  height: 41px;
+}
+.footer__content-nav {
+  display: flex;
+}
+.footer__content-nav li:not(:last-child) {
+  margin-right: 25px;
+}
+.footer__content-nav li a {
+  color: #ffffff;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.footer__content-nav li a:hover {
+  color: #57B3FE;
+}
+.footer__content-icon {
+  display: flex;
+}
+.footer__content-icon li:not(:last-child) {
+  margin-right: 15px;
+}
+.footer__content-icon li > a > svg {
+  fill: #ffffff;
+  transition: all 0.3s ease;
+}
+.footer__content-icon li > a > svg:hover {
+  fill: #57B3FE;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer__bottom > p {
+  color: #ffffff;
+  font-size: 15px;
+  opacity: 0.5;
+}
+.footer__bottom > span a {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.footer__bottom > span a:hover {
+  color: #57B3FE;
+}
+.footer__bottom > span a:not(:last-child) {
+  margin-right: 24px;
 }/*# sourceMappingURL=style.css.map */
