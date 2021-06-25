@@ -24,10 +24,11 @@
           >li {
             &:not(:last-child){
               margin-right: 32px;
-              transition: color 0.3s ease-in-out;
+              
             }
             >a {
               color: $white;
+              transition: color 0.3s ease-in-out;
               &:hover {
                 color: $blue;
               }

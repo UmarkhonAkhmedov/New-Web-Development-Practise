@@ -1,0 +1,78 @@
+.header__hero {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__info {
+      width: 588px;
+      height: 468px;
+      margin-top: 131px;
+
+      &-top {
+        display: flex;
+        align-items: center;
+        width: 365px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 10%);
+        border-radius: 32px;
+
+        &__save {
+          margin: 4px 16px 4px 4px;
+          padding: 4px 16px;
+          background-color: $white;
+          color: $darkblack;
+          font-weight: 500;
+          border-radius: 32px;
+        }
+        &__friday {
+          color: $white;
+        }
+      }
+      >h1 {
+        margin: 24px 0;
+        font-size: $font-xlg;
+      }
+
+      &-par {
+        width: 435px;
+        color: $lightgrey;
+        margin-bottom: 32px;
+      }
+      >a {
+        width: 202px;
+        font-size: $font-med-sm;
+        
+        >img {
+          margin-left: 24px;
+        }
+      }
+
+    }
+
+    &__img {
+      margin-top: 51px;
+
+      &-main {
+        top: 0;
+        left: 0;
+        position: relative;
+        width: 604px;
+        height: 585px;
+        
+        
+      }
+      &-rect__large {
+        top: 300px;
+        left: 300px;
+        position: absolute;
+      }
+      &-rect__small {
+        top: 500px;
+        left: 500px;
+        position: absolute;
+      }
+    }
+  }
+
+}
