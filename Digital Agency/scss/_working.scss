@@ -1,0 +1,62 @@
+.working {
+  padding: 151px 0 90px 0;
+  background-image:
+  url("../images/working__background.svg"), 
+  linear-gradient(240deg, $linearstart, $linearend 80%);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 470px) top 100px, 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-info {
+      width: 417px;
+
+      >h5 {
+        letter-spacing: 3px;
+        color: $white;
+        opacity: 0.5;
+      }
+      >h2 {
+        width: 414px;
+        color: $white;
+        margin-bottom: 24px;
+      }
+      >p {
+        font-size: $font-med;
+        color: $white;
+        margin-bottom: 30px;
+      }
+      >a {
+        margin: 0;
+      }
+    }
+    &-img {
+      position: relative;
+      background-color: rgb(255, 255, 255, 31%);
+      border-radius: 20px;
+      width: 540px;
+      height: 460px;
+      margin-bottom: 100px;
+
+      &__line {
+        position: absolute;
+        top: 70px;
+        left: -80px;
+      }
+      &__pie {
+        position: absolute;
+        top: 210px;
+        left: 50px;
+      }
+      &__img {
+        position: absolute;
+        top: 20px;
+        left: 210px;
+      }
+      
+    }
+  }
+}

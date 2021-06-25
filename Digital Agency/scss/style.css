@@ -378,4 +378,60 @@ ul {
 .brand__text {
   margin: 0 auto;
   width: 381px;
+}
+
+.working {
+  padding: 151px 0 90px 0;
+  background-image: url("../images/working__background.svg"), linear-gradient(240deg, #35D3FF, #A963FB 80%);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 470px) top 100px, 0;
+}
+.working__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.working__content-info {
+  width: 417px;
+}
+.working__content-info > h5 {
+  letter-spacing: 3px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.working__content-info > h2 {
+  width: 414px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.working__content-info > p {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.working__content-info > a {
+  margin: 0;
+}
+.working__content-img {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.31);
+  border-radius: 20px;
+  width: 540px;
+  height: 460px;
+  margin-bottom: 100px;
+}
+.working__content-img__line {
+  position: absolute;
+  top: 70px;
+  left: -80px;
+}
+.working__content-img__pie {
+  position: absolute;
+  top: 210px;
+  left: 50px;
+}
+.working__content-img__img {
+  position: absolute;
+  top: 20px;
+  left: 210px;
 }/*# sourceMappingURL=style.css.map */
