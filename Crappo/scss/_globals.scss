@@ -82,14 +82,14 @@ $blue: #3671E9;
 $darkblack: #0D0D2B;
 
 // Font Sizes
-$font-very-sm: 14px;
-$font-sm: 16px;
-$font-med-sm: 18px;
-$font-med: 20px;
-$font-med-high: 24px;
-$font-lg-sm: 32px;
-$font-lg: 40px;
-$font-xlg: 64px;
+$font-very-sm: 12px;
+$font-sm: 14px;
+$font-med-sm: 16px;
+$font-med: 18px;
+$font-med-high: 22px;
+$font-lg-sm: 30px;
+$font-lg: 38px;
+$font-xlg: 56px;
 
 html {
   font-size: 100%;
@@ -131,16 +131,16 @@ ul {
 }
 // Spacing
 .container {
-  max-width: 1440px;
-  padding: 0 120px;
+  max-width: 1360px;
+  padding: 0 100px;
   margin: 0 auto;
   overflow-x: hidden;
 }
 // Buttons
 .button {
   display: flex;
-  width: 161px;
-  height: 59px;
+  width: 150px;
+  height: 55px;
   justify-content: center;
   align-items: center;
   background-color: $blue;
@@ -157,17 +157,6 @@ ul {
 }
 
 // --Media Queries--
-
-@media only screen and (max-width: 1400px){
-  .container {
-    padding: 0 60px;
-  }
-  .navbar {
-    margin: 0;
-    margin-top: 20px;
-  }
-}
-
 @media (max-width: 1023px){
   .navbar__hamburger {
     display:inherit!important;
