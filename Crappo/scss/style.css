@@ -626,4 +626,104 @@ ul {
   width: 408px;
   margin-bottom: 32px;
   line-height: 2;
+}
+
+.profits {
+  background-color: #2B076E;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  background-image: url("../images/profit__img-circle.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 530px) bottom 0;
+}
+.profits .profit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.profits .profit__info {
+  width: 454px;
+}
+.profits .profit__info > h2 {
+  margin-bottom: 24px;
+}
+.profits .profit__info > p {
+  width: 400px;
+  margin-bottom: 32px;
+  line-height: 2;
+}
+.profits .profit__statistics {
+  background-color: #35068C;
+  width: 500px;
+  border-radius: 16px;
+  padding: 40px;
+}
+.profits .profit__statistics-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profits .profit__statistics-item > li:nth-child(1) {
+  display: flex;
+  width: 100px;
+}
+.profits .profit__statistics-item > li:nth-child(1) img {
+  margin-right: 16px;
+}
+.profits .profit__statistics-item > li:nth-child(1) > span h4 {
+  margin: 0;
+}
+.profits .profit__statistics-item > li:nth-child(1) > span h4:first-child {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.profits .profit__statistics-item > li:nth-child(1) > span h4:nth-child(2) {
+  font-size: 14px;
+  color: #F2F2F2;
+  font-weight: 400;
+}
+.profits .profit__statistics-item > li:nth-child(2) {
+  width: 62px;
+  color: #F2F2F2;
+  font-weight: 400;
+}
+.profits .profit__statistics-item > li:nth-child(3) {
+  display: flex;
+  width: 70px;
+}
+.profits .profit__statistics-item > li:nth-child(3) > img {
+  margin-left: -15px;
+  margin-right: 8px;
+}
+.profits .profit__statistics-item > li:nth-child(3) > h4 {
+  color: #8FFFBE;
+  font-size: 14px;
+  font-weight: 400;
+}
+.profits .profit__statistics-heading > li:first-child {
+  margin-right: 8px;
+}
+.profits .profit__statistics-heading > li:nth-child(4) {
+  margin-right: -10px;
+}
+.profits .profit__statistics-eth {
+  position: relative;
+  top: 0;
+  left: -60px;
+  margin: 0 -40px;
+  padding: 0 40px;
+  background-color: #4610AD;
+  border-radius: 16px;
+}
+.profits .profit__statistics-eth > li:first-child {
+  margin-right: -3px;
+}
+.profits .profit__statistics-eth > li:nth-child(3) > h4 {
+  color: #FF7676;
+  font-size: 14px;
+  font-weight: 400;
+}
+.profits .profit__statistics-ltc > li:nth-child(3) > img {
+  margin-left: -12px;
 }/*# sourceMappingURL=style.css.map */

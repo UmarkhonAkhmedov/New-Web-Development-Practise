@@ -1,0 +1,132 @@
+.profits {
+  background-color: $ink;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  background-image: 
+  url("../images/profit__img-circle.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 530px) bottom 0;
+
+  .profit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__info {
+      width: 454px;
+
+      >h2 {
+        margin-bottom: 24px;
+      }
+      >p {
+        width: 400px;
+        margin-bottom: 32px;
+        line-height: 2;
+      }
+    }
+
+    &__statistics {
+      background-color: #35068C;
+      width: 500px;
+      border-radius: 16px;
+      padding: 40px;
+
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        >li:nth-child(1) {
+          display: flex;
+          width: 100px;
+          img {
+            margin-right: 16px;
+          }
+          >span {
+            h4 {
+              margin: 0;
+              &:first-child {
+                font-size: $font-med;
+                margin-bottom: 5px;
+              }
+              &:nth-child(2) {
+                font-size: $font-sm;
+                color: #F2F2F2;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+        >li:nth-child(2) {
+          width: 62px;
+          color: #F2F2F2;
+          font-weight: 400;
+        }
+        >li:nth-child(3) {
+          display: flex;
+          width: 70px;
+          >img {
+            margin-left: -15px;
+            margin-right: 8px;
+          }
+          >h4 {
+            color: #8FFFBE;
+            font-size: $font-sm;
+            font-weight: 400;
+          }
+        }
+        
+      }
+
+      &-heading {
+        >li:first-child {
+          margin-right: 8px;
+        }
+        >li:nth-child(4) {
+          margin-right: -10px;
+        }
+      }
+
+      &-bitcoin {
+        
+      }
+
+      &-eth {
+        position: relative;
+        top: 0;
+        left: -60px;
+        margin: 0 -40px;
+        padding: 0 40px;
+        background-color: #4610AD;
+        border-radius: 16px;
+
+        >li:first-child {
+          margin-right: -3px;
+        }
+        >li:nth-child(3) {
+          >img {
+
+          }
+          >h4 {
+            color: $lightred;
+            font-size: $font-sm;
+            font-weight: 400;
+          }
+        }
+        
+      }
+
+      &-ltc {
+        >li:nth-child(3) {
+          >img {
+            margin-left: -12px;
+          }
+          >h4 {
+
+          }
+        }
+      }
+    }
+  }
+}
