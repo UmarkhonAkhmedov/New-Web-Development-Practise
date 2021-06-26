@@ -1,0 +1,36 @@
+.features {
+  background-color: $darkblack;
+  min-height: 580px;
+  background-image: 
+  url("../images/features__background-u.svg"),
+  url("../images/features__background-rect.svg");
+  background-repeat: no-repeat;
+  background-position: 
+  left calc(50% + 680px) top 360px,
+  right calc(50% + 490px) top 140px;
+
+  .feature {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__img {
+
+    }
+
+    &__info {
+      width: 480px;
+      h2 {
+        margin-bottom: 24px;
+      }
+      p {
+        width: 370px;
+        color: $lightgrey;
+        margin-bottom: 32px;
+      }
+    
+    }
+
+  }
+}

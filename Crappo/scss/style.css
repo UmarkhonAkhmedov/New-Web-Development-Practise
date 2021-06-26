@@ -297,4 +297,29 @@ ul {
 .results__item-info > p {
   margin-top: 5px;
   color: #E0E0E0;
+}
+
+.features {
+  background-color: #0D0D2B;
+  min-height: 580px;
+  background-image: url("../images/features__background-u.svg"), url("../images/features__background-rect.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 680px) top 360px, right calc(50% + 490px) top 140px;
+}
+.features .feature {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.features .feature__info {
+  width: 480px;
+}
+.features .feature__info h2 {
+  margin-bottom: 24px;
+}
+.features .feature__info p {
+  width: 370px;
+  color: #E0E0E0;
+  margin-bottom: 32px;
 }/*# sourceMappingURL=style.css.map */
