@@ -516,4 +516,85 @@ ul {
 }
 .trade__list .trade__third-item .growth__link img {
   padding: 20px;
+}
+
+.market {
+  background-color: #2B076E;
+  min-height: 800px;
+}
+.market h2 {
+  width: 758px;
+  text-align: center;
+  margin: 100px auto 0 auto;
+}
+.market__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.market__list-info {
+  width: 454px;
+}
+.market__list-info > h3 {
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+.market__list-info > p {
+  width: 350px;
+  margin-bottom: 32px;
+}
+.market__list-img {
+  position: relative;
+  width: 500px;
+  background-color: #35068C;
+  padding: 40px 40px 208px 40px;
+  margin: 100px 0 220px 0;
+}
+.market__list-img .market__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.market__list-img .market__item-top {
+  display: flex;
+  align-items: start;
+}
+.market__list-img .market__item-top > img {
+  margin-right: 16px;
+}
+.market__list-img .market__item-top > span h4 {
+  margin: 0;
+  font-size: 22px;
+  margin-bottom: 4px;
+  margin-right: 8px;
+}
+.market__list-img .market__item-top > span h5 {
+  margin: 0;
+  font-size: 12px;
+  color: #F2F2F2;
+  font-weight: 400;
+}
+.market__list-img .market__item-top > p {
+  font-size: 600;
+  font-size: 14px;
+  color: #CFCFCF;
+  opacity: 0.7;
+}
+.market__list-img .market__item .market__item-num > p {
+  color: #42FFFF;
+}
+.market__list-img .market__item-top__img-line {
+  position: absolute;
+  top: 120px;
+  left: 38px;
+}
+.market__list-img .market__item-top__img-trade {
+  position: absolute;
+  top: 240px;
+  left: 70px;
+}
+.market__list-img .market__item-top__img-price {
+  position: absolute;
+  top: 230px;
+  left: 330px;
 }/*# sourceMappingURL=style.css.map */

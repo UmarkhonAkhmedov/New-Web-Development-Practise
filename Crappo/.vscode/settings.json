@@ -8,5 +8,8 @@
     "lightblack",
     "lightred",
     "litecoin"
+  ],
+  "cSpell.ignoreWords": [
+    "behaviour"
   ]
 }
