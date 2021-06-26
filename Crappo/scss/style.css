@@ -100,7 +100,7 @@ ul {
 
 .container {
   max-width: 1360px;
-  padding: 0 120px;
+  padding: 0 60px;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -322,4 +322,107 @@ ul {
   width: 370px;
   color: #E0E0E0;
   margin-bottom: 32px;
+}
+
+.earn {
+  position: relative;
+  padding: 100px 0 219px 0;
+  background-color: #0D0D2B;
+}
+.earn__info {
+  width: 741px;
+  margin: 0 auto;
+}
+.earn__info-heading {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.earn__info-text {
+  font-size: 16px;
+  margin: 0 auto;
+  width: 622px;
+  text-align: center;
+}
+.earn__form {
+  position: absolute;
+  top: 282px;
+  left: 278px;
+  width: 942px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+.earn__form-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FBFCFE;
+  padding: 48px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.earn__form-input > input {
+  outline: none;
+  width: 403px;
+  height: 48px;
+  border: none;
+  border-bottom: 2px solid #E0E0E0;
+  padding-left: 15px;
+  color: #0D0D2B;
+  font-size: 18px;
+  font-weight: 500;
+}
+.earn__form-input > input::-moz-placeholder {
+  color: #0D0D2B;
+  font-size: 18px;
+  font-weight: 500;
+}
+.earn__form-input > input:-ms-input-placeholder {
+  color: #0D0D2B;
+  font-size: 18px;
+  font-weight: 500;
+}
+.earn__form-input > input::placeholder {
+  color: #0D0D2B;
+  font-size: 18px;
+  font-weight: 500;
+}
+.earn__form-input > select {
+  outline: none;
+  width: 200px;
+  height: 48px;
+  padding-left: 15px;
+  color: #0D0D2B;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid #E0E0E0;
+}
+.earn__form-info > h5 {
+  padding-top: 48px;
+  padding-left: 48px;
+  color: #3671E9;
+  font-size: 14px;
+  margin: 0;
+}
+.earn__form-info > h3 {
+  padding-left: 48px;
+  margin: 0;
+  font-size: 30px;
+  color: #0D0D2B;
+  font-weight: 700;
+  margin: 16px 0 4px 0;
+}
+.earn__form-info > h3 > span {
+  color: #3671E9;
+}
+.earn__form-info > p {
+  color: #828282;
+  padding-left: 48px;
+}
+
+.trade {
+  background-color: grey;
+  padding-top: 316px;
 }/*# sourceMappingURL=style.css.map */
