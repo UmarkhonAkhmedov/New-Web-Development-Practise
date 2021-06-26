@@ -100,7 +100,7 @@ ul {
 
 .container {
   max-width: 1360px;
-  padding: 0 60px;
+  padding: 0 120px;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -328,6 +328,7 @@ ul {
   position: relative;
   padding: 100px 0 219px 0;
   background-color: #0D0D2B;
+  margin: auto;
 }
 .earn__info {
   width: 741px;
@@ -352,6 +353,7 @@ ul {
   border-radius: 20px;
   margin: 0 auto;
   padding-bottom: 48px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .earn__form-input {
   display: flex;
@@ -423,6 +425,95 @@ ul {
 }
 
 .trade {
-  background-color: grey;
+  background-color: #F8F9FC;
   padding-top: 316px;
+}
+.trade__heading {
+  width: 741px;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+.trade__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.trade__list .trade__item {
+  margin-bottom: 100px;
+  width: 370px;
+  height: 320px;
+  text-align: center;
+  border-radius: 16px;
+  padding: 60px 0;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.trade__list .trade__item:hover {
+  transform: scale(1.05);
+}
+.trade__list .trade__item > span img {
+  margin-bottom: 48px;
+}
+.trade__list .trade__item__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.trade__list .trade__item__heading > h3 {
+  font-size: 30px;
+  margin-right: 8px;
+}
+.trade__list .trade__item__heading > h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.trade__list .trade__item > p {
+  width: 318px;
+  height: 64px;
+  margin: 0 auto 25px auto;
+}
+.trade__list .trade__item > a > img {
+  padding-left: 10px;
+}
+.trade__list .trade__one-item {
+  background-color: #2B076E;
+}
+.trade__list .trade__one-item a {
+  margin: 0 auto;
+}
+.trade__list .trade__second-item {
+  background-color: #ffffff;
+}
+.trade__list .trade__second-item__heading > h3 {
+  color: #0D0D2B;
+}
+.trade__list .trade__second-item__heading > h4 {
+  color: #BDBDBD;
+}
+.trade__list .trade__second-item p {
+  color: #828282;
+}
+.trade__list .trade__third-item {
+  background-color: #ffffff;
+}
+.trade__list .trade__third-item__heading > h3 {
+  color: #0D0D2B;
+}
+.trade__list .trade__third-item__heading > h4 {
+  color: #BDBDBD;
+}
+.trade__list .trade__third-item p {
+  color: #828282;
+}
+.trade__list .trade__third-item .growth__link {
+  border: 1px solid red;
+}
+.trade__list .trade__third-item .growth__link img {
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */

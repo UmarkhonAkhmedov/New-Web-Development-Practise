@@ -1,7 +1,118 @@
 .trade {
-  background-color: grey;
+  background-color: #F8F9FC;
   padding-top: 316px;
 
+  &__heading {
+    width: 741px;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+    .trade__item {
+      margin-bottom: 100px;
+      width: 370px;
+      height: 320px;
+      text-align: center;
+      border-radius: 16px;
+      padding: 60px 0;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+      >span {
+        img {
+          margin-bottom: 48px;
+        }
+      }
+      &__heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+
+        >h3 {
+          font-size: $font-lg-sm;
+          margin-right: 8px;
+          
+        }
+        >h4 {
+          margin: 0;
+          font-size: $font-med-sm;
+          font-weight: 500;
+          opacity: 0.7;
+        }
+        
+      }
+      > p {
+        width: 318px;
+        height: 64px;
+        margin: 0 auto 25px auto;
+      }
+      > a {
+        // width: 205px;
+        > img {
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .trade__one-item {
+      background-color: $ink;
+
+      a {
+        margin: 0 auto;
+      }
+    }
+
+    .trade__second-item {
+      background-color: $white;
+      &__heading {
+        >h3 {
+          color: $darkblack;
+        }
+        >h4 {
+          color: #BDBDBD;
+        }
+      }
+      p {
+        color: #828282;
+      }
+    }
+
+    .trade__third-item {
+      background-color: $white;
+
+      &__heading {
+        >h3 {
+          color: $darkblack;
+        }
+        >h4 {
+          color: #BDBDBD;
+        }
+      }
+      p {
+        color: #828282;
+      }
+      .growth__link {
+        border: 1px solid red;
+
+        img {
+          padding: 20px;
+        }
+      }
+    }
+  }
   
 }
 
