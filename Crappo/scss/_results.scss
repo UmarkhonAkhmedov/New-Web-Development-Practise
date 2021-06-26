@@ -1,0 +1,30 @@
+.results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: 334px;
+    margin: auto;
+
+    &-img {
+        background-color: rgba(255, 255, 255, 10%);
+        border-radius: 50%;
+        margin-right: 24px;
+      > img {
+        padding: 16px 18px;
+        
+      }
+    }
+
+    &-info {
+      > p {
+        margin-top: 5px;
+        color: $lightgrey; 
+      }
+    }
+  }
+}

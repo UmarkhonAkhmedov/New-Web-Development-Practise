@@ -1,11 +1,15 @@
 .header {
   background-color: $darkblack;
-  min-height: 1700px;
+  min-height: 1160px;
   background-image: 
   url("../images/hero__background-large.svg"),
-  url("../images/hero__background-small.svg");
+  url("../images/hero__background-small.svg"),
+  url("../images/results__background-d.svg");
   background-repeat: no-repeat;
-  background-position: right calc(50% + 50px) top 400px, left calc(50% + 350px) top 450px,;
+  background-position: 
+  right calc(50% + 50px) top 400px, 
+  left calc(50% + 350px) top 430px,
+  left calc(50% + 700px) top 950px,;
 
   .navbar {
     display: flex;

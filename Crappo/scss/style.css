@@ -100,7 +100,7 @@ ul {
 
 .container {
   max-width: 1360px;
-  padding: 0 100px;
+  padding: 0 120px;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -136,10 +136,10 @@ ul {
 }
 .header {
   background-color: #0D0D2B;
-  min-height: 1700px;
-  background-image: url("../images/hero__background-large.svg"), url("../images/hero__background-small.svg");
+  min-height: 1160px;
+  background-image: url("../images/hero__background-large.svg"), url("../images/hero__background-small.svg"), url("../images/results__background-d.svg");
   background-repeat: no-repeat;
-  background-position: right calc(50% + 50px) top 400px, left calc(50% + 350px) top 450px;
+  background-position: right calc(50% + 50px) top 400px, left calc(50% + 350px) top 430px, left calc(50% + 700px) top 950px;
 }
 .header .navbar {
   display: flex;
@@ -272,4 +272,29 @@ ul {
   top: 600px;
   left: 600px;
   position: absolute;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+}
+.results__item {
+  display: flex;
+  justify-content: center;
+  width: 334px;
+  margin: auto;
+}
+.results__item-img {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 24px;
+}
+.results__item-img > img {
+  padding: 16px 18px;
+}
+.results__item-info > p {
+  margin-top: 5px;
+  color: #E0E0E0;
 }/*# sourceMappingURL=style.css.map */
