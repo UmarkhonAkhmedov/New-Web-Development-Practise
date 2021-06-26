@@ -597,4 +597,33 @@ ul {
   position: absolute;
   top: 230px;
   left: 330px;
+}
+
+.statistics {
+  background-color: #2B076E;
+}
+.statistics .statistic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.statistics .statistic__img {
+  width: 710px;
+  margin-left: -190px;
+  margin-right: 140px;
+}
+.statistics .statistic__img > img {
+  width: 100%;
+}
+.statistics .statistic__info {
+  width: 456px;
+}
+.statistics .statistic__info > h2 {
+  margin-bottom: 24px;
+}
+.statistics .statistic__info > p {
+  width: 408px;
+  margin-bottom: 32px;
+  line-height: 2;
 }/*# sourceMappingURL=style.css.map */
