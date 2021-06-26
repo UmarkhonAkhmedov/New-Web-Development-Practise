@@ -1,0 +1,66 @@
+.start__mining {
+  background-image: 
+  url("../images/start__background-rect.svg"),
+  url("../images/start__background-rect.svg"),
+  linear-gradient(180deg, #2B076E, #0D0D2B);
+  padding: 88px 0;
+  background-repeat: no-repeat;
+  background-position: 
+  left calc(50% + 300px) top 10px,
+  right calc(50% + 300px) top 10px,
+  0;
+
+  .start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blue;
+    border-radius: 16px;
+    padding: 48px;
+    background-image: 
+    url("../images/start__background-vector.svg"),
+    url("../images/start__background-b.svg");
+    background-repeat: no-repeat;
+    background-position: 
+    right calc(50% + 528px) top 0px,
+    left calc(50% + 540px) top 90px;
+
+    &__info {
+      width: 501px;
+      >h3 {
+        margin-bottom: 16px;
+      }
+      >p {
+        width: 348px;
+        line-height: 1.5;
+      }
+    }
+
+    &__input {
+      display: flex;
+      width: 566px;
+
+      >input {
+        width: 324px;
+        margin-right: 40px;
+        outline: none;
+        background-color: $blue;
+        color: $white;
+        font-size: $font-med-sm;
+        border: none;
+        border-bottom: 1px solid rgba($color: $white, $alpha: 40%);
+
+        &::placeholder {
+          color: $white;
+        }
+
+      }
+      >a {
+        font-size: $font-med-sm;
+        font-weight: 600;
+        color: $darkblack;
+        background-color: $white;
+      }
+    }
+  }
+}
