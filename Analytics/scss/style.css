@@ -37,6 +37,7 @@ body {
   min-height: 300vh;
   background-color: #F8F9FF;
   color: #8794BA;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -70,10 +71,10 @@ ul {
 }
 
 .container {
-  max-width: 1600px;
-  padding: 0 210px;
+  max-width: 1180px;
+  padding: 0 160px;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .button {
@@ -94,4 +95,81 @@ ul {
 .button:hover {
   color: #8794BA;
   background-color: transparent;
+}
+
+.header {
+  min-height: 1000px;
+  background-image: url("../images/hero__background-rect.svg"), url("../images/hero__background-rect-pink.svg");
+  background-repeat: no-repeat;
+  background-position: top center, left calc(50% + 21px) top 545px;
+  background-size: auto, 1625px 271px;
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.header__navbar-main {
+  display: flex;
+  align-items: center;
+}
+.header__navbar-main__logo {
+  margin-right: 81px;
+}
+.header__navbar-main__list {
+  display: flex;
+}
+.header__navbar-main__list li:not(:last-child) {
+  margin-right: 32px;
+}
+.header__navbar-main__list li a {
+  color: #8794BA;
+  transition: all 0.3s ease-in-out;
+}
+.header__navbar-main__list li a:hover {
+  color: #EF2A82;
+}
+.header__navbar-links {
+  display: flex;
+  align-items: center;
+}
+.header__navbar-links__signin {
+  margin-right: 40px;
+  color: #8794BA;
+  transition: all 0.3s ease-in-out;
+}
+.header__navbar-links__signin:hover {
+  color: #EF2A82;
+}
+.header__navbar-links__signup {
+  width: 157px;
+  height: 36px;
+  background-color: transparent;
+  border: 2px solid #465B95;
+  color: #8794BA;
+}
+.header__navbar-links__signup:hover {
+  background-color: #EF2A82;
+  color: #ffffff;
+  border-color: #EF2A82;
+}
+.header__navbar-hamburger {
+  display: none;
+}
+.header__navbar-hamburger > div {
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.3s ease-in-out;
+}
+.header__navbar-hamburger > div:hover {
+  opacity: 0.7;
+}
+.header__navbar-hamburger > div > span {
+  background-color: #EF2A82;
+  width: 25px;
+  padding: 2px;
+}
+.header__navbar-hamburger > div > span:not(:last-child) {
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */

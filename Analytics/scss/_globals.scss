@@ -62,6 +62,7 @@ body {
   min-height: 300vh;
   background-color: $darkerWhite;
   color: $wildlBlue;
+  overflow-x: hidden;
 }
 h1 {
   line-height: 60px;
@@ -90,10 +91,10 @@ ul {
 }
 // Spacing
 .container {
-  max-width: 1600px;
-  padding: 0 210px;
+  max-width: 1180px;
+  padding: 0 160px;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 // Buttons
 .button {
