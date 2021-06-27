@@ -1,0 +1,45 @@
+// --Font Family--
+// Roboto
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v27-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/roboto-v27-latin-500.woff2') format('woff2'),
+    url('../fonts/roboto-v27-latin-500.woff') format('woff');
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/roboto-v27-latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-v27-latin-700.woff') format('woff');
+}
+
+// --Variables--
+// Colors
+$wildlBlue: #8794BA;
+$white: #ffffff;
+$pink: #EF2A82;
+$black: #3B3E43;
+$darkBlue: #172755;
+$blue: #0088F0;
+$black: #0D0D0D;
+
+// Font Sizes
+$font-very-sm: 14px;
+$font-sm-med: 16px;
+$font-sm: 18px;
+$font-med: 30px;
+$font-med-high: 40px;
+$font-lg: 50px;
