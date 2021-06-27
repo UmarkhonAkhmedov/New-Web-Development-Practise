@@ -22,18 +22,20 @@
         margin-right: 81px;
       }
       &__list {
-        display: flex;
-        li {
+        .main__list {
+          display: flex;
+          li {
 
-          &:not(:last-child) {
-            margin-right: 32px;
-          }
+            &:not(:last-child) {
+              margin-right: 32px;
+            }
 
-          a {
-            color: $wildlBlue;
-            transition: all 0.3s ease-in-out;
-            &:hover {
-              color: $pink;
+            a {
+              color: $wildlBlue;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                color: $pink;
+              }
             }
           }
         }
@@ -41,34 +43,35 @@
     }
 
     &-links {
-      display: flex;
-      align-items: center;
+      .navbar__links {
+        display: flex;
+        align-items: center;
 
-      &__signin {
-        margin-right: 40px;
-        color: $wildlBlue;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          color: $pink;
+        &-signin {
+          margin-right: 40px;
+          color: $wildlBlue;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: $pink;
+          }
         }
-      }
-      &__signup {
-        width: 157px;
-        height: 36px;
-        background-color: transparent;
-        border: 2px solid #465B95;
-        color: $wildlBlue;
+        &-signup {
+          width: 157px;
+          height: 36px;
+          background-color: transparent;
+          border: 2px solid #465B95;
+          color: $wildlBlue;
 
-        &:hover {
-          background-color: $pink;
-          color: $white;
-          border-color: $pink;
+          &:hover {
+            background-color: $pink;
+            color: $white;
+            border-color: $pink;
+          }
         }
       }
     }
 
     &-hamburger {
-      display: none;
       >div {
         display: flex;
         flex-direction: column;

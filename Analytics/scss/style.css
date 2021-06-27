@@ -97,6 +97,39 @@ ul {
   background-color: transparent;
 }
 
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .header__navbar-hamburger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .header__navbar-hamburger {
+    display: block;
+  }
+
+  .header__navbar-main__list {
+    display: none;
+  }
+
+  .header__navbar-links {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 30px;
+  }
+}
 .header {
   min-height: 1000px;
   background-image: url("../images/hero__background-rect.svg"), url("../images/hero__background-rect-pink.svg");
@@ -117,45 +150,42 @@ ul {
 .header__navbar-main__logo {
   margin-right: 81px;
 }
-.header__navbar-main__list {
+.header__navbar-main__list .main__list {
   display: flex;
 }
-.header__navbar-main__list li:not(:last-child) {
+.header__navbar-main__list .main__list li:not(:last-child) {
   margin-right: 32px;
 }
-.header__navbar-main__list li a {
+.header__navbar-main__list .main__list li a {
   color: #8794BA;
   transition: all 0.3s ease-in-out;
 }
-.header__navbar-main__list li a:hover {
+.header__navbar-main__list .main__list li a:hover {
   color: #EF2A82;
 }
-.header__navbar-links {
+.header__navbar-links .navbar__links {
   display: flex;
   align-items: center;
 }
-.header__navbar-links__signin {
+.header__navbar-links .navbar__links-signin {
   margin-right: 40px;
   color: #8794BA;
   transition: all 0.3s ease-in-out;
 }
-.header__navbar-links__signin:hover {
+.header__navbar-links .navbar__links-signin:hover {
   color: #EF2A82;
 }
-.header__navbar-links__signup {
+.header__navbar-links .navbar__links-signup {
   width: 157px;
   height: 36px;
   background-color: transparent;
   border: 2px solid #465B95;
   color: #8794BA;
 }
-.header__navbar-links__signup:hover {
+.header__navbar-links .navbar__links-signup:hover {
   background-color: #EF2A82;
   color: #ffffff;
   border-color: #EF2A82;
-}
-.header__navbar-hamburger {
-  display: none;
 }
 .header__navbar-hamburger > div {
   display: flex;
