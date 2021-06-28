@@ -382,6 +382,10 @@ ul {
     background-position: right calc(50% + 505px) top 0, left calc(50% + 300px) top -70px, top center, bottom center;
     background-size: 0, 0, 500%, 1625px 271px;
   }
+
+  .header__navbar {
+    margin-top: 30px;
+  }
 }
 .site__features .features {
   padding: 38px 0 110px 0;
@@ -425,7 +429,10 @@ ul {
     font-size: 14px;
   }
 
-  .features p {
+  .features__text {
+    display: flex;
+    justify-content: center;
+    margin-left: -50px;
     width: 100%;
     font-size: 16px;
   }

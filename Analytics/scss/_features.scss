@@ -45,7 +45,10 @@
   p {
     font-size: $font-very-sm;
   }
-  .features p {
+  .features__text {
+    display: flex;
+    justify-content: center;
+    margin-left: -50px;
     width: 100%;
     font-size: $font-sm;
   }
