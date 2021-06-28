@@ -1,0 +1,52 @@
+.site__features {
+
+  .features {
+    padding: 38px 0 110px 0;
+    text-align: center;
+    > h2 {
+      margin-bottom: 30px;
+      
+    }
+    > p {
+      font-size: $font-med;
+      margin-bottom: 81px;
+      padding: 0 60px;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+
+      &-item {
+        width: 300px;
+        margin-bottom: 20px;
+
+        > img {
+          width: 60px;
+          height: 60px;
+        }
+        > h4 {
+          font-size: $font-sm;
+        }
+        > p {
+          line-height: 22.4px;
+        }
+      }
+
+    }
+  }
+}
+@media screen and (max-width: 700px){
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: $font-very-sm;
+  }
+  .features p {
+    width: 100%;
+    font-size: $font-sm;
+  }
+} 
