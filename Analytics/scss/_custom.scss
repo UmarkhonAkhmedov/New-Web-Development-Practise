@@ -1,6 +1,7 @@
-.site__alerts {
+.site__custom {
+  padding-top: 60px;
   padding-bottom: 60px;
-  .alerts {
+  .custom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +31,7 @@
 }
 
 @media only screen and (max-width: 1024px){
-  .alerts__info {
+  .custom__info {
     min-width: 550px;
     margin: 0 auto;
     >h2 {
@@ -40,7 +41,7 @@
       text-align: center;
     }
   }
-  .alerts__img {
+  .custom__img {
     min-width: 550px;
     margin: 50px auto 0 auto; 
 
@@ -51,23 +52,23 @@
   }
 }
 @media only screen and (max-width: 700px){
-  .site__alerts {
-    padding-bottom: 30px;
+  .site__custom {
+    padding-top: 0;
   }
-  .alerts__info {
+  .custom__info {
     min-width: 100%;
     margin: 0 auto;
-
+    margin: 30px auto 0 auto; 
     >h2 {
-      font-size: 32px;
+      font-size: 30px;
     }
     >p {
       font-size: $font-very-sm;
     }
   }
-  .alerts__img {
+  .custom__img {
     min-width: 100%;
-    margin: 50px auto 0 auto; 
+    
 
     >img {
       min-width: 100%;
