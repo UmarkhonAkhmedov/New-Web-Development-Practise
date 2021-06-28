@@ -658,4 +658,106 @@ ul {
   .templates__img > img {
     min-width: 100%;
   }
+}
+.site__footer {
+  padding-top: 272px;
+}
+.site__footer .footer > h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.site__footer .footer__text {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+.site__footer .footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.site__footer .footer__list-item {
+  width: 340px;
+  background-color: #0F1F4B;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  border-radius: 20px;
+}
+.site__footer .footer__list-item__heading {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.site__footer .footer__list-item__sub-heading {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.site__footer .footer__list-item > hr {
+  width: 220px;
+  color: #2A407C;
+  border: none;
+  height: 1px;
+  background-color: #2A407C;
+}
+.site__footer .footer__list-item__price {
+  padding-top: 30px;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.site__footer .footer__list-item__price > span {
+  font-size: 60px;
+}
+.site__footer .footer__list-item > a {
+  width: 200px;
+  margin-top: 50px;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  border: 1px solid #8794BA;
+}
+.site__footer .footer__list-item > a:hover {
+  background-color: #EF2A82;
+  border-color: #EF2A82;
+}
+.site__footer .footer__list-item__standard {
+  background-color: #ffffff;
+}
+.site__footer .footer__list-item__standard__heading {
+  color: #172755;
+}
+.site__footer .footer__list-item__standard__sub-heading {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.site__footer .footer__list-item__standard > hr {
+  background-color: #D3D9E9;
+}
+.site__footer .footer__list-item__standard__price {
+  color: #172755;
+  font-weight: 500;
+}
+.site__footer .footer__list-item__standard__price > span {
+  font-size: 60px;
+}
+.site__footer .footer__list-item__standard > a {
+  width: 200px;
+  margin-top: 50px;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  background-color: #EF2A82;
+  border: 1px solid #EF2A82;
+  font-weight: 400;
+}
+.site__footer .footer__list-item__standard > a:hover {
+  background-color: transparent;
+  border-color: #172755;
+  color: #172755;
 }/*# sourceMappingURL=style.css.map */
