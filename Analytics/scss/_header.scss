@@ -1,11 +1,16 @@
 .header {
   background-image: 
+  url("../images/hero__background-substract__small.svg"),
+  url("../images/hero__background-substract__big.svg"),
   url("../images/hero__background-rect.svg"),
   url("../images/hero__background-rect-pink.svg");
   background-repeat: no-repeat;
-  background-position: top center,
+  background-position: 
+  right calc(50% + 505px) top 0, 
+  left calc(50% + 300px) top -70px, 
+  top center,
   left calc(50% + 21px) top 545px;
-  background-size: auto, 1625px 271px;
+  background-size: auto, auto, auto, 1625px 271px;
 
 
   &__navbar {
@@ -162,9 +167,12 @@
 }
 @media only screen and (max-width: 1023px){
   .header {
-    background-position: top center,
-  left calc(50% + 21px) top 1100px;
-    background-size: 280%, 1625px 271px;
+    background-position:
+    right calc(50% + 505px) top 0, 
+    left calc(50% + 300px) top -70px, 
+    top center,
+    left calc(50% + 21px) top 1100px;
+    background-size: auto, auto, 280%, 1625px 271px;
   }
   .header__navbar-hamburger {
     display: block;
@@ -201,14 +209,22 @@
 }
 @media only screen and (max-width: 950px){
   .header {
-    background-position: top center, left calc(50% + 21px) top 890px;
-    background-size: 280%, 1625px 271px;
+    background-position: 
+    right calc(50% + 505px) top 0, 
+    left calc(50% + 300px) top -70px, 
+    top center, 
+    left calc(50% + 21px) top 890px;
+    background-size: 0, 0, 280%, 1625px 271px;
   }
 }
 @media only screen and (max-width: 768px){
   .header {
-    background-position: top center, left calc(50% + 21px) top 850px;
-    background-size: 350%, 1625px 271px;
+    background-position: 
+    right calc(50% + 505px) top 0, 
+    left calc(50% + 300px) top -70px, 
+    top center, 
+    left calc(50% + 21px) top 850px;
+    background-size: 0, 0, 350%, 1625px 271px;
   }
   p {
     font-size: 16px;
@@ -247,8 +263,11 @@
   }
   
   .header {
-    background-position: top center, bottom center;
-    background-size: 380%, 1625px 271px;
+    background-position: 
+    right calc(50% + 505px) top 0, 
+    left calc(50% + 300px) top -70px, 
+    top center, bottom center;
+    background-size: 0, 0, 380%, 1625px 271px;
   }
   .hero {
     margin-top: 50px;
@@ -282,11 +301,15 @@
   }
   .hero__info a {
     margin: 0;
+    margin-left: 40px;
   }
 }
 @media only screen and (max-width: 500px) {
   .header {
-    background-position: top center, bottom center;
-    background-size: 500%, 1625px 271px;
+    background-position: 
+    right calc(50% + 505px) top 0, 
+    left calc(50% + 300px) top -70px, 
+    top center, bottom center;
+    background-size: 0, 0, 500%, 1625px 271px;
   }
 }
