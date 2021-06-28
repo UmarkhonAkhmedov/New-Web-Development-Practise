@@ -141,7 +141,7 @@
     padding: 0 100px;
   }
 }
-@media only screen and (min-width: 1023px){
+@media only screen and (min-width: 1024px){
   .header__navbar-hamburger {
     display: none;
   }
@@ -163,7 +163,7 @@
 @media only screen and (max-width: 1023px){
   .header {
     background-position: top center,
-  left calc(50% + 21px) top 3000px;
+  left calc(50% + 21px) top 1100px;
     background-size: 280%, 1625px 271px;
   }
   .header__navbar-hamburger {
@@ -199,7 +199,44 @@
     display: none;
   }
 }
+@media only screen and (max-width: 950px){
+  .header {
+    background-position: top center, left calc(50% + 21px) top 890px;
+    background-size: 280%, 1625px 271px;
+  }
+}
 @media only screen and (max-width: 768px){
+  .header {
+    background-position: top center, left calc(50% + 21px) top 850px;
+    background-size: 350%, 1625px 271px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .hero__info {
+    width: 100%;
+    margin: 0;
+  }
+  .hero__info img {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .hero {
+    width: 400px;
+  }
+  #hero__info-heading {
+    display: flex;
+    width: 400px;
+    margin: auto;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .hero__info p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+  }
   .container {
     padding: 0 80px;
   }
@@ -207,5 +244,49 @@
 @media only screen and (max-width: 600px){
   .container {
     padding: 0 30px;
+  }
+  
+  .header {
+    background-position: top center, bottom center;
+    background-size: 380%, 1625px 271px;
+  }
+  .hero {
+    margin-top: 50px;
+    width: 100%;
+    padding-bottom: 200px;
+    margin: 0;
+  }
+  .hero__info {
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+  }
+  .hero__info img {
+    width: 300px;
+    margin: 50px 0 0 0;
+  
+  }
+  #hero__info-heading {
+    display: flex;
+    width: 300px;
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .hero__info p {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .hero__info a {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header {
+    background-position: top center, bottom center;
+    background-size: 500%, 1625px 271px;
   }
 }
