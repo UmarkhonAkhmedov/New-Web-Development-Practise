@@ -116,4 +116,10 @@ ul {
   background-color: transparent; 
 }
 
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 0 90px;
+  }
+}
+
 

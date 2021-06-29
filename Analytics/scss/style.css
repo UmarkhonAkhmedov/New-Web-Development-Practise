@@ -97,6 +97,11 @@ ul {
   background-color: transparent;
 }
 
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 0 90px;
+  }
+}
 .header {
   background-image: url("../images/hero__background-substract__small.svg"), url("../images/hero__background-substract__big.svg"), url("../images/hero__background-rect.svg"), url("../images/hero__background-rect-pink.svg");
   background-repeat: no-repeat;
@@ -207,11 +212,6 @@ ul {
   left: -30px;
 }
 
-@media only screen and (max-width: 1200px) {
-  .container {
-    padding: 0 100px;
-  }
-}
 @media only screen and (min-width: 1024px) {
   .header__navbar-hamburger {
     display: none;
