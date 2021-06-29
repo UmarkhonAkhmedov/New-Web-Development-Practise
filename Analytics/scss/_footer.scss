@@ -1,15 +1,21 @@
 .site__footer {
   padding-top: 272px;
-  background-image: url("../images/footer__background-blue.svg"),
+  background-image: 
+  url("../images/footer__background-blue.svg"),
   url("../images/footer__background-pink.svg");
   background-repeat: no-repeat;
-  background-size: auto, 1580px;
-  background-position: bottom center, left calc(50% + 0px) top 35px;
+  background-size: auto, auto, 1580px;
+  background-position: 
+  left calc(50% + 350px) top 270px,
+  bottom center, 
+  left calc(50% + 0px) top 35px;
+
   .footer {
 
     >h2 {
       text-align: center;
       margin-bottom: 30px;
+      color: $white;
     }
     &__text {
       text-align: center;
@@ -33,7 +39,10 @@
         padding-bottom: 70px;
         border-radius: 20px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.05);
+        }
         &__heading {
           font-size: $font-xmed;
           color: $white;
@@ -188,7 +197,11 @@
 
 @media screen and (max-width:1366px){
   .site__footer {
-    background-size: 2500px 2170px, 1580px;
+    background-size: auto, 2900px 2970px, 1580px;
+    background-position: 
+    left calc(50% + 350px) top 270px,
+    left calc(50% + 0px) bottom -820px, 
+    left calc(50% + 0px) top 35px;
     .footer {
 
       h1 {
@@ -205,17 +218,42 @@
     }
   }
 }
+@media screen and (min-width: 1000px){
+  .site__footer {
+    background-image: 
+    url("../images/footer__background-subtract.svg"),
+    url("../images/footer__background-blue.svg"),
+    url("../images/footer__background-pink.svg");
+    background-repeat: no-repeat;
+    background-size: auto, 2900px 2970px, 1580px;
+    background-position: 
+    left calc(50% + 350px) top 270px,
+    left calc(50% + 0px) bottom -820px, 
+    left calc(50% + 0px) top 35px;
+  }
+}
+@media screen and (max-width:999px) {
+  .site__footer {
+    background-size: 3300px 2700px, 1580px;
+    background-position: 
+    left calc(50% + 0px) bottom -820px, 
+    left calc(50% + 0px) top 35px;
+  }
+}
 @media screen and (max-width:919px) {
   .site__footer {
-    background-size: 150%, 1580px;
+    background-size: 3300px 3640px, 1580px;
+    background-position: 
+    left calc(50% + 0px) bottom -820px, 
+    left calc(50% + 0px) top 35px;
   }
 }
 
 @media screen and (max-width:900px){
   .site__footer {
-    background-size: 1580px 2920px, 1580px;
+    background-size: 3300px 3470px, 1580px;
     background-position: 
-    bottom center,
+    left calc(50% + 0px) bottom -820px, 
     left calc(50% + 0px) top 35px;
 
     .footer {
@@ -247,9 +285,30 @@
     }
   }
 }
-@media screen and (max-width) {
+@media screen and (max-width: 600px) {
   .site__footer {
-    
+    background-size: 3520px 3400px, 1580px;
+    background-position: 
+    left calc(50% + 0px) bottom -820px, 
+    left calc(50% + 0px) top 35px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .site__footer {
+    background-size: 3520px 3500px, 1580px;
+    background-position: 
+    left calc(50% + 0px) bottom -820px, 
+    left calc(50% + 0px) top 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .site__footer {
+    background-size: 3520px 3550px, 1580px;
+    background-position: 
+    left calc(50% + 0px) bottom -820px, 
+    left calc(50% + 0px) top 35px;
+  }
+}
+
 
