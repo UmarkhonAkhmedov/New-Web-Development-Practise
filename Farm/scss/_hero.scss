@@ -1,0 +1,172 @@
+.site__hero {
+  height: 100vh;
+  background-image: url("../images/hero__background.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 20px) top 0;
+  background-size: 1440px 745px;
+
+  .hero {
+    text-align: center;
+    color: $white;
+    &__info {
+      padding-top: 150px;
+      
+      h1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+        margin: 0 auto 30px auto;
+        font-size: $font-xlg;
+        font-weight: 700;
+      }
+      &-input {
+        display: flex;
+        align-items: center;;
+        width: 800px;
+        margin: 0 auto;
+        background-color: $white;
+        border-radius: 10px;
+
+        &__search {
+          width: 500px;
+          height: 70px;
+          outline: none;
+          border: none;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          font-size: $font-xsm;
+          padding-left: 50px;
+
+          &::placeholder {
+            text-align: center;
+            font-size: $font-med;
+            color: $reddishGrey;
+          }
+        }
+
+        &__button {
+          display: flex;
+          align-items: center;
+          border-left: 3px solid rgba($color: $black, $alpha: 0.5);
+          padding: 0px 50px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            > svg {
+              fill: $green;
+            }
+            > a {
+              color: $green;
+            }
+          }
+          
+          > svg {
+            width: 30px;
+            height: 30px;
+            fill: $darkerGrey;
+          }
+          
+          > a {
+            margin-left: 10px;
+            font-size: $font-med;
+            font-weight: bold;
+            color: $darkerGrey;
+          }
+        }
+      }
+      p {
+        margin-top: 50px;
+        font-size: $font-med;
+      }
+    }
+
+    &__input {
+      width: 800px;  
+      background-color: lightgreen;
+      margin: 120px auto 0 auto;
+      padding: 20px 0 40px 0;
+      > h2 {
+        font-size: $font-lg;
+        margin-bottom: 20px;
+      }
+      &-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &__text {
+          width: 200px;
+          padding: 10px;
+          outline: none;
+          border: none;
+
+          &::placeholder {
+            text-align: center;
+          }
+        }
+        &__number {
+          width: 200px;
+          padding: 8px;
+          margin: 0 20px;
+          outline: none;
+          border: none;
+
+          &::placeholder {
+            text-align: left;
+          }
+        }
+        &__button {
+          width: 200px;
+          background-color: $lighterBlack;
+          padding: 10px 30px 10px 30px;
+          transition: background-color 0.3s ease-in-out;
+          &:hover {
+            background-color: $white;
+            > a, i {
+              transition: color 0.3s ease-in-out;
+              color: $green;
+            }
+          }
+
+          > a {
+            font-size: 20px;
+            color: $white;
+            padding-right: 20px;
+            padding-bottom: -30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .site__hero {
+    .hero {
+      &__info {
+        h1 {
+          width: 100%;
+        }
+        &-input {
+          width: 100%;
+        }
+      }
+
+      &__input {
+        width: 100%;
+        
+        &-main {
+          &__text {
+            margin-bottom: 10px;
+          }
+          &__number {
+            margin-bottom: 10px;
+          }
+          &__button {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

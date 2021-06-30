@@ -108,8 +108,8 @@ ul {
   align-items: center;
 }
 .header__nav-logo > img {
-  width: 100px;
-  height: 30px;
+  width: 90px;
+  height: 25px;
 }
 .header__nav-menu > ul {
   display: flex;
@@ -229,4 +229,175 @@ ul {
 }
 .show__menu {
   right: 0;
+}
+
+.site__hero {
+  height: 100vh;
+  background-image: url("../images/hero__background.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 20px) top 0;
+  background-size: 1440px 745px;
+}
+.site__hero .hero {
+  text-align: center;
+  color: #ffffff;
+}
+.site__hero .hero__info {
+  padding-top: 150px;
+}
+.site__hero .hero__info h1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 0 auto 30px auto;
+  font-size: 40px;
+  font-weight: 700;
+}
+.site__hero .hero__info-input {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.site__hero .hero__info-input__search {
+  width: 500px;
+  height: 70px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 18px;
+  padding-left: 50px;
+}
+.site__hero .hero__info-input__search::-moz-placeholder {
+  text-align: center;
+  font-size: 22px;
+  color: #695B5B;
+}
+.site__hero .hero__info-input__search:-ms-input-placeholder {
+  text-align: center;
+  font-size: 22px;
+  color: #695B5B;
+}
+.site__hero .hero__info-input__search::placeholder {
+  text-align: center;
+  font-size: 22px;
+  color: #695B5B;
+}
+.site__hero .hero__info-input__button {
+  display: flex;
+  align-items: center;
+  border-left: 3px solid rgba(0, 0, 0, 0.5);
+  padding: 0px 50px;
+  transition: all 0.3s ease-in-out;
+}
+.site__hero .hero__info-input__button:hover > svg {
+  fill: #008000;
+}
+.site__hero .hero__info-input__button:hover > a {
+  color: #008000;
+}
+.site__hero .hero__info-input__button > svg {
+  width: 30px;
+  height: 30px;
+  fill: #5F675D;
+}
+.site__hero .hero__info-input__button > a {
+  margin-left: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #5F675D;
+}
+.site__hero .hero__info p {
+  margin-top: 50px;
+  font-size: 22px;
+}
+.site__hero .hero__input {
+  width: 800px;
+  background-color: lightgreen;
+  margin: 120px auto 0 auto;
+  padding: 20px 0 40px 0;
+}
+.site__hero .hero__input > h2 {
+  font-size: 33px;
+  margin-bottom: 20px;
+}
+.site__hero .hero__input-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.site__hero .hero__input-main__text {
+  width: 200px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+.site__hero .hero__input-main__text::-moz-placeholder {
+  text-align: center;
+}
+.site__hero .hero__input-main__text:-ms-input-placeholder {
+  text-align: center;
+}
+.site__hero .hero__input-main__text::placeholder {
+  text-align: center;
+}
+.site__hero .hero__input-main__number {
+  width: 200px;
+  padding: 8px;
+  margin: 0 20px;
+  outline: none;
+  border: none;
+}
+.site__hero .hero__input-main__number::-moz-placeholder {
+  text-align: left;
+}
+.site__hero .hero__input-main__number:-ms-input-placeholder {
+  text-align: left;
+}
+.site__hero .hero__input-main__number::placeholder {
+  text-align: left;
+}
+.site__hero .hero__input-main__button {
+  width: 200px;
+  background-color: #3f3f3f;
+  padding: 10px 30px 10px 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+.site__hero .hero__input-main__button:hover {
+  background-color: #ffffff;
+}
+.site__hero .hero__input-main__button:hover > a, .site__hero .hero__input-main__button:hover i {
+  transition: color 0.3s ease-in-out;
+  color: #008000;
+}
+.site__hero .hero__input-main__button > a {
+  font-size: 20px;
+  color: #ffffff;
+  padding-right: 20px;
+  padding-bottom: -30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .site__hero .hero__info h1 {
+    width: 100%;
+  }
+  .site__hero .hero__info-input {
+    width: 100%;
+  }
+  .site__hero .hero__input {
+    width: 100%;
+  }
+  .site__hero .hero__input-main__text {
+    margin-bottom: 10px;
+  }
+  .site__hero .hero__input-main__number {
+    margin-bottom: 10px;
+  }
+  .site__hero .hero__input-main__button {
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
