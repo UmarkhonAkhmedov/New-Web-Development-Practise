@@ -139,17 +139,23 @@
 }
 @media screen and (max-width:700px){
   .nav__close {
-    top: 58px;
+    top: 55px;
     right: 68px;
   }
 }
 @media screen and (max-width:500px){
   .nav__close {
-    top: 58px;
+    top: 55px;
     right: 48px;
   }
 }
 .show__menu {
   right: 0;
+}
+@media screen and (max-width:400px){
+  .nav__close {
+    top: 55px;
+    right: 30px;
+  }
 }
 
