@@ -1,0 +1,116 @@
+.header {
+  min-height: 500px;
+  background-color: lightskyblue;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.nav__main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+  &-list {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    margin-right: 56px;
+    > li {
+      background-color: rgb(255, 255, 255, 10%);
+      border-radius: 32px; 
+      border: 1px solid rgb(255, 255, 255, 30%);
+      transition: all 0.3s ease-in-out;
+      &:not(:last-child){
+        padding: 7px 15px;
+      }
+      &:hover {
+        background-color: $lightestgreen;
+        a {
+          color: $darkGreen;
+          
+        }
+      }
+      > a {
+        color: $darkerWhite;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        
+      }
+      &:last-child {
+        padding: 6px 11px;
+        &:hover {
+          > select {
+            color: $darkGreen;
+          }
+        }
+      }
+
+      }
+      > select {
+        background-color: transparent;
+        border: none;
+        color: $darkerWhite;
+        font-size: $font-ssm;
+        font-weight: 600;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        >option {
+          color: $darkerWhite;
+          background-color: $lightgreen;
+        }
+      }
+    }
+  } 
+  &-link {
+    width: 107px;
+    height: 46px;
+    background-color: $lightestgreen;
+    color: $darkGreen;
+    &:hover {
+      background-color: $lightgreen;
+      color: $white;
+    }
+  }
+}
+.nav__main-icon {
+  display: none;
+}
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  row-gap: 4px;
+  > span {
+    width: 25px;
+    height: 2px;
+    padding: 1px;
+    background-color: $lightestgreen;
+  }
+}
+
+
+@media screen and (max-width:768px){
+  .nav__main {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background-color: lightskyblue;
+  }
+  .nav__main-icon {
+    display: block;
+  }
+  .nav__hamburger {
+    display: flex;
+  }
+}
+.show__menu {
+  right: 0;
+}

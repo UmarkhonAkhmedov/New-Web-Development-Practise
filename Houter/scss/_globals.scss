@@ -124,7 +124,7 @@ ul {
   align-items: center;
   background-color: $lightgreen;
   color: $white;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   cursor: pointer;
   font-weight: 600;
@@ -139,4 +139,25 @@ ul {
   width: 32px;
   height: 1px;
   background-color: $orange;
+}
+
+@media screen and (max-width: 1366px){
+  .container {
+    padding: 0 75px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .container {
+    padding: 0 60px;
+  }
+}
+@media screen and (max-width: 768px){
+  .container {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 500px){
+  .container {
+    padding: 0 30px;
+  }
 }
