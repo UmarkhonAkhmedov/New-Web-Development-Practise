@@ -2,11 +2,14 @@
   min-height: 1000px;
   background-image: 
   url("../images/hero__background-circle.svg"),
-  url("../images/hero__background-rect.svg");
+  url("../images/hero__background-rect.svg"),
+  url("../images/hero__background-main.png");
   background-repeat: no-repeat;
   background-position: 
   right calc(50% + 500px) top -200px,
-  right calc(50% + 650px) top -200px;
+  right calc(50% + 650px) top -200px,
+  left calc(50% + 360px) top 0px;
+  background-size: auto, auto, 720px 720px;
 }
 
 .nav {
