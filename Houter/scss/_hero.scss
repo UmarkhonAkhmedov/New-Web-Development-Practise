@@ -1,0 +1,82 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 96px;
+  flex-wrap: wrap;
+
+  &__info {
+    width: 496px;
+    border: 1px solid red;
+
+    > h1 {
+      font-size: $font-xlg;
+      text-transform: capitalize;
+      margin-bottom: 24px;
+      > span {
+        
+      }
+    }
+    > p {
+      font-size: $font-sm;
+      margin-bottom: 32px;
+      line-height: 28px;
+    }
+    &-search {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid $grey;
+      border-radius: 32px;
+      margin-bottom: 32px;
+
+      > span {
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+        > img {
+          width: 24px;
+          height: 24px;
+          margin: 16px 16px 16px 24px;
+          
+        }
+        > input {
+          width: 303px;
+          height: 30px;
+          border: none;
+          outline: none;
+          
+          &::placeholder {
+            font-weight: 500;
+            color: $darkerGrey;
+          }
+        }
+      }
+      > a {
+        display: flex;
+        align-items: center;
+        width: 109px;
+        height: 48px;
+        margin-right: 4px;
+        padding-bottom: 2px;
+        >svg {
+          margin-left: 12px;
+          margin-top: 2px;
+          fill: $white;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+          
+          > svg {
+            fill: $darkGreen;
+          }
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 550px;
+    border: 1px solid red;
+  }
+}

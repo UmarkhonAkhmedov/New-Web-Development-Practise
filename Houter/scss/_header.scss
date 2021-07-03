@@ -1,6 +1,12 @@
 .header {
-  min-height: 500px;
-  background-color: rgb(86, 174, 93);
+  min-height: 1000px;
+  background-image: 
+  url("../images/hero__background-circle.svg"),
+  url("../images/hero__background-rect.svg");
+  background-repeat: no-repeat;
+  background-position: 
+  right calc(50% + 500px) top -200px,
+  right calc(50% + 650px) top -200px;
 }
 
 .nav {
