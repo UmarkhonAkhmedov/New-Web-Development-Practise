@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="icon" type="image/svg" href="images/website__logo.svg">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="scss/style.css">
   <title>Houter Landing Page</title>
@@ -148,7 +149,7 @@
       <!-- First -->
       <div class="feature__img">
         <div class="feature__img-info feature__img-first">
-          <img class="feature__img-info__main feature__img-first__main" src="images/features__home-one.svg" alt="House Image">
+          <img class="feature__img-info__main feature__img-first__main" src="images/features__home-one.png" alt="House Image">
           <span class="feature__img-info__type feature__img-first__type">
             <img src="images/features__icon-popular.svg" alt="Popular Image">
             <p>Popular</p>
@@ -166,7 +167,7 @@
 
         <!-- Second -->
         <div class="feature__img-info feature__img-second">
-          <img class="feature__img-info__main feature__img-second__main" src="images/features__home-second.svg" alt="House Image">
+          <img class="feature__img-info__main feature__img-second__main" src="images/features__home-second.png" alt="House Image">
           <span class="feature__img-info__type feature__img-second__type">
             <img src="images/hero__features-house__home.svg" alt="House Image">
             <p>New house</p>
@@ -184,7 +185,7 @@
 
         <!-- Third -->
         <div class="feature__img-info feature__img-third">
-          <img class="feature__img-info__main feature__img-third__main" src="images/features__home-third.svg" alt="House Image">
+          <img class="feature__img-info__main feature__img-third__main" src="images/features__home-third.png" alt="House Image">
           <span class="feature__img-info__type feature__img-third__type">
             <img src="images/features__icon-deals.svg" alt="Wallet Image">
             <p>Best Deals</p>
@@ -202,7 +203,7 @@
 
         <!-- Fourth -->
         <div class="feature__img-info feature__img-fourth">
-          <img class="feature__img-info__main feature__img-fourth__main" src="images/features__home-fourth.svg" alt="House Image">
+          <img class="feature__img-info__main feature__img-fourth__main" src="images/features__home-fourth.png" alt="House Image">
           <span class="feature__img-info__type feature__img-fourth__type">
             <img src="images/features__icon-popular.svg" alt="Popular Image">
             <p>Popular</p>
@@ -272,19 +273,88 @@
         </div>
         <!---->
         <div class="sell__img">
-          <img class="sell__img-house" src="images/sell__img-house.svg" alt="House">
-          <img class="sell__img-player" src="images/sell__img-house-player.svg" alt="Video Player Icon">
-          <img class="sell__img-sofa" src="images/sell__img-sofa.svg" alt="Sofa">
-          <img class="sell__img-chair" src="images/sell__img-chair.svg" alt="Chair">
-          <img class="sell__img-flower" src="images/sell__img-flower.svg" alt="Flowers">
+          <img class="sell__img-house" src="images/sell__img-house.png" alt="House">
+          <img class="sell__img-player" src="images/sell__img-house-player.png" alt="Video Player Icon">
+          <img class="sell__img-sofa" src="images/sell__img-sofa.png" alt="Sofa">
+          <img class="sell__img-chair" src="images/sell__img-chair.png" alt="Chair">
+          <img class="sell__img-flower" src="images/sell__img-flower.png" alt="Flowers">
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Review Section -->
+  <section class="website__review">
+    <div class="container">
+      <div class="review">
+        <hr class="x-line">
+        <h5>See Our Review</h5>
+        <h2>What Our User Say About US</h2>
+        <div class="review__list">
+          <div class="review__list-item">
+            <img class="review__list-item__img" src="images/review__first.svg" alt="Villa Image">
+            <div class="review__bottom">
+              <h3>Best! I got the house I wanted through Hounter</h3>
+              <p class="review__bottom-text">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+              <div class="review__bottom-info">
+                <span class="review__bottom-info__img"><img src="images/review__second-person.svg" alt="Women"></span>
+                <span class="review__bottom-info__data">
+                  <p>Dianne Russell</p>
+                  <span>Manager Director</span>
+                </span>
+                <span class="review__bottom-info__star">
+                  <img src="images/review__second-star.svg" alt="Star">
+                  <p>4.6</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+        <div class="review__list-item">
+          <img class="review__list-item__img" src="images/review__second.svg" alt="House Image">
+          <div class="review__bottom">
+            <h3>My house sold out fast!</h3>
+            <p class="review__bottom-text">I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!</p>
+            <div class="review__bottom-info">
+              <span class="review__bottom-info__img"><img src="images/review__first-person.svg" alt="Men"></span>
+              <span class="review__bottom-info__data">
+                <p>Courtney Henry</p>
+                <span>CEO Andarafish</span>
+              </span>
+              <span class="review__bottom-info__star">
+                <img src="images/review__second-star.svg" alt="Star">
+                <p>4.3</p>
+              </span>
+            </div>
+          </div>
+        </div>  
+        <!---->
+        <div class="review__list-item">
+          <img class="review__list-item__img" src="images/review__third.svg" alt="Villa Image">
+          <div class="review__bottom">
+            <h3>Through the Hounter, I can get a house for my self</h3>
+            <p class="review__bottom-text">By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!</p>
+            <div class="review__bottom-info">
+              <span class="review__bottom-info__img"><img src="images/review__third-person.svg" alt="Women"></span>
+              <span class="review__bottom-info__data">
+                <p>Esther Howard</p>
+                <span>Head of Marketing</span>
+              </span>
+              <span class="review__bottom-info__star">
+                <img src="images/review__second-star.svg" alt="Star">
+                <p>4.6</p>
+              </span>
+            </div>
+          </div> 
+        </div>
+      </div>    
+    </div>
+  </section>
 
 
 
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>

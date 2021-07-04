@@ -1,5 +1,11 @@
 .website__sell {
   padding-top: 120px;
+  background-image: 
+  url("../images/sell__background-yellow.svg"),
+  url("../images/sell__background-red.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 500px) top -150px,
+  left calc(50% + 500px) top -250px;
   
   .sell {
     display: flex;
@@ -151,6 +157,7 @@
 
 @media screen and (max-width:1024px){
   .website__sell {
+    
     .sell {
       flex-direction: column;
       justify-content: center;
