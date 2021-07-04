@@ -148,3 +148,178 @@
     }
   }
 }
+
+@media screen and (max-width:1024px){
+  .website__sell {
+    .sell {
+      flex-direction: column;
+      justify-content: center;
+      &__info {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        margin-left: 0;
+        &-top {
+          justify-content: center;
+          margin-left: 0;
+        }
+
+        &-text {
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        &-list__item {
+          justify-items: center;
+        }
+        &-list {
+          &__item {
+            row-gap: 0;
+            column-gap: 0;
+            &-item {
+              margin-bottom: 20px;
+            }
+          }
+        }
+        &-line {
+          margin: 12px 0 32px 0;
+        }
+        &-line {
+          width: 100%;
+        }
+        &-contact {
+          justify-content: center;
+        }
+
+      }
+      &__img {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .website__sell {  
+    .sell {
+      &__info {
+        > h2 {
+          font-size: $font-xmed;
+        }
+        > p {
+          font-size: $font-ssm;
+        }
+        &-list {
+          &__item {
+            row-gap: 0;
+            column-gap: 0;
+            &-item {
+              margin-bottom: 20px;
+            }
+          }
+        }
+        &-contact {
+          
+
+          &__text {
+            margin-right: 30px;
+          }
+        }
+      }
+      
+      &__img {
+        width: 400px;
+        height: 459px;
+        
+  
+        &-house {
+          width: 400px;
+          height: 350px;
+        }
+        &-player {
+          top: 150px;
+          left: 180px;
+        }
+        &-sofa {
+          width: 250px;
+          height: 150px;
+          bottom: 20px;
+          left: -40px;
+        }
+        &-chair {
+          bottom: 50px;
+          right: -40px;
+        }
+        &-flower {
+          bottom: 50px;
+          right: 75px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px){
+  .website__sell {  
+    padding-top: 80px;
+    .sell {
+      &__info {
+        > h2 {
+          font-size: $font-xmed;
+        }
+        > p {
+          font-size: $font-ssm;
+          width: 100%;
+        }
+        &-list {
+          &__item {
+            grid-template-columns: 1fr;
+            grid-template-rows: 4fr;
+          }
+        }
+        &-contact {
+          flex-direction: column;
+          &__img {
+            margin-right: 0;
+          }
+          &__text {
+            margin-right: 0px;
+          }
+        }
+      }
+      
+      &__img {
+        margin: 0 auto;
+        width: 300px;
+        height: 359px;
+        
+  
+        &-house {
+          width: 300px;
+          height: 320px;
+        }
+        &-player {
+          top: 125px;
+          left: 125px;
+        }
+        &-sofa {
+          width: 190px;
+          height: 120px;
+          bottom: 20px;
+          left: -30px;
+        }
+        &-chair {
+          width: 70px;
+          height: 60px;
+          bottom: 50px;
+          right: -30px;
+        }
+        &-flower {
+          width: 70px;
+          height: 60px;
+          bottom: 50px;
+          right: 55px;
+        }
+      }
+    }
+  }
+}
