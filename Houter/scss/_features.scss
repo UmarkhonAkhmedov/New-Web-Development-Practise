@@ -201,29 +201,34 @@
 @media screen and (max-width: 1380px){
   .feature {
     &__img {
-
+      column-gap: 0;
       &-info {
+        
         &__main {
           width: 280px;
           height: auto;
         }
       }
       &-first{
+        margin-right: 30px;
         &__type {
           top: 265px;
         }
       }
       &-second{
+        margin-right: 30px;
         &__type {
           top: 265px;
         }
       }
       &-third{
+        margin-right: 30px;
         &__type {
           top: 265px;
         }
       }
       &-fourth{
+        margin-right: 30px;
         &__type {
           top: 265px;
         }
@@ -267,6 +272,7 @@
     }
 
     &__img {
+      column-gap: 0;
       margin-left: 0;
       &-info {
         &__main {
@@ -281,16 +287,19 @@
         }
       }
       &-first{
+        margin-right: 20px;
         &__type {
           top: 265px;
         }
       }
       &-second{
+        margin-right: 20px;
         &__type {
           top: 265px;
         }
       }
       &-third{
+        margin-right: 20px;
         &__type {
           top: 265px;
         }

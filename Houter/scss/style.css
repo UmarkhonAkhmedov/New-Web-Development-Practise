@@ -773,18 +773,34 @@ ul {
 }
 
 @media screen and (max-width: 1380px) {
+  .feature__img {
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
   .feature__img-info__main {
     width: 280px;
     height: auto;
   }
+  .feature__img-first {
+    margin-right: 30px;
+  }
   .feature__img-first__type {
     top: 265px;
+  }
+  .feature__img-second {
+    margin-right: 30px;
   }
   .feature__img-second__type {
     top: 265px;
   }
+  .feature__img-third {
+    margin-right: 30px;
+  }
   .feature__img-third__type {
     top: 265px;
+  }
+  .feature__img-fourth {
+    margin-right: 30px;
   }
   .feature__img-fourth__type {
     top: 265px;
@@ -822,6 +838,8 @@ ul {
     margin-right: 0px;
   }
   .feature__img {
+    -moz-column-gap: 0;
+         column-gap: 0;
     margin-left: 0;
   }
   .feature__img-info__main {
@@ -834,11 +852,20 @@ ul {
   .feature__img-info__price {
     font-size: 18px;
   }
+  .feature__img-first {
+    margin-right: 20px;
+  }
   .feature__img-first__type {
     top: 265px;
   }
+  .feature__img-second {
+    margin-right: 20px;
+  }
   .feature__img-second__type {
     top: 265px;
+  }
+  .feature__img-third {
+    margin-right: 20px;
   }
   .feature__img-third__type {
     top: 265px;
