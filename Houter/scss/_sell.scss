@@ -1,0 +1,150 @@
+.website__sell {
+  padding-top: 120px;
+  
+  .sell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info {
+      margin-left: 40px;
+      width: 43.5%;
+
+      &-top {
+        display: flex;
+        align-items: center;
+        margin-left: -40px;
+        > hr {
+          margin-right: 8px;
+        }
+      }
+      > h2 {
+        margin-top: 12px;
+        margin-bottom: 16px;
+      }
+      &-text {
+        width: 80%;
+        font-size: $font-sm;
+        line-height: 28px;
+        margin-bottom: 16px;
+      }
+      &-list {
+        
+        > h4 {
+          margin: 0;
+          color: $darkBlue;
+          font-size: $font-sm;
+          font-weight: 600;
+          opacity: 0.75;
+          margin-bottom: 16px;
+        }
+        &__item {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          row-gap: 16px;
+
+          &-item {
+            display: flex;
+            align-items: center;
+            > img {
+              margin-right: 16px;
+            }
+            > p {
+              color: #3C4563;
+              font-weight: 600;
+              font-size: $font-sm;
+            }
+          }
+        }
+      }
+      &-line {
+        width: 80%;
+        height: 2px;
+        border: none;
+        background-color: $darkerWhite;
+        margin: 32px 0 32px 0;
+      }
+      &-contact {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        &__img {
+          width: 56px;
+          height: 56px;
+          margin-right: 24px;
+          margin-bottom: 10px;
+          background-image: url("../images/sell__img-person.png");
+          background-size: 120px 120px;
+          background-repeat: no-repeat;
+          background-position: left calc(50% - 0px) top -22px;
+          
+        }
+        &__text {
+          margin-right: 59px;
+          margin-bottom: 10px;
+          > p {
+            font-size: $font-xsm;
+            color: $almostBlack;
+            font-weight: 500;
+            margin-bottom: 4px;
+          }
+          > span {
+            font-weight: 500;
+            color: $darkerGrey;
+            font-size: $font-sm;
+          }
+        }
+        > a {
+          margin-bottom: 10px;
+          width: 163px;
+          height: 48px;
+          > svg {
+            margin-right: 16px;
+            fill: $white;
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover {
+            > svg {
+              fill: $darkGreen;
+            }
+          }
+          
+        }
+      }
+
+    }
+    &__img {
+      position: relative;
+      width: 528px;
+      height: 459px;
+      
+
+      &-house {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      &-player {
+        position: absolute;
+        top: 185px;
+        left: 260px;
+      }
+      &-sofa {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      &-chair {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+      }
+      &-flower {
+        position: absolute;
+        bottom: 0;
+        right: 125px;
+      }
+    }
+  }
+}

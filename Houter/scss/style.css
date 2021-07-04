@@ -873,4 +873,140 @@ ul {
   .feature__img-fourth__type {
     top: 265px;
   }
+}
+.website__sell {
+  padding-top: 120px;
+}
+.website__sell .sell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.website__sell .sell__info {
+  margin-left: 40px;
+  width: 43.5%;
+}
+.website__sell .sell__info-top {
+  display: flex;
+  align-items: center;
+  margin-left: -40px;
+}
+.website__sell .sell__info-top > hr {
+  margin-right: 8px;
+}
+.website__sell .sell__info > h2 {
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+.website__sell .sell__info-text {
+  width: 80%;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.website__sell .sell__info-list > h4 {
+  margin: 0;
+  color: #1B1C57;
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.75;
+  margin-bottom: 16px;
+}
+.website__sell .sell__info-list__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 16px;
+}
+.website__sell .sell__info-list__item-item {
+  display: flex;
+  align-items: center;
+}
+.website__sell .sell__info-list__item-item > img {
+  margin-right: 16px;
+}
+.website__sell .sell__info-list__item-item > p {
+  color: #3C4563;
+  font-weight: 600;
+  font-size: 16px;
+}
+.website__sell .sell__info-line {
+  width: 80%;
+  height: 2px;
+  border: none;
+  background-color: #F0F3FD;
+  margin: 32px 0 32px 0;
+}
+.website__sell .sell__info-contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.website__sell .sell__info-contact__img {
+  width: 56px;
+  height: 56px;
+  margin-right: 24px;
+  margin-bottom: 10px;
+  background-image: url("../images/sell__img-person.png");
+  background-size: 120px 120px;
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 0px) top -22px;
+}
+.website__sell .sell__info-contact__text {
+  margin-right: 59px;
+  margin-bottom: 10px;
+}
+.website__sell .sell__info-contact__text > p {
+  font-size: 18px;
+  color: #0E1735;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.website__sell .sell__info-contact__text > span {
+  font-weight: 500;
+  color: #888B97;
+  font-size: 16px;
+}
+.website__sell .sell__info-contact > a {
+  margin-bottom: 10px;
+  width: 163px;
+  height: 48px;
+}
+.website__sell .sell__info-contact > a > svg {
+  margin-right: 16px;
+  fill: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.website__sell .sell__info-contact > a:hover > svg {
+  fill: #047857;
+}
+.website__sell .sell__img {
+  position: relative;
+  width: 528px;
+  height: 459px;
+}
+.website__sell .sell__img-house {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.website__sell .sell__img-player {
+  position: absolute;
+  top: 185px;
+  left: 260px;
+}
+.website__sell .sell__img-sofa {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.website__sell .sell__img-chair {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+.website__sell .sell__img-flower {
+  position: absolute;
+  bottom: 0;
+  right: 125px;
 }/*# sourceMappingURL=style.css.map */
