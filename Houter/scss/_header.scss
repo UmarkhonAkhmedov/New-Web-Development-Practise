@@ -1,5 +1,5 @@
 .header {
-  min-height: 1000px;
+
   background-image: 
   url("../images/hero__background-circle.svg"),
   url("../images/hero__background-rect.svg"),
@@ -94,8 +94,9 @@
 .nav__hamburger {
   display: none;
   flex-direction: column;
-  row-gap: 4px;
+  
   > span {
+    margin: 2px 0;
     width: 25px;
     height: 2px;
     padding: 1px;
@@ -108,7 +109,36 @@
     }
   }
 }
-
+@media screen and (max-width: 1200px){
+  .header {
+    background-image: 
+    url("../images/hero__background-circle.svg"),
+    url("../images/hero__background-rect.svg"),
+    url("../images/hero__background-main.png");
+    background-repeat: no-repeat;
+    background-position: 
+    right calc(50% + 500px) top -200px,
+    right calc(50% + 650px) top -200px,
+    left calc(50% + 360px) top 0px;
+    background-size: auto, auto, 830px 720px;
+  }
+}
+@media screen and (max-width: 1023px){
+  .header {
+    min-height: 1000px;
+    background-color: rgb(132, 195, 227);
+    background-image: 
+    url("../images/hero__background-circle.svg"),
+    url("../images/hero__background-rect.svg"),
+    url("../images/hero__background-main.png");
+    background-repeat: no-repeat;
+    background-position: 
+    right calc(50% + 500px) top -200px,
+    right calc(50% + 650px) top -200px,
+    left calc(50% + 360px) top 0px;
+    background-size: auto, auto, 0;
+  }
+}
 @media screen and (max-width:768px){
   .nav__main {
     position: fixed;
@@ -120,14 +150,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 15px;
+    margin-bottom: 15px;
     flex-wrap: wrap;
+    z-index: 100;
+    transition: 0.5s;
 
     &-list {
       flex-direction: column;
       margin-right: 0;
-      row-gap: 30px;
       flex-wrap: wrap;
+      li {
+        margin-bottom: 20px;
+      }
     }
   }
   .nav__main-icon {

@@ -94,6 +94,8 @@ h1, h2, h3 {
 h5 {
   font-weight: 500;
   color: $orange;
+  font-size: $font-ssm;
+  margin: 0;
 }
 p {
   padding: 0;
@@ -139,6 +141,8 @@ ul {
   width: 32px;
   height: 1px;
   background-color: $orange;
+  margin: 0;
+  border: none;
 }
 
 @media screen and (max-width: 1366px){
