@@ -1,0 +1,99 @@
+.website__subscribe {
+  padding: 100px 0;
+  .subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+    background-image: url("../images/subscribe__background.svg");
+    background-size: cover;
+    padding: 33px 73px 60px 42px;
+    &__left {
+      position: relative;
+      width: 200px;
+      height: 200px;
+
+      &-chair {
+        position: absolute;
+        top: 0;
+        left: 0;
+      } 
+      &-men {
+        position: absolute;
+        top: 0;
+        right: -25px;
+      } 
+      &-women {
+        position: absolute;
+        bottom: 0px;
+        left: -10px;
+      } 
+      &-house {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      } 
+    }
+
+    &__info {
+      text-align: center;
+      width: 496px;
+      > h2 {
+        margin-bottom: 32px;
+      }
+      &-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border-radius: 32px;
+        padding: 4px;
+        > img {
+          padding: 0 16px 0 24px;
+        }
+        > input {
+          width: 283px;
+          border: none;
+          outline: none;
+
+          &::placeholder {
+            font-size: $font-ssm;
+            font-weight: 500;
+            color: $darkerGrey;
+
+          }
+        }
+        > a {
+          width: 129px;
+          height: 46px;
+        }
+      }
+    }
+
+    &__right {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      &-house {
+        position: absolute;
+        top: 5px;
+        left: 0;
+      } 
+      &-women {
+        position: absolute;
+        top: 40px;
+        right: -20px;
+      } 
+      &-men {
+        position: absolute;
+        bottom: 30px;
+        left: 0px;
+      }
+      &-chair {
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+      }  
+    }
+  }
+}
