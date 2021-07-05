@@ -102,6 +102,8 @@
     column-gap: 40px;
     margin-top: 40px;
     margin-left: 40px;
+    left: 0;
+    transition: 0.8s;
 
     &-info {
       &__type {

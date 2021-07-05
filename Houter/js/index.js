@@ -53,3 +53,60 @@ if(third){
   })
 }
 
+// SLide Image in features
+const previous = document.getElementById('next__image');
+const next = document.getElementById('previous__image');
+const feature = document.getElementById('feature__img');
+
+
+if(next){
+  next.addEventListener('click', () => {
+  
+  feature.style.left = "-90%";
+  if(next){
+    next.addEventListener('click', () => {
+    
+    feature.style.left = "-185%";
+    if(next){
+      next.addEventListener('click', () => {
+      
+      feature.style.left = "-285%";
+      if(next){
+        next.addEventListener('click', () => {
+        
+        feature.style.left = "0%";
+      
+        })
+      }
+      })
+    }
+    })
+  }
+  })
+}
+if(previous){
+  previous.addEventListener('click', () => {
+  
+  feature.style.left = "-285%";
+  if(previous){
+    previous.addEventListener('click', () => {
+    
+    feature.style.left = "-185%";
+    if(previous){
+      previous.addEventListener('click', () => {
+      
+      feature.style.left = "-90%";
+      if(previous){
+        previous.addEventListener('click', () => {
+        
+        feature.style.left = "0%";
+      
+        })
+      }
+      })
+    }
+    })
+  }
+  })
+}
+
