@@ -1,4 +1,11 @@
 .website__article {
+  background-image: 
+  url("../images/article__background-green.svg"),
+  url("../images/article__background-blue.svg");
+  background-repeat: no-repeat;
+  background-position: 
+  right calc(50% + 700px) top 100px,
+  right calc(50% + 600px) top -70px;
 
   &-heading {
     text-align: center;
@@ -64,9 +71,6 @@
             > img {
               margin-right: 12px;
             }
-            > p {
-              
-            }
           }
         }
       }
@@ -122,9 +126,6 @@
           > img {
             margin-right: 12px;
           }
-          > p {
-            
-          }
         }
       }
     }
@@ -150,6 +151,9 @@
 
 @media screen and (max-width: 1024px){
   .website__article {
+    background-position: 
+    right calc(50% + 500px) top 100px,
+    right calc(50% + 400px) top -70px;
     .article {
       flex-direction: column;
       &__content {
@@ -175,6 +179,9 @@
 
 @media screen and (max-width: 640px){
   .website__article {
+    background-position: 
+    right calc(50% + 400px) top 100px,
+    right calc(50% + 300px) top -70px;
     &-heading {
       > h2 {
         font-size: $font-xmed;
