@@ -1,0 +1,64 @@
+// Font Family
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/poppins-v15-latin-300.woff2') format('woff2'),
+    url('../fonts/poppins-v15-latin-300.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+    url('../fonts/poppins-v15-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/poppins-v15-latin-500.woff2') format('woff2'),
+    url('../fonts/poppins-v15-latin-500.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/poppins-v15-latin-600.woff2') format('woff2'),
+    url('../fonts/poppins-v15-latin-600.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/poppins-v15-latin-700.woff2') format('woff2'),
+    url('../fonts/poppins-v15-latin-700.woff') format('woff');
+}
+
+// Variables
+// Colors
+$white: #ffffff;
+$orange: #CE7A2D;
+$greyBlue: #868FA1;
+$lightBlack: rgb(38, 38, 38);
+$lighterBlack: rgb(45, 45, 45);
+$black66: rgb(66, 66, 66);
+$darkerWhite: #F8F9F9;
+$dark: #262626;
+
+// Font Sizes
+$font-ssm: 0.75rem;
+$font-sm: 0.875rem;
+$font-xsm: 1rem;
+$font-smed: 1.125rem;
+$font-med: 1.75rem;
+$font-xmed: 2.75rem;
+$font-lg: 3rem;
+$font-xlg: 4.5rem;
+
+// Global Styles
