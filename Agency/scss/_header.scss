@@ -14,6 +14,10 @@
   line-height: 0;
   > svg {
     fill: $white;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      fill: $orange;
+    }
   }
 }
 .header__nav-list {
@@ -25,6 +29,16 @@
       font-size: $font-ssm;
       font-weight: 700;
       color: $white;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        color: $orange;
+      }
+      
+    }
+    &:first-child {
+      > a {
+        color: $orange;
+      }
     }
   } 
   &__item {
@@ -45,10 +59,15 @@
   > span {
     width: 25px;
     height: 1px;
-    padding: 2px;
+    padding: 1px;
     background-color: $white;
     &:not(:last-child){
-      margin-bottom: 4px;
+      margin-bottom: 5px;
+    }
+  }
+  &:hover, &:active {
+    > span {
+      background-color: $orange;
     }
   }
 }
@@ -60,10 +79,44 @@
     right: -100%;
     width: 70%;
     height: 100%;
-    background-color: lightskyblue;
+    flex-direction: column;
+    background-color: $black66;
     transition: .8s;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    > li {
+      margin: 10px 0;
+      
+      > a {
+        font-size: $font-sm;
+      }
+    }
+    .close__icon {
+      display: block;
+      position: absolute;
+      top: 38px;
+      right: 66px;
+      transform: scale(2.5);
+      color: $white;
+      &:hover, &:active {
+        color: $orange;
+      }
+    }
+  }
+  .header__nav-menu {
+    display: flex;
   }
 }
 .show__right {
   right: 0;
+}
+
+@media screen and (max-width:500px) {
+  .header__nav-list {
+    .close__icon {
+      top: 38px;
+      right: 36px;
+    }
+  }
 }

@@ -142,13 +142,12 @@ li {
     border-color: red;
   }
 } 
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
   .container {
     padding: 0 60px;
     border-color: darkslateblue;
   }
-}  
+}
 @media screen and (max-width: 500px){
   .container {
     padding: 0 30px;
