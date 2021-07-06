@@ -1,0 +1,69 @@
+.header {
+  background-image: url("../images/hero__background-img.png");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 0px) top 0;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 33px 0 33px 0;
+}
+.header__nav-logo {
+  line-height: 0;
+  > svg {
+    fill: $white;
+  }
+}
+.header__nav-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  >li {
+    > a {
+      font-size: $font-ssm;
+      font-weight: 700;
+      color: $white;
+    }
+  } 
+  &__item {
+    margin-right: 24px;
+  } 
+    
+    
+  
+  .close__icon {
+    display: none;
+  }
+
+}
+
+.header__nav-menu {
+  display: none;
+  flex-direction: column;
+  > span {
+    width: 25px;
+    height: 1px;
+    padding: 2px;
+    background-color: $white;
+    &:not(:last-child){
+      margin-bottom: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background-color: lightskyblue;
+    transition: .8s;
+  }
+}
+.show__right {
+  right: 0;
+}
