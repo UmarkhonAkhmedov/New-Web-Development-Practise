@@ -62,3 +62,68 @@ $font-lg: 3rem;
 $font-xlg: 4.5rem;
 
 // Global Styles
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.75rem;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 300vh;
+  color: #798294;
+}
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  line-height: 4.125px;
+  color: $white;
+  font-size: $font-lg;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+a, 
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+// Spacing
+.container {
+  max-width: 1200px;
+  padding: 0 120px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+// Buttons
+.button {
+  display: flex;
+  width: 8.4375;
+  height: 3.125;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: $font-very-sm;
+  font-family: 700;
+  border: 1px solid $white;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: $orange; 
+  border: none;
+}
