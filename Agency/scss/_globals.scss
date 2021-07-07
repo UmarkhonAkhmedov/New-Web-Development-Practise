@@ -83,7 +83,7 @@ h1, h2, h3 {
   padding: 0;
   font-weight: 600;
   color: $white;
-  font-size: $font-lg;
+  font-size: $font-xmed;
 }
 p {
   padding: 0;
@@ -141,7 +141,7 @@ li {
     border-color: red;
   }
   h2 {
-    font-size: $font-xmed;
+    font-size: 40px;
   }
 } 
 @media screen and (max-width: 1024px){
