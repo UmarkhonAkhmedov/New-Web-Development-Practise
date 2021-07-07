@@ -138,6 +138,9 @@ li {
     padding: 0 83px;
     border-color: red;
   }
+  h2 {
+    font-size: $font-xmed;
+  }
 } 
 @media screen and (max-width: 1024px){
   .container {

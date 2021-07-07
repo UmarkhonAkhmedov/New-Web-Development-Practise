@@ -115,6 +115,10 @@ li {
     padding: 0 83px;
     border-color: red;
   }
+
+  h2 {
+    font-size: 44px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -365,13 +369,15 @@ li {
   line-height: 28px;
 }
 .service__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 80px;
   margin: 70px -8px 0 -8px;
 }
 .service__list-item {
+  width: 22%;
   background-color: #2d2d2d;
   margin: 10px;
   padding: 40px;
@@ -384,4 +390,88 @@ li {
 }
 .service__list-item > p {
   font-size: 14px;
+}
+
+@media screen and (max-width: 1366px) {
+  .service {
+    padding: 110px 0;
+  }
+  .service__heading-text {
+    width: 615px;
+    margin: 0 auto;
+    line-height: 28px;
+  }
+  .service__list {
+    margin: 70px -15px 0 -15px;
+  }
+  .service__list-item {
+    margin: 15px;
+    padding: 30px;
+  }
+  .service__list-item > p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .service {
+    padding: 90px 0;
+  }
+  .service__heading-text {
+    width: 615px;
+    margin: 0 auto;
+    line-height: 28px;
+  }
+  .service__list {
+    margin: 70px -15px 0 -15px;
+  }
+  .service__list-item {
+    width: 35%;
+    margin: 15px;
+    padding: 30px;
+  }
+  .service__list-item > p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service {
+    padding: 70px 0;
+  }
+  .service__heading {
+    font-size: 22px;
+  }
+  .service__heading-text {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .service__list {
+    margin: 50px auto 0 auto;
+  }
+  .service__list-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service {
+    padding: 40px 0;
+  }
+  .service__heading {
+    font-size: 20px;
+  }
+  .service__heading-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .service__list {
+    margin: 50px auto 0 auto;
+  }
+  .service__list-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .service__list-item > h4 {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
