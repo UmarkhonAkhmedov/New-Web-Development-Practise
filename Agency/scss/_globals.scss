@@ -135,7 +135,8 @@ li {
 
 @media screen and (max-width: 1366px){
   .container {
-    padding: 0 83px;
+    max-width: 1150px;
+    padding: 0 108px;
     border-color: red;
   }
   h2 {

@@ -112,7 +112,8 @@ li {
 
 @media screen and (max-width: 1366px) {
   .container {
-    padding: 0 83px;
+    max-width: 1150px;
+    padding: 0 108px;
     border-color: red;
   }
 
@@ -473,5 +474,97 @@ li {
   }
   .service__list-item > h4 {
     font-size: 16px;
+  }
+}
+.result {
+  padding: 125px 0;
+  background-image: url("../images/result__background-img.png");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 0px) top 0;
+}
+.result .result__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.result .result__list-item {
+  text-align: center;
+}
+.result .result__list-item > span {
+  font-size: 44px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.result .result__list-item > hr {
+  margin: 16px auto 5px auto;
+  padding: 0;
+  width: 79px;
+  height: 3px;
+  border: none;
+  background-color: orange;
+}
+.result .result__list-item > p {
+  margin: 5px 0px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .result {
+    padding: 100px 0;
+    background-size: 1024px 317px;
+  }
+  .result .result__list-item > span {
+    font-size: 40px;
+  }
+  .result .result__list-item > hr {
+    margin: 10px auto;
+    width: 70px;
+  }
+  .result .result__list-item > p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .result {
+    padding: 75px 0;
+    background-size: 768px 267px;
+  }
+  .result .result__list-item > span {
+    font-size: 30px;
+  }
+  .result .result__list-item > hr {
+    margin: 10px auto;
+    width: 65px;
+  }
+  .result .result__list-item > p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 500px) {
+  .result {
+    padding: 10px 0;
+    background-size: 500px 240px;
+  }
+  .result .result__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .result .result__list-item {
+    margin: 10px;
+  }
+  .result .result__list-item > span {
+    font-size: 30px;
+  }
+  .result .result__list-item > hr {
+    margin: 10px auto;
+    width: 65px;
+  }
+  .result .result__list-item > p {
+    font-size: 12px;
+    font-weight: 400;
   }
 }/*# sourceMappingURL=style.css.map */
