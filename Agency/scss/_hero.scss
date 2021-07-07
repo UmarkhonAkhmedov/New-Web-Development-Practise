@@ -34,7 +34,7 @@
     }
     &-orange {
       background-color: $orange;
-      border: 3px solid transparent;
+      border: 2px solid transparent;
       &:hover {
         border-color: $white;
         background-color: transparent;
@@ -45,14 +45,69 @@
 
 
 @media screen and (max-width: 1366px){
-
+  .hero {
+    padding: 90px 0 210px 0;
+    &__heading {
+      font-size: 60px;
+      margin-bottom: 24px;
+    }
+  
+    
+  }
 }
 @media screen and (max-width: 1024px){
-
+  .hero {
+    padding: 60px 0 120px 0;
+    text-align: center;
+    &__heading {
+      font-size: $font-lg;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+  
+    > p {
+      margin-bottom: 20px;
+    }
+  }
 }
 @media screen and (max-width: 768px){
-
+  .hero {
+    padding: 60px 0 120px 0;
+    text-align: center;
+    &__heading {
+      font-size: 38px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+  
+    > p {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
 }
 @media screen and (max-width: 500px){
-
+  .hero {
+    padding: 60px 0 120px 0;
+    &__heading {
+      font-size: $font-med;
+      margin-bottom: 18px;
+    }
+  
+    > p {
+      font-size: $font-sm;
+      width: 100%;
+      margin-bottom: 18px;
+      line-height: 24px;
+    }
+  
+    &__button {
+      font-size: $font-sm;
+      > a {
+        margin: 0 4px;
+      }
+    }
+  }
+  
 }

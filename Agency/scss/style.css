@@ -100,7 +100,7 @@ li {
   text-align: center;
   cursor: pointer;
   font-family: 700;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 32px;
   transition: all 0.3s ease-in-out;
 }
@@ -235,7 +235,21 @@ li {
   right: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .header {
+    background-size: 1024px 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    background-size: 1024px 700px;
+  }
+}
 @media screen and (max-width: 500px) {
+  .header {
+    background-size: 768px 650px;
+  }
+
   .header__nav-list .close__icon {
     top: 38px;
     right: 36px;
@@ -271,9 +285,69 @@ li {
 }
 .hero__button-orange {
   background-color: #CE7A2D;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
 }
 .hero__button-orange:hover {
   border-color: #ffffff;
   background-color: transparent;
+}
+
+@media screen and (max-width: 1366px) {
+  .hero {
+    padding: 90px 0 210px 0;
+  }
+  .hero__heading {
+    font-size: 60px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding: 60px 0 120px 0;
+    text-align: center;
+  }
+  .hero__heading {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .hero > p {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 60px 0 120px 0;
+    text-align: center;
+  }
+  .hero__heading {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .hero > p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero {
+    padding: 60px 0 120px 0;
+  }
+  .hero__heading {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+  .hero > p {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 18px;
+    line-height: 24px;
+  }
+  .hero__button {
+    font-size: 14px;
+  }
+  .hero__button > a {
+    margin: 0 4px;
+  }
 }/*# sourceMappingURL=style.css.map */
