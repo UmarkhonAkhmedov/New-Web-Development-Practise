@@ -646,10 +646,12 @@ li {
   .portfolio__text {
     width: 90%;
     margin: 0 auto 40px auto;
+    font-size: 14px;
+    line-height: 20px;
   }
   .portfolio__img > div {
     width: 100%;
-    margin: 0;
+    margin: 0 0px -5px 0px;
   }
 }
 .testimonials__heading {
@@ -720,13 +722,28 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  .testimonials__text {
+    width: 100%;
+  }
   .testimonials__item {
     position: relative;
     top: 0;
-    right: 0;
+    left: calc(50% - 150px);
   }
   .testimonials__item-info {
     width: 500px;
-    margin: 10px;
+  }
+  .testimonials__item-info__first {
+    margin-right: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .testimonials__heading {
+    font-size: 22px;
+  }
+  .testimonials__text {
+    margin: 0 0 40px 0;
+    font-size: 14px;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
