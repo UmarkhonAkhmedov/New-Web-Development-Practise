@@ -1,0 +1,37 @@
+.service {
+  text-align: center;
+  background-color: $lightBlack;
+  padding: 130px 0;
+
+  &__heading {
+    margin-bottom: 8px;
+  }
+  &__heading-text {
+    width: 615px;
+    margin: 0 auto;
+    line-height: 28px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 80px;
+    margin: 70px -8px 0 -8px;
+    &-item {
+      background-color: $lighterBlack;
+      margin: 10px;
+      padding: 40px;
+
+      > h4 {
+        margin: 8px 0 0 0;
+        color: $white;
+        font-size: $font-smed;
+        font-weight: 600;
+      }
+      > p {
+        font-size: $font-sm;
+      }
+    }
+  }
+}

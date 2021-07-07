@@ -1,16 +1,10 @@
 .hero {
-  padding: 90px 0 210px 0;
+  padding: 90px 0 200px 0;
   text-align: center;
   &__heading {
     font-size: $font-xlg;
     font-weight: 600;
     margin-bottom: 24px;
-    &-start {
-
-    }
-    &-end {
-
-    }
   }
 
   > p {
