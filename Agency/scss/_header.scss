@@ -2,13 +2,14 @@
   background-image: url("../images/hero__background-img.png");
   background-repeat: no-repeat;
   background-position: left calc(50% + 0px) top 0;
+  background-size: auto;
 }
 .header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 33px 0 33px 0;
+  padding: 33px 0 45px 0;
 }
 .header__nav-logo {
   line-height: 0;
@@ -111,8 +112,25 @@
 .show__right {
   right: 0;
 }
-
+// @media screen and (max-width:1366px){
+//   .header {
+//     background-size: 1366px 771px;
+//   }
+// }
+// @media screen and (max-width:1024px){
+//   .header {
+//     background-size: 1024px 771px;
+//   }
+// }
+// @media screen and (max-width:768px){
+//   .header {
+//     background-size: 768px 771px;
+//   }
+// }
 @media screen and (max-width:500px) {
+  // .header {
+  //   background-size: 1440px 771px;
+  // }
   .header__nav-list {
     .close__icon {
       top: 38px;

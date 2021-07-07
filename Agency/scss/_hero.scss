@@ -1,0 +1,58 @@
+.hero {
+  padding: 90px 0 210px 0;
+  text-align: center;
+  &__heading {
+    font-size: $font-xlg;
+    font-weight: 600;
+    margin-bottom: 24px;
+    &-start {
+
+    }
+    &-end {
+
+    }
+  }
+
+  > p {
+    width: 562px;
+    margin: 0 auto;
+    color: $white;
+    font-weight: 300;
+    margin-bottom: 24px;
+    line-height: 28px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: $font-sm;
+    font-weight: 600;
+    > a {
+      margin: 0 8px;
+    }
+    &-orange {
+      background-color: $orange;
+      border: 3px solid transparent;
+      &:hover {
+        border-color: $white;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1366px){
+
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 500px){
+
+}
