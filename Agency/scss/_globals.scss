@@ -133,6 +133,9 @@ li {
   background-color: $orange; 
   border-color: transparent;
 }
+.team__blog-line {
+  border-color: rgba(255, 255, 255, 15%)
+}
 
 @media screen and (max-width: 1366px){
   .container {
