@@ -4,12 +4,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    flex-wrap: wrap;
     &-lists {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
       width: 648px;
+      margin-bottom: 20px;
       > img {
         
       }
@@ -31,6 +33,7 @@
       }
     }
     &-links {
+      margin-bottom: 20px;
       img {
         width: 16px;
         height: 16px;
@@ -46,6 +49,6 @@
   }
   p {
     color: $white;
-    font-size: $font
+    font-size: $font-sm;
   }
 }

@@ -1103,12 +1103,15 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .footer__nav-lists {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 648px;
+  margin-bottom: 20px;
 }
 .footer__nav-lists > ul {
   display: flex;
@@ -1121,6 +1124,9 @@ li {
 .footer__nav-lists > ul > li > a {
   font-size: 12px;
   color: #ffffff;
+}
+.footer__nav-links {
+  margin-bottom: 20px;
 }
 .footer__nav-links img {
   width: 16px;
@@ -1135,4 +1141,5 @@ li {
 }
 .footer p {
   color: #ffffff;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
