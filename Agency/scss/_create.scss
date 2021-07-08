@@ -1,0 +1,55 @@
+.site__create {
+  padding: 100px 0 130px 0;
+  .create {
+    text-align: center;
+    background-color: $orange;
+    padding: 100px 0;
+
+    > h2 {
+
+    }
+    > p {
+      width: 547px;
+      margin: 23px auto 23px auto;
+      color: $white;
+    }
+    &__buttons {
+      display: flex;
+      justify-content: center;
+
+      &-transparent {
+        margin-right: 16px;
+        font-weight: 700;
+        font-size: $font-sm;
+        &:hover {
+          background-color: $white;
+          color: #262626;
+        }
+      }
+      &-white {
+        color: #262626;
+        background-color: $white;
+        font-weight: 700;
+        font-size: $font-sm;
+        &:hover {
+          background-color: transparent;
+          color: $white;
+          border-color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px){
+  .site__create {
+    .create {
+      > h2 {
+        font-size: 28px;
+      }
+      > p {
+        width: 90%;
+      }
+    }
+  }
+}
