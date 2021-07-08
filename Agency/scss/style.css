@@ -759,6 +759,7 @@ li {
   width: 547px;
   margin: 23px auto 23px auto;
   color: #ffffff;
+  line-height: 28px;
 }
 .site__create .create__buttons {
   display: flex;
@@ -786,10 +787,31 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  .site__create {
+    padding: 50px 0 70px 0;
+  }
   .site__create .create > h2 {
     font-size: 28px;
   }
   .site__create .create > p {
     width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .site__create {
+    padding: 30px 0 50px 0;
+  }
+  .site__create .create {
+    padding: 50px 10px;
+  }
+  .site__create .create > h2 {
+    font-size: 22px;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .site__create .create > p {
+    width: 100%;
+    line-height: 20px;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
