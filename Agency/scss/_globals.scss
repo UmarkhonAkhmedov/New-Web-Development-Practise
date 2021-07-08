@@ -110,7 +110,6 @@ li {
   padding: 0 120px;
   margin: 0 auto;
   overflow-x: hidden;
-  border: 1px solid rgb(123, 215, 248);
 }
 
 // Buttons
@@ -141,7 +140,6 @@ li {
   .container {
     max-width: 1150px;
     padding: 0 108px;
-    border-color: red;
   }
   h2 {
     font-size: 40px;
@@ -150,12 +148,10 @@ li {
 @media screen and (max-width: 1024px){
   .container {
     padding: 0 60px;
-    border-color: darkslateblue;
   }
 }
 @media screen and (max-width: 500px){
   .container {
     padding: 0 30px;
-    border-color: red;
   }
 } 
