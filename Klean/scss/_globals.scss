@@ -31,9 +31,30 @@
   src: url('../fonts/nunito-v16-latin-700.woff2') format('woff2'),
     url('../fonts/nunito-v16-latin-700.woff') format('woff');
 }
+// Variables
+// Font Sizes
+$font-sm: 1rem;
+$font-xsm: 1.25rem;
+$font-med: 1.5625;
+$font-xmed: 2rem;
+$font-lg: 3.3rem;
+$font-xlg: 3.1875rem; 
+
+// Colors
+$buttonLinear: linear-gradient(135%, #C381DB, #4E92F9);
+$blueGrey: #485466;
+$blue: #4E92F9;
+$white: #ffffff;
+$h2Black: #242A33;
+$textBlueGrey: #5A6980;
+$h5BlueGrey: #6C7E99;
+$darkBlue: #7E92B2;
+$h5LightBlack: #363F4D;
+$lightBlue: #90A8CC;
+
 // General Styles
 html {
-  font-size: 100%;
+  font-size: 16px;
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
@@ -45,7 +66,6 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
   line-height: 1.3;
-  font-size: $font-sm;
   font-weight: 400;
   min-height: 300vh;
 }
@@ -61,7 +81,7 @@ h5 {
   color: $h5BlueGrey;
 }
 p {
-  line-height: 22px;
+  line-height: 1.375rem;
   color: $textBlueGrey;
 }
 a, 
@@ -80,8 +100,8 @@ ul {
 }
 .button {
   display: flex;
-  width: 112px;
-  height: 36px;
+  width: 7rem;
+  height: 2.25rem;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -100,24 +120,43 @@ ul {
 }
 
 @media screen and (max-width: 1440px){
+  html {
+    font-size: 15px;
+  }
   .container {
     padding: 0 113px;
   }
 }
-
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1366px){
+  html {
+    font-size: 14px;
+  }
   .container {
-    padding: 0 100px;
+    padding: 0 103px;
+  }
+}
+@media screen and (max-width: 1024px){
+  html {
+    font-size: 13px;
+  }
+  .container {
+    padding: 0 80px;
   }
 }
 
 @media screen and (max-width: 768px){
+  html {
+    font-size: 13px;
+  }
   .container {
     padding: 0 60px;
   }
 }
 
 @media screen and (max-width: 500px){
+  html {
+    font-size: 12px;
+  }
   .container {
     padding: 0 30px;
   }
