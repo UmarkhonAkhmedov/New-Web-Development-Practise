@@ -134,7 +134,7 @@ ul {
     padding: 0 80px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   html {
     font-size: 13px;
   }
@@ -213,6 +213,16 @@ ul {
 }
 .nav__main-close {
   display: none;
+  background: -webkit-linear-gradient(135deg, #C381DB, #4E92F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.nav__main-close:hover {
+  background: -webkit-linear-gradient(135deg, #8800ba, #0066ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .nav__links {
   display: flex;
@@ -264,26 +274,46 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.nav__menu > i:hover {
+  background: -webkit-linear-gradient(135deg, #8800ba, #0066ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 840px) {
   .nav__main-list {
     position: fixed;
-    bottom: 0;
+    top: 0;
     right: -100%;
     width: 70%;
     height: 100%;
-    background-color: lightgreen;
+    background-color: #b1fcdf;
     flex-direction: column;
     transition: 0.8s;
+    padding-top: 80px;
+    padding-left: 25px;
+    box-sizing: border-box;
+  }
+  .nav__main-list li {
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 15px;
   }
 
   .nav__links {
-    flex-direction: column;
+    justify-content: center;
     position: fixed;
-    top: 30px;
+    flex-direction: row;
+    position: fixed;
+    top: 300px;
+    width: 70%;
     right: -100%;
     transition: 0.8s;
+    font-size: 15px;
   }
 
   .nav__menu {
@@ -293,9 +323,8 @@ ul {
   .nav__main-close {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 25px;
+    top: 16px;
+    right: 58px;
   }
 }
 .show__menu {
@@ -304,4 +333,13 @@ ul {
 
 .show__links {
   right: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .nav__main-close {
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: 28px;
+  }
 }/*# sourceMappingURL=style.css.map */
