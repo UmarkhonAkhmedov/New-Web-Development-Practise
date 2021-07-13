@@ -15,58 +15,58 @@
     <div class="container">
       <!-- Navbar -->
       <nav class="nav">
-        <div class="nav__logo">
-          <a href="index.html"><img src="images/website__logo.svg" alt="Website Logo"></a>
-        </div>
         <div class="nav__main">
-          <div class="nav__main-list">
-            <ul>
-              <li>
-                <select name="forma" onchange="location = this.value;"> 
-                  <option value="#home">Home</option>
-                  <option value="#home">Home</option>
-                </select>
-              </li>
-              <li>
-                <select name="forma" onchange="location = this.value;">
-                  <option value="#service">Service</option>
-                  <option value="#service">Service</option>
-                </select>
-              </li>
-              <li>
-                <select name="forma" onchange="location = this.value;">
-                  <option value="#works">Works</option>
-                  <option value="#works">Works</option>
-                </select>
-              </li>
-              <li>
-                <select name="forma" onchange="location = this.value;">
-                  <option value="#news">News</option>
-                  <option value="#news">News</option>
-                </select>
-              </li>
-              <li>
-                <select name="forma" onchange="location = this.value;">
-                  <option value="#contact">Contact</option>
-                  <option value="#contact">Contact</option>
-                </select>
-              </li>
-            </ul>
-          </div>
-          <div class="nav__main-links">
-            <a class="nav__main-links__simple" href="#">Log In</a>
-            <a class="button" href="#">Sign Up</a>
-          </div>
+          <a class="nav__main-logo" href="index.html">
+            <img src="images/website__logo.svg" alt="Website Logo">
+          </a>
+          <ul id="nav__main-list" class="nav__main-list">
+          <li>
+            <select name="forma" onchange="location = this.value;"> 
+              <option value="#home">Home</option>
+              <option value="#home">Home</option>
+            </select>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <select name="forma" onchange="location = this.value;">
+              <option value="#service">Service</option>
+              <option value="#service">Service</option>
+            </select>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <select name="forma" onchange="location = this.value;">
+              <option value="#works">Works</option>
+              <option value="#works">Works</option>
+            </select>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <select name="forma" onchange="location = this.value;">
+              <option value="#news">News</option>
+              <option value="#news">News</option>
+            </select>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <select name="forma" onchange="location = this.value;">
+              <option value="#contact">Contact</option>
+              <option value="#contact">Contact</option>
+            </select>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
           <i class="nav__main-close ri-close-line" id="nav__main-close"></i>
-          <div class="nav__main-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          </ul>
+          
+        </div>
+        <div class="nav__links" id="nav__links">
+          <span class="nav__links-simple"><a  href="#">Log In</a></span>
+          <span class="nav__links-max"><a href="#">Sign Up</a></span>
+        </div>
+        <div class="nav__menu" id="nav__menu">
+          <i class="ri-function-line"></i>
         </div>
       </nav>
-      <!---->
-
     </div>
   </header>
   
@@ -75,3 +75,6 @@
   <script src="js/index.js"></script>
 </body>
 </html>
+
+
+
