@@ -15,3 +15,5 @@ function closed(){
   links.classList.remove('show__links');
 }
 close.addEventListener('click', closed)
+
+

@@ -1,0 +1,26 @@
+.hero {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 300vh;
+  background-image: url("../images/hero__main-background.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 635px) top -400px;
+  overflow: hidden;
+}
+
+
+
+
+
+@media screen and (max-width:1440px) {
+  .hero {
+    background-size: 900px 400px;
+    background-position: left calc(50% + 235px) top -80px;
+  }
+}
+@media screen and (max-width:1366px) {
+  .hero {
+    background-size: 900px 500px;
+    background-position: left calc(50% + 350px) top -80px;
+  }
+}
