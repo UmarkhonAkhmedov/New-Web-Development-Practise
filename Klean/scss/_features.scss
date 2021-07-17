@@ -1,0 +1,106 @@
+.features {
+  padding: 6rem 0 5.6rem 0;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+
+  &__text {
+    width: 558px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 5rem;
+    &-item {
+      width: 33%;
+      margin-bottom: 5rem;
+      > img {
+        width: 7.125rem;
+        height: 6.125rem;
+      }
+      > h5 {
+        margin: 1.5rem 0 .5rem 0;
+        color: $h5BlueGrey;
+      }
+      > p {
+        width: 286px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1366px){
+  .features {
+    &__list {
+
+      &-item {
+        > img {
+          width: 6rem;
+          height: 5rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1000px){
+  .features {
+    &__list {
+      justify-content: space-between;
+      margin-top: 5rem;
+      &-item {
+        width: 300px;
+        > img {
+          width: 6rem;
+          height: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px){
+  .features {
+    &__heading {
+      font-size: $font-xmed;
+    }
+    &__text {
+      width: 100%;
+    }
+
+    &__list {
+      display: block;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 3rem;
+      &-item {
+        margin: 20px auto 40px auto;
+      }
+      
+    }
+  }
+}
+@media screen and (max-width:500px) {
+  .features {
+    padding: 4rem 0 3rem 0;
+    &__list {
+      display: block;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 2rem;
+      &-item {
+        width: 100%;
+        margin: 20px auto 30px auto;
+      }
+      
+    }
+  }
+  
+}
