@@ -1,0 +1,122 @@
+.service {
+  
+  &__heading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    text-align: center;
+    width: 558px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5.8rem 0 3.5rem 0;
+
+    &-item {
+      width: 32%;
+      border: 1px solid rgb(252, 250, 254);
+      padding: 5.4375rem 3.5rem 3.3125rem 3.5rem;
+      box-sizing: border-box;
+      border-radius: 40px;
+      background: linear-gradient(137.73deg, rgba(255, 255, 255, 0) 4.16%, rgba(255, 255, 255, 0.5) 102.02%);
+      backdrop-filter: blur(60px);
+
+      &__img {
+        display: block;
+        margin: 0 auto;
+        width: 8.43rem;
+        height: 8.43rem;
+        padding-bottom: 2.8rem;
+      }
+      > h5 {
+        margin: 2rem 0 1.375rem 0;
+      }
+      > p {
+        margin-bottom: 2.5rem;
+      }
+      > span {
+        display: flex;
+        align-items: center;
+        > a {
+          margin-right: 1rem;
+          color: $blue;
+          font-weight: 700;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: #0357d5;
+          }
+        }
+      }
+    }
+    &-second {
+      border: 1px solid rgb(255, 255, 255);
+      background: radial-gradient(114.42% 114.42% at -2.96% -9.7%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+    }
+  }
+}
+@media screen and (max-width:1366px){
+  .service {
+    &__list {
+      margin: 3.0rem 0 2.0rem 0;
+      flex-wrap: wrap;
+  
+      &-item {
+        padding: 2.5rem 2rem 2.5rem 2rem;
+        width: 30%;
+      }
+    }
+  }
+}
+@media screen and (max-width:1200px){
+  .service {
+    &__list {
+      justify-content: center;
+      margin: 3.0rem 0 2.0rem 0;
+      flex-wrap: wrap;
+  
+      &-item {
+        margin: 10px;
+        width: 350px;
+        padding: 3rem 2rem 2rem 2rem;
+
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:768px){
+  .service {
+    &__heading {
+      font-size: $font-xmed;
+    }
+    &__text {
+      width: 100%;
+    }
+    &__list {
+      justify-content: center;
+      margin: 2.0rem 0 1.0rem 0;
+    }
+  }
+}
+@media screen and (max-width:1200px){
+  .service {
+    &__list {
+      justify-content: center;
+      margin: 2.0rem 0 1.0rem 0;
+      flex-wrap: wrap;
+  
+      &-item {
+        margin: 10px;
+        width: 350px;
+        padding: 1rem 3rem 3rem 2rem;
+
+      }
+    }
+  }
+}

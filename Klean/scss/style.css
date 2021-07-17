@@ -52,13 +52,13 @@ h1, h2, h3 {
   font-weight: 700;
   line-height: 48px;
   color: #242A33;
-  font-size: 3.3rem;
+  font-size: 2.5rem;
 }
 
 h5 {
   font-weight: 700;
   font-size: 1.25rem;
-  color: #6C7E99;
+  color: #485466;
 }
 
 p {
@@ -81,7 +81,6 @@ ul {
   padding: 0 390px;
   margin: 0 auto;
   overflow-x: hidden;
-  border: 1px solid lightgreen;
 }
 
 .button {
@@ -127,7 +126,7 @@ ul {
   }
 
   .container {
-    padding: 0 103px;
+    padding: 0 150px;
   }
 
   body {
@@ -165,6 +164,7 @@ ul {
 .site-header {
   position: fixed;
   width: 100%;
+  z-index: 10000;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 14.06%, rgba(255, 255, 255, 0.8) 85.42%, rgba(255, 255, 255, 0) 100%);
   -webkit-backdrop-filter: blur(111px);
           backdrop-filter: blur(111px);
@@ -312,7 +312,7 @@ ul {
     background-color: #d0ffed;
     flex-direction: column;
     transition: 0.8s;
-    padding: 100px 100px 400px 150px;
+    padding: 100px 100px 700px 150px;
     padding-left: 110px;
     z-index: 1000;
     box-sizing: border-box;
@@ -482,7 +482,7 @@ ul {
 
 @media screen and (max-width: 1366px) {
   .brand {
-    margin: 80px 0 80px 0;
+    margin: 60px 0 60px 0;
   }
   .brand .brand__list {
     justify-content: center;
@@ -525,5 +525,107 @@ ul {
   .brand .brand__list img {
     width: 60%;
     height: auto;
+  }
+}
+.service__heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.service__text {
+  text-align: center;
+  width: 558px;
+  margin: 0 auto;
+}
+.service__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 5.8rem 0 3.5rem 0;
+}
+.service__list-item {
+  width: 32%;
+  border: 1px solid #fcfafe;
+  padding: 5.4375rem 3.5rem 3.3125rem 3.5rem;
+  box-sizing: border-box;
+  border-radius: 40px;
+  background: linear-gradient(137.73deg, rgba(255, 255, 255, 0) 4.16%, rgba(255, 255, 255, 0.5) 102.02%);
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+}
+.service__list-item__img {
+  display: block;
+  margin: 0 auto;
+  width: 8.43rem;
+  height: 8.43rem;
+  padding-bottom: 2.8rem;
+}
+.service__list-item > h5 {
+  margin: 2rem 0 1.375rem 0;
+}
+.service__list-item > p {
+  margin-bottom: 2.5rem;
+}
+.service__list-item > span {
+  display: flex;
+  align-items: center;
+}
+.service__list-item > span > a {
+  margin-right: 1rem;
+  color: #4E92F9;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.service__list-item > span > a:hover {
+  color: #0357d5;
+}
+.service__list-second {
+  border: 1px solid white;
+  background: radial-gradient(114.42% 114.42% at -2.96% -9.7%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+@media screen and (max-width: 1366px) {
+  .service__list {
+    margin: 3rem 0 2rem 0;
+    flex-wrap: wrap;
+  }
+  .service__list-item {
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .service__list {
+    justify-content: center;
+    margin: 3rem 0 2rem 0;
+    flex-wrap: wrap;
+  }
+  .service__list-item {
+    margin: 10px;
+    width: 350px;
+    padding: 3rem 2rem 2rem 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service__heading {
+    font-size: 2rem;
+  }
+  .service__text {
+    width: 100%;
+  }
+  .service__list {
+    justify-content: center;
+    margin: 2rem 0 1rem 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .service__list {
+    justify-content: center;
+    margin: 2rem 0 1rem 0;
+    flex-wrap: wrap;
+  }
+  .service__list-item {
+    margin: 10px;
+    width: 350px;
+    padding: 1rem 3rem 3rem 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
