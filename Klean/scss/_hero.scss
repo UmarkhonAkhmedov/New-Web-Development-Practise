@@ -1,11 +1,39 @@
 .hero {
   margin: 0 auto;
   max-width: 1920px;
-  min-height: 300vh;
   background-image: url("../images/hero__main-background.svg");
   background-repeat: no-repeat;
   background-position: left calc(50% + 635px) top -400px;
   overflow: hidden;
+  z-index: -1;
+  
+  &__info {
+    padding: 180px 0 135px 0;
+
+    &-heading {
+      color: $blueGrey;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-bottom: 1.5rem;
+      &__top {
+        background: -webkit-linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: $font-xlg;
+
+      }
+      &__bottom {
+        font-weight: 400;
+      }
+      
+    }
+    p {
+      line-height: 1.375rem;
+      margin-bottom: 3rem;
+      width: 461px;
+    }
+  }
+  
 }
 
 
@@ -22,5 +50,61 @@
   .hero {
     background-size: 900px 500px;
     background-position: left calc(50% + 350px) top -80px;
+    &__info {
+      padding: 120px 0 50px 0;
+  
+      &-heading {        
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .hero {
+    background-image: url("../images/hero__main-background.svg");
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 150px) top -200px;
+    overflow: hidden;
+    &__info {
+      text-align: center;
+      padding: 350px 0 40px 0;
+      a {
+        margin: 0 auto;
+      }
+      p {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+@media screen and (max-width:500px){
+  .hero {
+    background-size: 600px 350px;
+    background-position: left calc(50% + 110px) top -80px;
+    &__info {
+      padding: 300px 0 40px 0;
+  
+      &-heading {
+        color: $blueGrey;
+        font-size: 2.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+        font-size: 23px;
+        &__top {
+          background: -webkit-linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 32px;
+          
+        }
+        &__bottom {
+          font-weight: 400;
+        }
+      }
+      p {
+        margin-bottom: 2rem;
+      }
+    }
   }
 }

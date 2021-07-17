@@ -4,15 +4,14 @@
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 14.06%, rgba(255, 255, 255, 0.8) 85.42%, rgba(255, 255, 255, 0) 100%);
   backdrop-filter: blur(111px);
   background-repeat: no-repeat;
-
 }
 
 .nav {
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 100;
-
   &__main {
     padding: 1.25rem 0;
     display: flex;
@@ -142,7 +141,11 @@
   }
 } 
 
-
+@media screen and (max-width:1366px){
+  .site-header {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 1) 14.06%, rgba(255, 255, 255, 1) 85.42%, rgba(255, 255, 255, 0.8) 100%);
+  }
+}
 @media screen and (max-width:840px){
   .nav__main-list {
     position: fixed;
@@ -150,11 +153,12 @@
     right: -100%;
     width: 70%;
     height: 100%;
-    background-color: rgb(177, 252, 223);
+    background-color: rgb(208, 255, 237);
     flex-direction: column;
     transition: .8s;
-    padding-top: 80px;
-    padding-left: 25px;
+    padding: 100px 100px 400px 150px;
+    padding-left: 110px;
+    z-index: 1000;
     box-sizing: border-box;
     li {
       top: 0;
@@ -174,6 +178,7 @@
     right: -100%; 
     transition: .8s;
     font-size: 15px;
+    z-index: 1100;
   }
   .nav__menu {
     display: block;
