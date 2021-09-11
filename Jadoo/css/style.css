@@ -1,0 +1,149 @@
+/* Table of Contents */
+/* 1. Font Family */
+/* 2. Variables */
+/* 3. General Styles */
+/*  */
+
+/*  */
+/* 1. Font Family */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v23-latin-regular.woff2') format('woff2'),
+    url('../fonts/open-sans-v23-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/open-sans-v23-latin-600.woff2') format('woff2'),
+    url('../fonts/open-sans-v23-latin-600.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v23-latin-700.woff2') format('woff2'),
+    url('../fonts/open-sans-v23-latin-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Volkhov';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/volkhov-v12-latin-regular.woff2') format('woff2'),
+    url('../fonts/volkhov-v12-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Volkhov';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/volkhov-v12-latin-700.woff2') format('woff2'),
+    url('../fonts/volkhov-v12-latin-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+    url('../fonts/poppins-v15-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v15-latin-500.woff2') format('woff2'),
+    url('../fonts/poppins-v15-latin-500.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v15-latin-600.woff2') format('woff2'),
+    url('../fonts/poppins-v15-latin-600.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v15-latin-700.woff2') format('woff2'),
+    url('../fonts/poppins-v15-latin-700.woff') format('woff');
+}
+
+/*  */
+/* 2. Variables */
+:root {
+  /* Colors */
+  --black: #080809;
+  --white: #ffffff;
+  --lightBlack: #212832;
+  --red: #DF6951;
+  --darkBlue: #181E4B;
+  --yellow: #F1A501;
+  --lightBlue: #5E6282;
+  --darkerBlack: #14183E;
+
+  /* Font Sizes */
+  --small: 14px;
+  --normal: 16px;
+  --medium: 18px;
+  --large: 20px;
+}
+
+/*  */
+/* 3. General Styles */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins' sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: var(--normal);
+  font-weight: 400;
+  min-height: 300vh;
+  color: var(--lightBlue);
+}
+
+h1, h2 {
+  font-family: 'Volkhov' sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  line-height: 64px;
+  color: var(--darkerBlack);
+  font-size: 50px;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: var(--medium);
+  font-weight: 600;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+a, 
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.container {
+  max-width: 1228px;
+  padding: 0 106px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/*  */
+/* 4. */
+
+
