@@ -77,9 +77,9 @@
   --black: #080809;
   --white: #ffffff;
   --lightBlack: #212832;
-  --red: #DF6951;
+  --red: rgb(223, 105, 81);
   --darkBlue: #181E4B;
-  --yellow: #F1A501;
+  --yellow: rgb(241, 165, 1);
   --lightBlue: #5E6282;
   --darkerBlack: #14183E;
 
@@ -117,7 +117,7 @@ h1, h2 {
   color: var(--darkerBlack);
   font-size: 50px;
 }
-h3 {
+h4 {
   margin: 0;
   padding: 0;
   font-size: var(--medium);
@@ -146,7 +146,7 @@ ul {
 /*  */
 /* 4. Navbar */
 .nav {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .nav__content {
   display: flex;
@@ -223,8 +223,70 @@ ul {
   height: 3px;
   margin: 3px 0;
   background-color: var(--yellow);
+}
+
+/* Hero Section */
+.hero {
+  padding-bottom: 60px;
+}
+.hero h3 {
+  padding-top: 60px;
+  color: var(--red);
+  font-size: var(--large);
+}
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
 
 }
+.hero__text {
+  line-height: 25px;
+}
+.hero__link {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 60px;
+} 
+.hero__link a {
+  border: 1px solid var(--yellow);
+  margin-right: 70px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--yellow);
+  font-size: var(--small);
+  box-shadow: 0px 6px 8px 10px rgba(237, 241, 1, 0.3);
+  transition: all 0.3s ease;
+}
+.hero__link a:hover {
+  background-color: transparent;
+  border-color: var(--lightBlack);
+  box-shadow: 0px 6px 8px 10px rgba(255, 255, 255, 1);
+  color: var(--lightBlack);
+}
+.hero__play {
+  display: flex;
+  align-items: center;
+}
+.hero__play span {
+  border: 1px solid var(--red);
+  padding: 10px 13px 10px 15px;
+  border-radius: 50%;
+  background-color: var(--red);
+  margin-right: 20px;
+  box-shadow: 0px 8px 8px 6px rgba(223, 105, 81, 0.2);
+}
+.hero__play p {
+  font-size: var(--small);
+  cursor: pointer;
+  color: #686D77;
+}
+.hero__play p:hover {
+  color: var(--red);
+}
+
+
 
 
 
@@ -291,9 +353,9 @@ ul {
   .nav__close {
     position: absolute;
     display: block;
-    top: 33px;
-    right: 51px;
-    transform: scale(1.3);
+    top: 31px;
+    right: 52px;
+    transform: scale(1.4);
     transition: all 0.3s ease;
   }
   .nav__close:hover, .nav__close:active {
@@ -317,8 +379,8 @@ ul {
     padding: 0 30px;
   }
   .nav__close {
-    top: 33px;
-    right: 31px;
+    top: 31px;
+    right: 33px;
   }
 }
 
