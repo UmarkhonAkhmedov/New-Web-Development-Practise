@@ -105,7 +105,10 @@ body {
   font-size: var(--normal);
   font-weight: 400;
   min-height: 300vh;
+  max-width: 1366px;
+  margin: 0 auto;
   color: var(--lightBlue);
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -145,8 +148,33 @@ ul {
 
 /*  */
 /* 4. Navbar */
+.header {
+  background-image: 
+  url("../img/hero__background-circle.svg"),
+  url("../img/hero__background-line.svg"),
+  url("../img/hero__plane.svg"),
+  url("../img/hero__main-background.svg"),
+  url("../img/hero__plane-second.svg"),
+  url("../img/hero__background-rect.jpg");
+  background-repeat: no-repeat;
+  background-position: 
+  right calc(50% + 730px) top -50px,
+  right calc(50% + 220px) top 110px,
+  left calc(50% + 100px) top 140px,
+  left calc(50% + 240px) top 100px,
+  left calc(50% + 470px) top 170px,
+  left calc(50% + 440px) top -80px;
+  background-size:
+  500px 500px,
+  300px 300px,
+  110px 110px,
+  560px 560px,
+  110px 110px,
+  650px 680px;
+}
 .nav {
   padding-top: 20px;
+  
 }
 .nav__content {
   display: flex;
@@ -203,6 +231,7 @@ ul {
 .nav__item-lan select {
   border: none;
   outline: none;
+  background-color: transparent;
 }
 .nav__item-lan select:hover {
   color: var(--yellow);
@@ -227,6 +256,7 @@ ul {
 
 /* Hero Section */
 .hero {
+  position: relative;
   padding-bottom: 60px;
 }
 .hero h3 {
@@ -285,6 +315,7 @@ ul {
 .hero__play p:hover {
   color: var(--red);
 }
+
 
 
 
