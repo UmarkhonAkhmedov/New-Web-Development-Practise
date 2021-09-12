@@ -4,12 +4,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="icon" href="img/logo.png">
+  <link rel="icon" href="img/website__logo.svg">
   <link rel="stylesheet" href="css/style.css">
   <title>Jadoo Landing Page</title>
 </head>
 <body>
-  
+  <!---------- Header ---------->
+  <header>
+    <!----- Navbar ----->
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__content">
+          <!-- Logo -->
+          <div class="nav__logo">
+            <a href="index.html"><img src="img/website__logo.svg" alt="Website Logo"></a>
+          </div>
+          <!-- Ul list -->
+          <div class="nav__info">
+            <ul class="nav__list" id="nav__list">
+              <li class="nav__item nav__item-com"><a href="#">Destinations</a></li>
+              <li class="nav__item nav__item-com"><a href="#">Hotels</a></li>
+              <li class="nav__item nav__item-com"><a href="#">Flights</a></li>
+              <li class="nav__item nav__item-com"><a href="#">Bookings</a></li>
+              <li class="nav__item nav__item-login"><a href="#">Login</a></li>
+              <li class="nav__item nav__item-sign"><a href="#">Sign up</a></li>
+              <li class="nav__item nav__item-lan">
+                <select name="forma" onchange="location = this.value;">
+                  <option value="#">EN</option>
+                  <option value="#">FR</option>
+                  <option value="#">GR</option>
+                 </select>
+              </li>
+              <i class="nav__close uil uil-multiply" id="nav__close"></i>
+            </ul>
+          </div>
+          <!-- Hamburger Menu -->
+          <div class="nav__hamburger" id="nav__hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <script src="js/script.js"></script>
 </body>
 </html>
