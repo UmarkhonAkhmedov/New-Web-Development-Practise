@@ -340,7 +340,7 @@ ul {
   
 }
 .category__item {
-  width: 200px;
+  width: 190px;
   margin-top: 40px;
   padding: 30px;
 }
@@ -460,6 +460,15 @@ ul {
   .nav__hamburger:active .nav__hamburger-line {
     background-color: var(--lightBlack);
   }
+  h2 {
+    font-size: 30px;
+  }
+  .category h2 {
+    margin: 0px 0 10px 0;
+  }
+  .category {
+    background-image: none;
+  }
 
   /* Hero Section */
   .header {
@@ -505,10 +514,23 @@ ul {
 .show__menu {
   right: 0;
 }
-
+@media screen and (max-width: 600px){
+  .category__list {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .category__item {
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 500px){
   .container {
     padding: 0 30px;
+  }
+  .category h2 {
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 30px;
   }
   .nav__close {
     top: 31px;
