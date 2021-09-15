@@ -118,12 +118,12 @@ h1, h2 {
   font-weight: 700;
   line-height: 64px;
   color: var(--darkerBlack);
-  font-size: 50px;
+  font-size: 40px;
 }
 h4 {
   margin: 0;
   padding: 0;
-  font-size: var(--medium);
+  font-size: var(--small);
   font-weight: 600;
 }
 p {
@@ -314,6 +314,67 @@ ul {
 .hero__play p:hover {
   color: var(--red);
 }
+/* Category */
+.category {
+  text-align: center;
+  border: 1px solid lightcyan;
+  background-image: 
+  url("../img/category__background-plus.svg"), 
+  url("../img/category__background-rect.svg");
+  background-repeat: no-repeat;
+  background-size: 130px 140px, 80px 80px;
+  background-position: 
+  left calc(50% + 550px) top 0,
+  right calc(50% + 270px) bottom 80px;
+
+}
+.category h2 {
+  margin: 10px 0 30px 0;
+}
+.category__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-bottom: 120px;
+  
+}
+.category__item {
+  width: 200px;
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.category__weather h5, 
+.category__event h5,
+.category__costum h5 {
+  padding-top: 22px;
+}
+.category__item h5 {
+  margin-top: 0;
+  font-size: var(--normal);
+}
+.category__item p {
+  font-size: var(--small);
+  line-height: 20px;
+}
+.category__plane img {
+  width: 100px;
+  height: 100px;
+}
+.category__plane {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+
+
+
+
+
+
+
 
 
 
