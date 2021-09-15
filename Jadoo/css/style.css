@@ -317,7 +317,6 @@ ul {
 /* Category */
 .category {
   text-align: center;
-  border: 1px solid lightcyan;
   background-image: 
   url("../img/category__background-plus.svg"), 
   url("../img/category__background-rect.svg");
