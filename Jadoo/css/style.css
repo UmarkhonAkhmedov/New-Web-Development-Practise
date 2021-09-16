@@ -550,6 +550,15 @@ img {
   .category__item {
     margin-top: 10px;
   }
+  .selling__list {
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  .selling__item {
+    width: 70%;
+    margin: 20px auto;
+  }
 }
 @media screen and (max-width: 500px){
   .container {
