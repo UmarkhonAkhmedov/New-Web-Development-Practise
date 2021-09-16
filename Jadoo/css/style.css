@@ -110,7 +110,9 @@ body {
   color: var(--lightBlue);
   overflow-x: hidden;
 }
-
+h1 {
+  font-size: 60px;
+}
 h1, h2 {
   font-family: 'Volkhov', sans-serif;
   margin: 0;
@@ -268,9 +270,7 @@ img {
   font-size: var(--large);
 }
 .hero h1 {
-  font-size: 60px;
   margin-bottom: 20px;
-
 }
 .hero__text {
   line-height: 25px;
@@ -372,12 +372,29 @@ img {
 }
 
 /* Top Selling */
-
-
-
+.selling {
+  position: relative;
+}
+.selling h4 {
+  text-align: center;
+}
+.selling h2 {
+  text-align: center;
+  margin: 10px 0 30px 0;
+}
 .selling__list {
   display: flex;
+  justify-content: space-between;
+
 }
+.selling__item {
+  width: 30%;
+}
+.selling__main-img {
+  width: 100%;
+  border-radius: 25px;
+}
+
 
 
 
