@@ -586,6 +586,25 @@ img {
   .nav__item-lan {
     margin-left: 15px;
   }
+  /* Book */
+  .book__info h2 {
+    margin: 20px 0 40px 0;
+    padding-right: 0px;
+  }
+  .book__steps-card {
+    padding-right: 0px;
+  }
+  .book__img-main {
+    top: 50px;
+    left: 0px;
+    width: 300px;
+  }
+  .book__img-small {
+    top: 260px;
+    left: 200px;
+    width: 200px;
+
+  }
 }
 @media screen and (max-width: 768px){
   /* Navbar */
@@ -705,10 +724,23 @@ img {
   .hero__link {
     justify-content: center;
   }
+  .book__list {
+    flex-wrap: wrap;
+  }
+  .book__info {
+    width: 100%;
+  }
+  .book__img {
+    width: 100%;
+  
+  }
+  
+  
 }
 .show__menu {
   right: 0;
 }
+
 @media screen and (max-width: 600px){
   .category__list {
     justify-content: center;
