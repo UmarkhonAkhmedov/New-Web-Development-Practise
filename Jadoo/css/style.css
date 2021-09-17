@@ -423,6 +423,131 @@ img {
   margin-right: 15px;
 }
 
+/* Book */
+.book {
+  padding: 120px 0;
+  background-image: url("../img/book__background-cicle.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left calc(50% + 360px) top -50px;
+}
+.book__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.book__info {
+  width: 48%;
+}
+.book__info h2 {
+  margin: 20px 0 40px 0;
+  line-height: 40px;
+  font-size: 36px;
+  padding-right: 30px;
+}
+.book__steps-card {
+  display: flex;
+  padding-right: 80px;
+  margin-bottom: 40px;
+}
+.book__steps-card img {
+  margin-right: 30px;
+}
+.book__steps-card span h5 {
+  font-weight: bold;
+  font-size: var(--normal);
+  margin: 0 0 10px 0;
+  
+}
+.book__img {
+  position: relative;
+  width: 48%; 
+  
+}
+.book__img-main {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 320px;
+  background-color: white;
+  padding: 20px;
+  z-index: 1;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.book__img-main h4 {
+  margin: 20px 0 15px 0;
+  color: #080809;
+  font-size: 17px;
+}
+.book__img-main p {
+  font-size: 15px;
+}
+.book__main-images {
+  display: flex;
+  margin-top: 20px;
+}
+.book__main-images img {
+  background-color: #F5F5F5;
+  padding: 8px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.book__img-main__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.book__img-small {
+  position: absolute;
+  top: 260px;
+  left: 280px;
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  width: 230px;
+  padding: 10px;
+  z-index: 10;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.book__small-info {
+  margin-left: 15px;
+}
+.book__small-info h5 {
+  margin: 0 0 6px 0;
+}
+.book__small-info h4 {
+  margin-bottom: 15px;
+}
+.book__small-info p {
+  font-weight: 600;
+}
+.book__small-info p span {
+  color: #8A79DF;
+}
+.book__small-info__bottom {
+  display: inline-block;
+  width: 100%;
+  height: 5px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+.book__small-info__bottom p {
+  background-color: #8A79DF;
+  width: 45%;
+  height: 5px;
+  border-radius: 10px;
+
+}
+
+
+
+
+
+
 
 
 
