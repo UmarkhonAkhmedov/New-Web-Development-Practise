@@ -530,6 +530,17 @@ img {
   .category {
     background-image: none;
   }
+  /* Top Selling */
+  .selling__list {
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .selling__item {
+    width: 60%;
+    margin: 0 auto 40px auto;
+
+  }
 
   /* Hero Section */
   .header {
@@ -580,6 +591,17 @@ img {
   }
   .category__item {
     margin-top: 10px;
+  }
+  /* Top Selling */
+  .selling__list {
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .selling__item {
+    width: 70%;
+    margin: 0 auto 40px auto;
+
   }
 }
 @media screen and (max-width: 500px){
@@ -635,6 +657,14 @@ img {
   .hero__text {
     font-size: var(--small);
   }
+  /* Top Selling */
+  .selling__item {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  .selling__item-info {
+    padding: 20px 20px;
+  }  
 }
 
 
