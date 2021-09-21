@@ -658,13 +658,14 @@ img {
   text-align: center;
   font-size: 30px;
   padding: 0 100px;
-  margin-bottom: 50px;
   line-height: 1.4;
 }
 .sub__input {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 .sub__input input {
   outline: none;
@@ -673,6 +674,7 @@ img {
   margin-right: 24px;
   padding: 22px 30px;
   width: 350px;
+  margin-bottom: 30px;
 }
 .sub__input a {
   font-size: 16px;
@@ -681,6 +683,7 @@ img {
   color: var(--white);
   background-image: linear-gradient(#FF946D, #FF7D68);
   transition: 0.3s;
+  margin-bottom: 30px;
 }
 .sub__input a:hover {
   opacity: 0.8;
@@ -933,6 +936,18 @@ img {
   .book__img {
     width: 100%;
   
+  }
+  .sub__main {
+    margin: 0 0px;
+  }
+  .sub__main h2 {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 1.4;
+  }
+  .sub__input input {
+    width: 60%;
+    margin: 0 auto 20px auto;
   }
   
   
