@@ -689,6 +689,56 @@ img {
   opacity: 0.8;
 }
 
+/* Footer */
+.footer {
+
+}
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer__links ul {
+  display: flex;
+  align-items: center;
+}
+.footer__logo {
+  width: 300px;
+  margin: 20px auto 0px auto;
+}
+.footer__logo img {
+  margin-bottom: 40px;
+}
+.footer__company {
+  width: 120px;
+  margin: 20px auto 0px auto;
+}
+.footer__contact {
+  width: 120px;
+  margin: 20px auto 0px auto;
+}
+.footer__more {
+  width: 120px;
+  margin: 20px auto 0px auto;
+}
+.footer__links {
+  width: 300px;
+  margin: 0 auto;
+}
+
+
+.footer__links ul li:not(:last-child){
+  margin-right: 40px;
+}
+.footer__links ul li:nth-child(2){
+  padding: 10px 12px;
+  background-color: #C68BF0;
+  border-radius: 50%;
+  
+}
+
 
 
 
