@@ -715,6 +715,20 @@ img {
   width: 120px;
   margin: 20px auto 0px auto;
 }
+.footer__item h4 {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.footer__company ul li, .footer__contact ul li, .footer__more ul li{
+  margin: 20px 0;
+}
+.footer__item ul li a {
+  color: #5E6282;
+}
+.footer__item ul li a:hover {
+  color: #1a1c26;
+  font-weight: 500;
+}
 .footer__contact {
   width: 120px;
   margin: 20px auto 0px auto;
@@ -738,7 +752,19 @@ img {
   border-radius: 50%;
   
 }
+.footer__mobile-discover {
+  margin-top: 50px;
+}
+.footer__mobile-links {
+  display: inline-block;
+  margin-top: 20px;
+}
 
+
+.footer__rights {
+  margin: 50px 0;
+  text-align: center;
+}
 
 
 
@@ -1092,6 +1118,24 @@ img {
   }
   .brand__image-active {
     margin-bottom: 70px;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__links {
+    text-align: center;
+  }
+  .footer__links ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer__links ul li {
+    margin: 0;
+  }
+  .footer__links ul li:not(:last-child){
+    margin-right: 0px;
   }
 }
 
