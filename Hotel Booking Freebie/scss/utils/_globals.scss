@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font-mulish;
+  font-size: $font-s-12;
+  font-weight: 400;
+  min-height: 300vh;
+  color: $main-text;
+  background-color: $main-background;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: 700;
+}
+h2 {
+  font-size: $font-s-36;
+}
+h3 {
+  font-size: $font-s-24;
+}
+a, 
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+// Spacing
+.container {
+  max-width: 1440px;
+  padding: 0 165px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.btn {
+  background-color: $button-red;
+  color: $white;
+  font-weight: 700;
+}
