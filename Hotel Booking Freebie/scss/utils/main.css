@@ -115,8 +115,8 @@ ul {
 }
 
 .container {
-  max-width: 1440px;
-  padding: 0 165px;
+  max-width: 1366px;
+  padding: 0 128px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -125,5 +125,50 @@ ul {
   background-color: #EC1F46;
   color: #FFFFFF;
   font-weight: 700;
+}
+
+.header {
+  background-color: #F5FAFE;
+  padding: 20px 0;
+}
+
+.header .top__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+
+.header .top__header--contact {
+  display: flex;
+}
+
+.header .top__header--contact p {
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.header .top__header--info {
+  display: flex;
+  align-items: center;
+}
+
+.header .top__header--info__gift {
+  display: flex;
+  align-items: center;
+  margin-right: 98px;
+}
+
+.header .top__header--info__gift img {
+  margin-right: 20px;
+}
+
+.header .top__header--info__loyalty {
+  display: flex;
+  align-items: center;
+}
+
+.header .top__header--info__loyalty img {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
