@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="./scss/utils/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Hotel Booking Freebie</title>
 </head>
 <body>
@@ -13,6 +14,7 @@
   <!-- Top Of Header -->
   <header class="header">
     <div class="container">
+      <!---->
       <section class="top__header">
         <div class="top__header--contact">
           <p>Questions? Need Help?</p>
@@ -20,19 +22,46 @@
         </div>
         <div class="top__header--info">
           <span class="top__header--info__gift">
-            <img src="./img/top_gift.svg" alt="Gift Icon">
+            <i class="fas fa-gift"></i>
             <p>BTP Gift Card</p>
           </span>
           <span class="top__header--info__loyalty">
-            <img src="./img/top_star.svg" alt="Star Icon">
+            <i class="fas fa-star"></i>
             <p>Loyalty Program</p>
           </span>
         </div>
       </section>
-      <section class="bottom__header">
-
-      </section>
+      <!---->
     </div>
+    <section class="bottom__header">
+     <div class="container">  
+        <div class="bottom__header--inside">
+          <div class="header__main">
+            <div class="header__main--logo">
+              <a href="#"><img src="./img/website__logo.svg" alt="Website Logo"></a>
+            </div>
+            <div class="header__main--search">
+              <input type="text" placeholder="Search Location">
+              <button><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+          <div class="header__info">
+            <span class="header__info--shopping">
+              <img src="./img/top_shopping.svg" alt="Shopping Cart">
+              <span>2</span>
+            </span>
+            <span class="header__info--select">
+              <img src="img/top__option-men.svg" alt="">
+              <select name="" id="">
+                <option value="">Nathan</option>
+                <option value="">Smith</option>
+                <option value="">Adam</option>
+              </select>
+            </span>
+          </div>
+        </div>
+     </div>
+    </section>
   </header>
 
 

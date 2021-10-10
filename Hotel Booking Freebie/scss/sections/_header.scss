@@ -1,0 +1,174 @@
+.top__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  padding: 20px 0;
+
+  &--contact {
+    display: flex;
+    cursor: pointer;
+
+    p {
+      margin-right: 20px;
+      font-weight: 700;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $button-red;
+      }
+    }
+
+    span {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $button-red;
+      }
+    }
+  }
+
+  &--info {
+    display: flex;
+    align-items: center;
+
+    &__gift {
+      display: flex;
+      align-items: center;
+      margin-right: 98px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $button-red;
+      }
+
+      i {
+        margin-right: 20px;
+        font-size: 16px;
+      }
+    }
+
+    &__loyalty {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $button-red;
+      }
+
+      i {
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.bottom__header {
+  padding: 40px 0;
+  background-color: $white;
+
+  &--inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+    .header__main {
+      display: flex;
+      align-items: center;
+  
+      &--logo {
+        margin-right: 100px;
+        cursor: pointer;
+        
+        img {
+          height: 22px;
+        }
+      }
+  
+      &--search {
+        input {
+          width: 285px;
+          height: 40px;
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+          background-color: $main-background;
+          border: none;
+          outline: none;
+          padding-left: 23px;
+
+          &::placeholder {
+            padding: 12px 0 13px 0;
+            color: $main-text;
+          }
+        }
+        button {
+          padding: 12px 24px 13px 24px;
+          margin-left: -5px;
+          background-color: $button-red;
+          border-top-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: $secondary-background;
+          }
+
+          i {
+            font-size: 14px;
+            color: $white;
+          }
+        }
+      }
+    }
+  
+    .header__info {
+      position: relative;
+      display: flex;
+      align-items: center;
+      
+      &--shopping {
+        margin-right: 50px;
+        cursor: pointer;
+
+        >span {
+          position: absolute;
+          top: 3px;
+          left: 15px;
+          font-size: $font-s-10;
+          background-color: $button-red;
+          color: $white;
+          padding: 2px 5px;
+          border-radius: 50%;
+        }
+      }
+
+      &--select {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 8px;
+        }
+        select {
+          font-size: $font-s-14;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 0 10px;
+          
+          option {
+            background-color: $main-background;
+          }
+        }
+      }
+    }
+  }
+}

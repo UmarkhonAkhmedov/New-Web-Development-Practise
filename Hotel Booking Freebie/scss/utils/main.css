@@ -127,48 +127,178 @@ ul {
   font-weight: 700;
 }
 
-.header {
-  background-color: #F5FAFE;
-  padding: 20px 0;
-}
-
-.header .top__header {
+.top__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 10px;
+  padding: 20px 0;
 }
 
-.header .top__header--contact {
+.top__header--contact {
   display: flex;
+  cursor: pointer;
 }
 
-.header .top__header--contact p {
+.top__header--contact p {
   margin-right: 20px;
   font-weight: 700;
+  transition: all 0.3s ease-in-out;
 }
 
-.header .top__header--info {
+.top__header--contact p:hover {
+  color: #EC1F46;
+}
+
+.top__header--contact span {
+  transition: all 0.3s ease-in-out;
+}
+
+.top__header--contact span:hover {
+  color: #EC1F46;
+}
+
+.top__header--info {
   display: flex;
   align-items: center;
 }
 
-.header .top__header--info__gift {
+.top__header--info__gift {
   display: flex;
   align-items: center;
   margin-right: 98px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.header .top__header--info__gift img {
+.top__header--info__gift:hover {
+  color: #EC1F46;
+}
+
+.top__header--info__gift i {
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.top__header--info__loyalty {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.top__header--info__loyalty:hover {
+  color: #EC1F46;
+}
+
+.top__header--info__loyalty i {
+  display: inline-block;
+  font-size: 16px;
   margin-right: 20px;
 }
 
-.header .top__header--info__loyalty {
+.bottom__header {
+  padding: 40px 0;
+  background-color: #FFFFFF;
+}
+
+.bottom__header--inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom__header--inside .header__main {
   display: flex;
   align-items: center;
 }
 
-.header .top__header--info__loyalty img {
-  margin-right: 20px;
+.bottom__header--inside .header__main--logo {
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+.bottom__header--inside .header__main--logo img {
+  height: 22px;
+}
+
+.bottom__header--inside .header__main--search input {
+  width: 285px;
+  height: 40px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: #F5FAFE;
+  border: none;
+  outline: none;
+  padding-left: 23px;
+}
+
+.bottom__header--inside .header__main--search input::placeholder {
+  padding: 12px 0 13px 0;
+  color: #333333;
+}
+
+.bottom__header--inside .header__main--search button {
+  padding: 12px 24px 13px 24px;
+  margin-left: -5px;
+  background-color: #EC1F46;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottom__header--inside .header__main--search button:hover {
+  background-color: #0A223D;
+}
+
+.bottom__header--inside .header__main--search button i {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.bottom__header--inside .header__info {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bottom__header--inside .header__info--shopping {
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.bottom__header--inside .header__info--shopping > span {
+  position: absolute;
+  top: 3px;
+  left: 15px;
+  font-size: 10px;
+  background-color: #EC1F46;
+  color: #FFFFFF;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+.bottom__header--inside .header__info--select {
+  display: flex;
+  align-items: center;
+}
+
+.bottom__header--inside .header__info--select img {
+  margin-right: 8px;
+}
+
+.bottom__header--inside .header__info--select select {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.bottom__header--inside .header__info--select select option {
+  background-color: #F5FAFE;
 }
 /*# sourceMappingURL=main.css.map */
