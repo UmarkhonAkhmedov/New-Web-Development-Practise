@@ -1,5 +1,43 @@
-@mixin media-xl {
+@include media-xl {
   .container {
-    padding: 0 165px;
+    // padding: 0 165px;
+  }
+}
+
+@include media-lgx  {
+  .bottom__header {
+    &--inside {
+      justify-content: center;
+      flex-wrap: wrap;
+      
+
+      .header__main {
+        margin: 0 40px 30px 0;
+        
+        
+      }
+    }
+  }
+  
+}
+
+@include media-lg {
+  .container {
+    padding: 0 80px;
+  }
+  .nav {
+    &__list {
+      li {
+        a {
+          font-size: $font-s-11;
+        }
+      }
+    }
+  }
+}
+
+@include media-md {
+  .container {
+    padding: 0 40px;
   }
 }

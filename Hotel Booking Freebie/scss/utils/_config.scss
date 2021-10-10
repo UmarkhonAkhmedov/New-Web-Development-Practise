@@ -10,6 +10,7 @@ $black: #000000;
 // 
 // Font Sizes
 $font-s-10: 10px;
+$font-s-11: 11px;
 $font-s-12: 12px;
 $font-s-13: 13px;
 $font-s-14: 14px;
@@ -24,22 +25,27 @@ $font-nunito: "Nunito", sans-serif;
 
 // Responsive 
 @mixin media-sm {
-  @media screen and (min-width: 500px){
+  @media screen and (max-width: 500px){
     @content;
   }
 }
 @mixin media-md {
-  @media screen and (min-width: 768px){
+  @media screen and (max-width: 768px){
     @content;
   }
 }
 @mixin media-lg {
-  @media screen and (min-width: 1024px){
+  @media screen and (max-width: 1024px){
+    @content;
+  }
+}
+@mixin media-lgx {
+  @media screen and (max-width: 1150px){
     @content;
   }
 }
 @mixin media-xl {
-  @media screen and (min-width: 1440px){
+  @media screen and (max-width: 1440px){
     @content;
   }
 }
