@@ -334,6 +334,17 @@ ul {
   color: #EC1F46;
 }
 
+.nav__list--close {
+  position: absolute;
+  visibility: hidden;
+}
+
+.nav__hambur {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+}
+
 @media screen and (max-width: 1150px) {
   .bottom__header--inside {
     justify-content: center;
@@ -355,7 +366,93 @@ ul {
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 40px;
+    padding: 0 60px;
+  }
+  .top__header {
+    display: none;
+  }
+  .bottom__header--inside {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bottom__header--inside .header__main {
+    flex-direction: column;
+    width: 100%;
+  }
+  .bottom__header--inside .header__main--logo {
+    margin-bottom: 30px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .bottom__header--inside .header__main--search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bottom__header--inside .header__info {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bottom__header--inside .header__info--shopping {
+    position: relative;
+  }
+  .bottom__header--inside .header__info--shopping > span {
+    top: -3px;
+    left: 14px;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav__list {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  .nav__list li {
+    margin-bottom: 10px;
+  }
+  .nav__list li a {
+    font-size: 12px;
+  }
+  .nav__list--close {
+    top: 42px;
+    right: 65px;
+    font-size: 20px;
+    color: #EC1F46;
+    visibility: visible;
+  }
+  .nav__hambur {
+    position: absolute;
+    top: 38px;
+    right: 157%;
+    display: block;
+    font-size: 25px;
+    color: #EC1F46;
+    visibility: visible;
+  }
+}
+
+.show__bar {
+  right: 0;
+}
+
+.remove__hambur {
+  visibility: hidden;
+  right: -100%;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 60px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -23,5 +23,15 @@
         }
       }
     }
+    &--close {
+      position: absolute;
+      visibility: hidden;
+     
+    }
+  }
+  &__hambur {
+    position: absolute;
+    display: none;
+    visibility: hidden;
   }
 }
