@@ -133,6 +133,7 @@ ul {
   align-items: center;
   font-size: 10px;
   padding: 20px 0;
+  z-index: 1;
 }
 
 .top__header--contact {
@@ -345,6 +346,7 @@ ul {
   position: absolute;
   display: none;
   visibility: hidden;
+  z-index: -1;
 }
 
 .offer__info {
@@ -513,6 +515,7 @@ ul {
     width: 70%;
     height: 100%;
     transition: all 0.5s ease-in-out;
+    z-index: 10;
   }
   .nav__list {
     flex-direction: column;
@@ -534,11 +537,12 @@ ul {
   .nav__hambur {
     position: absolute;
     top: 38px;
-    right: 157%;
+    right: 55px;
     display: block;
     font-size: 25px;
     color: #EC1F46;
     visibility: visible;
+    z-index: 1;
   }
 }
 
@@ -546,9 +550,21 @@ ul {
   right: 0;
 }
 
-.remove__hambur {
-  visibility: hidden;
-  right: -100%;
+@media screen and (max-width: 600px) {
+  .offer__info--heading {
+    flex-wrap: wrap;
+  }
+  .offer__info--heading .heading__main {
+    padding-bottom: 10px;
+  }
+  .offer__info--heading .heading__main--title {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .offer__info--heading .heading__main--links__half {
+    flex-wrap: nowrap;
+    width: 70px;
+  }
 }
 
 @media screen and (max-width: 500px) {

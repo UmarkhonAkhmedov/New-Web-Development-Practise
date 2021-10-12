@@ -29,9 +29,11 @@
      
     }
   }
-  &__hambur {
-    position: absolute;
-    display: none;
-    visibility: hidden;
-  }
+}
+
+.nav__hambur {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+  z-index: -1;
 }

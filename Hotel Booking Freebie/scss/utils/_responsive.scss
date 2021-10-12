@@ -95,6 +95,7 @@
     width: 70%;
     height: 100%;
     transition: all 0.5s ease-in-out;
+    z-index: 10;
 
     &__list {
       flex-direction: column;
@@ -116,27 +117,53 @@
         visibility: visible;
       }
     }
-    &__hambur {
-      position: absolute;
-      top: 38px;
-      right: 157%;
-      display: block;
-      font-size: 25px;
-      color: $button-red;
-      visibility: visible;
-    }
+  }
+  .nav__hambur {
+    position: absolute;
+    top: 38px;
+    right: 55px;
+    display: block;
+    font-size: 25px;
+    color: $button-red;
+    visibility: visible;
+    z-index: 1;
   }
 }
 .show__bar {
   right: 0;
 }
-.remove__hambur {
-  visibility: hidden;
-  right: -100%;
+
+@include media-sm {
+  .offer {
+
+    &__info {
+      &--heading {
+        flex-wrap: wrap;
+
+        .heading__main {
+          padding-bottom: 10px;
+
+          &--title {
+            width: 100%;
+            margin-right: 20px;
+            
+          }
+
+          &--links {
+            
+            &__half {
+              flex-wrap: nowrap;
+              width: 70px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
-@include media-sm {
+@include media-vsm {
   .container {
     padding: 0 60px;
   }
