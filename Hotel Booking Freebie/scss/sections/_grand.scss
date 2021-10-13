@@ -1,0 +1,96 @@
+.grand {
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--img {
+      margin-right: 30px;
+      > img {
+        width: 100%;
+      }
+    }
+
+    &--info {
+      display: flex;
+      flex-direction: column;
+
+      .price {
+        width: 350px;
+        padding: 26px;
+        color: $white;
+        background-color: $secondary-background;
+        border-radius: 8px;
+        font-family: $font-nunito;
+        margin-bottom: 20px;
+
+        &__start {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          &--price {
+            &__start {
+              margin-bottom: 5px;
+              font-size: 10xp;
+            }
+            > h3 {
+              font-size: 28px;
+              font-size: 700;
+            }
+
+            &__per {
+              margin-top: 5px;
+            } 
+          }   
+          &--info {
+
+            >span {
+              display: flex;
+              align-items: center;
+              margin: 4px;
+
+              > img {
+                margin-right: 8px;
+              }
+            }
+          }    
+        }
+
+        &__booking {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 10px 0 17px 0;
+          font-size: $font-s-18;
+          font-weight: 600;
+
+          > span {
+            display: flex;
+
+            > img {
+              margin-right: 10px;
+            }
+          }
+        }
+        &__button {
+          width: 100%;
+          padding: 13px 0px;
+          text-align: center;
+          margin: 0 auto;
+          font-size: $font-s-14;
+          font-weight: 600;
+        }
+        
+      }
+      .map {
+        width: 347px;
+        height: 213px;
+        
+      
+      }
+      
+    }
+  }
+}
