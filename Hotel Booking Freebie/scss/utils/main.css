@@ -530,6 +530,12 @@ ul {
   margin: 0 auto;
   font-size: 14px;
   font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.grand__main--info .price__button:hover {
+  background-color: #ed4b69;
 }
 
 .grand__main--info .map {
@@ -543,12 +549,6 @@ ul {
   height: 213px;
   width: 347px;
   border-radius: 8px;
-}
-
-@media screen and (max-width: 1440px) {
-  .container {
-    padding: 0 165px;
-  }
 }
 
 @media screen and (max-width: 1150px) {
