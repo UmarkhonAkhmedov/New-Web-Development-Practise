@@ -1,0 +1,27 @@
+.package__header {
+  padding-top: 60px;
+  .header {
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      li {
+        padding: 10px 5px;
+        cursor: pointer;
+        font-size: $font-s-14;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        border-bottom: 3px solid transparent;
+        margin-bottom: 20px;
+
+        &:hover {
+          color: $button-red;
+          border-bottom: 3px solid $button-red;
+        }
+      }
+    }
+  }
+}

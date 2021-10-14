@@ -47,3 +47,7 @@ ul {
   background-color: $button-red;
   color: $white;
 }
+#active {
+  color: $button-red;
+  border-bottom: 3px solid $button-red;
+}

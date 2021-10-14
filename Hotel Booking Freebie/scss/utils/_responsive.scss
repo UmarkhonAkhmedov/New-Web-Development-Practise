@@ -34,6 +34,20 @@
       }
     }
   }
+  .package__header {
+
+    .header {
+  
+      ul {
+        justify-content: center;
+
+        li {
+          padding: 10px;
+          margin: 0 10px 20px 10px;
+        }
+      }
+    }
+  }
 }
 
 @include media-768 {
@@ -161,8 +175,20 @@
       }
     }
   }
+  .package__header {
+    padding-top: 30px;
+    .header {
+  
+      ul {
+        justify-content: center;
 
-
+        li {
+          padding: 10px;
+          margin: 0 10px 5px 10px;
+        }
+      }
+    }
+  }
 
 }
 .show__bar {
@@ -289,6 +315,21 @@
             border-radius: 8px;
             margin: 0 auto;
           }
+        }
+      }
+    }
+  }
+  .package__header {
+    padding-top: 30px;
+    .header {
+  
+      ul {
+        flex-direction: column;
+        justify-content: center;
+
+        li {
+          padding: 3px;
+          margin: 0 10px 8px 10px;
         }
       }
     }
