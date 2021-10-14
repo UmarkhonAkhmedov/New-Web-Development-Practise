@@ -1,10 +1,10 @@
-@include media-xl {
+@include media-1440 {
   .container {
-    // padding: 0 165px;
+    padding: 0 165px;
   }
 }
 
-@include media-lgx  {
+@include media-1150  {
   .bottom__header {
     &--inside {
       justify-content: center;
@@ -21,7 +21,7 @@
   
 }
 
-@include media-lg {
+@include media-1024 {
   .container {
     padding: 0 80px;
   }
@@ -36,7 +36,7 @@
   }
 }
 
-@include media-md {
+@include media-768 {
   .container {
     padding: 0 60px;
   }
@@ -128,12 +128,48 @@
     visibility: visible;
     z-index: 1;
   }
+
+  .grand {
+
+    &__main {
+      
+      flex-wrap: wrap;
+      &--img {
+        width: 100%;
+        margin: 0 0 40px 0;
+      }
+
+      &--info {
+        justify-content: center;
+        flex-direction: row;
+
+        .price {
+          width: 45%;
+          margin-right: 10px;
+        }
+        .map {
+          width: 45%;
+          margin-left: 10px;
+          .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height: 250px;
+            width: 250px; 
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+
+
+
 }
 .show__bar {
   right: 0;
 }
 
-@include media-sm {
+@include media-600 {
   .offer {
 
     &__info {
@@ -160,12 +196,101 @@
       }
     }
   }
+  .grand {
+
+    &__main {
+
+      &--img {
+        margin: 0 0 20px 0;
+      }
+      &--info {
+        flex-wrap: wrap;
+        justify-content: center;
+        .price {
+          width: 80%;
+          margin-right: 0px;
+          padding: 10px 20px;
+        }
+        .map {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          margin-left: 0px;
+          margin: 0 auto;
+          text-align: center;
+
+          .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height: auto;
+            width: 80%; 
+            border-radius: 8px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 
-@include media-vsm {
+@include media-500 {
   .container {
-    padding: 0 60px;
+    padding: 0 30px;
+  }
+  .nav__hambur {
+    top: 38px;
+    right: 32px;
   }
 
+}
+
+@include media-400 {
+  .grand {
+    
+
+    &__main {
+
+      &--img {
+        margin: 0 0 10px 0;
+      }
+      &--info {
+        .price {
+          width: 70%;
+          margin-right: 0px;
+          padding: 10px 20px;
+          margin-bottom: 10px;
+
+          &__start {
+            &--price {
+              &__start {
+                font-size: 8px;
+              }
+              > h3 {
+                font-size: 24px;
+              }
+              
+            }
+          }
+          &__booking {
+            font-size: 14px;
+          }
+          &__button {
+            font-size: 12px;
+          }
+        }
+        .map {
+
+          .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height: auto;
+            width: 70%; 
+            border-radius: 8px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
 }

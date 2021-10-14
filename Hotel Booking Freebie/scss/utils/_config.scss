@@ -24,32 +24,37 @@ $font-mulish: "Mulish", sans-serif;
 $font-nunito: "Nunito", sans-serif;
 
 // Responsive 
-@mixin media-vsm {
+@mixin media-400 {
   @media screen and (max-width: 500px){
     @content;
   }
 }
-@mixin media-sm {
+@mixin media-500 {
+  @media screen and (max-width: 500px){
+    @content;
+  }
+}
+@mixin media-600 {
   @media screen and (max-width: 600px){
     @content;
   }
 }
-@mixin media-md {
+@mixin media-768 {
   @media screen and (max-width: 768px){
     @content;
   }
 }
-@mixin media-lg {
+@mixin media-1024 {
   @media screen and (max-width: 1024px){
     @content;
   }
 }
-@mixin media-lgx {
+@mixin media-1150 {
   @media screen and (max-width: 1150px){
     @content;
   }
 }
-@mixin media-xl {
+@mixin media-1440 {
   @media screen and (max-width: 1440px){
     @content;
   }
