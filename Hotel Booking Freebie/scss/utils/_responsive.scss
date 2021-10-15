@@ -142,7 +142,25 @@
     visibility: visible;
     z-index: 1;
   }
+  .offer {
+    &__info {
 
+      &--heading {
+
+        .heading__main {
+
+          &--title {
+            flex-wrap: wrap;
+
+            h3 {
+              margin-right: 10px;
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
   .grand {
 
     &__main {
@@ -175,6 +193,7 @@
       }
     }
   }
+
   .package__header {
     padding-top: 30px;
     .header {
@@ -255,6 +274,22 @@
           }
         }
       }
+    }
+  }
+  .package__middle {
+
+    .package {
+      justify-content: center;
+      flex-direction: column;
+
+      &__highlight {
+        width: 100%;
+      }
+
+      &__details {
+        width: 100%;
+      }
+      
     }
   }
 }
