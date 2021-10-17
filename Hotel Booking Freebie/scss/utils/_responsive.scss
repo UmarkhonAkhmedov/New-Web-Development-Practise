@@ -209,7 +209,28 @@
     }
   }
 
+  .package__summary {
+    .summary {
+
+      &__details {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &--left, &--center, &--right {
+          margin: 10px 10px 40px 10px;
+
+          &__info {
+            margin-top: 10px;
+          }
+        }
+
+      }
+    }
+  }
+
 }
+
+
 .show__bar {
   right: 0;
 }

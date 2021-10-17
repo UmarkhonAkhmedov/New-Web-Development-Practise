@@ -597,6 +597,7 @@ ul {
 
 .package__middle .package__highlight {
   width: 48%;
+  border-radius: 10px;
   background-color: white;
   margin-bottom: 25px;
 }
@@ -607,6 +608,8 @@ ul {
   padding: 16px 0 16px 24px;
   color: #FFFFFF;
   background-color: #0A223D;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .package__middle .package__highlight--info {
@@ -629,6 +632,7 @@ ul {
 
 .package__middle .package__details {
   width: 48%;
+  border-radius: 10px;
   background-color: white;
   margin-bottom: 25px;
 }
@@ -639,6 +643,8 @@ ul {
   padding: 16px 0 16px 24px;
   color: #FFFFFF;
   background-color: #0A223D;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .package__middle .package__details--info {
@@ -675,6 +681,53 @@ ul {
 
 .package__middle .package__details--info__right img {
   margin-right: 15px;
+}
+
+.package__summary .summary {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.package__summary .summary > h4 {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px 0 16px 24px;
+  color: #FFFFFF;
+  background-color: #0A223D;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.package__summary .summary__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 27px 24px 0px 24px;
+}
+
+.package__summary .summary__details--left h5, .package__summary .summary__details--center h5, .package__summary .summary__details--right h5 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #EC1F46;
+  margin-bottom: 20px;
+}
+
+.package__summary .summary__details--left span, .package__summary .summary__details--center span, .package__summary .summary__details--right span {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.package__summary .summary__details--left span > img, .package__summary .summary__details--center span > img, .package__summary .summary__details--right span > img {
+  margin-right: 15px;
+}
+
+.package__summary .summary__details--left__info, .package__summary .summary__details--center__info, .package__summary .summary__details--right__info {
+  margin-top: 60px;
+}
+
+.package__summary .summary__details--center {
+  margin: 0 15px 0 15px;
 }
 
 @media screen and (max-width: 1150px) {
@@ -822,6 +875,16 @@ ul {
   .package__header .header ul li {
     padding: 10px;
     margin: 0 10px 5px 10px;
+  }
+  .package__summary .summary__details {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .package__summary .summary__details--left, .package__summary .summary__details--center, .package__summary .summary__details--right {
+    margin: 10px 10px 40px 10px;
+  }
+  .package__summary .summary__details--left__info, .package__summary .summary__details--center__info, .package__summary .summary__details--right__info {
+    margin-top: 10px;
   }
 }
 
