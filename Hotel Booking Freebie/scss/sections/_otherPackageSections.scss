@@ -1,0 +1,50 @@
+.hotel__package, .room__package, .enter__package,
+.dining__package, .review__package, .faq__package {
+
+  &--info {
+    background-color: $white;
+    border-radius: 10px;
+
+    &__text {
+      display: inline-block;
+      margin: 30px 0;
+    }
+  }
+}
+
+.hotel__package {
+  display: none;
+}
+
+.room__package {
+  display: none;
+}
+
+.enter__package, .review__package{
+
+  ul {
+    margin-top: -20px;
+    margin-left: 50px;
+    list-style-type: disc;
+
+    li {
+      font-size: $font-s-14;
+      padding: 5px 0;
+    }
+  }
+}
+
+.enter__package {
+  display: none;
+}
+
+.dining__package {
+  display: none;
+}
+
+.review__package {
+  display: none;
+}
+.faq__package {
+  display: none;
+}

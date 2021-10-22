@@ -51,3 +51,35 @@ ul {
   color: $button-red;
   border-bottom: 3px solid $button-red;
 }
+.other__package--heading {
+  width: 100%;
+  font-size: $font-s-14;
+  font-weight: 700;
+  padding: 16px 0 16px 24px;
+  color: $white;
+  background-color: $secondary-background;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.other__package--h3 {
+  margin-top: 20px;
+  margin-bottom: 29px
+}
+.other__package {
+  &--info {
+    background-color: $white;
+    border-radius: 10px;
+
+    &__text {
+      display: inline-block;
+      margin: 40px 0;
+    }
+  }
+}
+.other__package--p {
+  font-size: $font-s-14;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+

@@ -131,6 +131,39 @@ ul {
   border-bottom: 3px solid #EC1F46;
 }
 
+.other__package--heading {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 16px 0 16px 24px;
+  color: #FFFFFF;
+  background-color: #0A223D;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.other__package--h3 {
+  margin-top: 20px;
+  margin-bottom: 29px;
+}
+
+.other__package--info {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.other__package--info__text {
+  display: inline-block;
+  margin: 40px 0;
+}
+
+.other__package--p {
+  font-size: 14px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
 .top__header {
   display: flex;
   justify-content: space-between;
@@ -728,6 +761,53 @@ ul {
 
 .package__summary .summary__details--center {
   margin: 0 15px 0 15px;
+}
+
+.hotel__package--info, .room__package--info, .enter__package--info,
+.dining__package--info, .review__package--info, .faq__package--info {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.hotel__package--info__text, .room__package--info__text, .enter__package--info__text,
+.dining__package--info__text, .review__package--info__text, .faq__package--info__text {
+  display: inline-block;
+  margin: 30px 0;
+}
+
+.hotel__package {
+  display: none;
+}
+
+.room__package {
+  display: none;
+}
+
+.enter__package ul, .review__package ul {
+  margin-top: -20px;
+  margin-left: 50px;
+  list-style-type: disc;
+}
+
+.enter__package ul li, .review__package ul li {
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.enter__package {
+  display: none;
+}
+
+.dining__package {
+  display: none;
+}
+
+.review__package {
+  display: none;
+}
+
+.faq__package {
+  display: none;
 }
 
 @media screen and (max-width: 1150px) {
