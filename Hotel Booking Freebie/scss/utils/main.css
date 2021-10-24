@@ -810,6 +810,14 @@ ul {
   display: none;
 }
 
+.other-site {
+  margin-top: 65px;
+}
+
+.other-site h3 {
+  margin: 40px 0 65px 0;
+}
+
 @media screen and (max-width: 1150px) {
   .bottom__header--inside {
     justify-content: center;
