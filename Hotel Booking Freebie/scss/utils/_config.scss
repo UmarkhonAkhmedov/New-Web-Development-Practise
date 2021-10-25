@@ -44,6 +44,11 @@ $font-nunito: "Nunito", sans-serif;
     @content;
   }
 }
+@mixin media-850 {
+  @media screen and (max-width: 850px){
+    @content;
+  }
+}
 @mixin media-1024 {
   @media screen and (max-width: 1024px){
     @content;
