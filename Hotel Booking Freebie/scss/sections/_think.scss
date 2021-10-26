@@ -1,0 +1,65 @@
+.think-site {
+  margin-top: 60px;
+  padding-bottom: 60px;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .think {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+
+    &__left {
+      fill: #828282;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        fill: $button-red;
+      }
+      
+    }
+
+    &__right {
+      fill: #828282;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        fill: $button-red;
+      }
+    }
+
+    &__info {
+      position: relative;
+      width: 65%;
+      text-align: center;
+      background-color: #fff;
+      padding: 12px 60px 30px 60px;
+
+      &--main {
+        transform: translateY(-60px);
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+      }
+      &--heading {
+        font-size: $font-s-14;
+        font-weight: 700;
+        color: $button-red;
+        margin-top: -50px;
+        margin-bottom: 10px;
+      }
+      &--date {
+        margin-bottom: 5px;
+      }
+      &--text {
+        margin-top: 32px;
+        line-height: 19px;
+      }
+      
+    }
+  }
+}

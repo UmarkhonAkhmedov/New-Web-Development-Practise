@@ -268,6 +268,36 @@
     }
   }
 
+  .think-site {
+
+    .think {
+
+      &__info {
+        width: 80%;
+        padding: 12px 30px 20px 30px;
+
+
+        &--main {
+          transform: translateY(-50px);
+          width: 70px;
+          height: 70px;
+        }
+        &--heading {
+          font-size: $font-s-12;
+          margin-top: -40px;
+        }
+        &--date {
+          font-size: $font-s-10;
+        }
+        &--text {
+          margin-top: 20px;
+          font-size: $font-s-11;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+
 }
 
 
