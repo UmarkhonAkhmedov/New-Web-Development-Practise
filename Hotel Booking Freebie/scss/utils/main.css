@@ -1032,6 +1032,76 @@ strike {
   line-height: 19px;
 }
 
+.subscribe-site {
+  padding: 100px 0 80px 0;
+  background: linear-gradient(rgba(10, 34, 61, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url("/img/subscribe__main-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe-site .subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.subscribe-site .subscribe__heading {
+  color: white;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+.subscribe-site .subscribe__heading > h3 {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.subscribe-site .subscribe__heading > h2 {
+  font-weight: 500;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.subscribe-site .subscribe__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.subscribe-site .subscribe__input > input {
+  width: 280px;
+  height: 55px;
+  font-size: 14px;
+  padding: 19px 0 18px 39px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.subscribe-site .subscribe__input > input::placeholder {
+  color: #BDBDBD;
+  font-weight: 300;
+}
+
+.subscribe-site .subscribe__input > a {
+  display: inline-block;
+  height: 55px;
+  padding: 20px 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #EC1F46;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.subscribe-site .subscribe__input > a:hover {
+  background-color: #ed4b69;
+}
+
 @media screen and (max-width: 1150px) {
   .bottom__header--inside {
     justify-content: center;
@@ -1230,6 +1300,16 @@ strike {
     font-size: 11px;
     line-height: 14px;
   }
+  .subscribe-site {
+    padding: 100px 0 100px 0;
+  }
+  .subscribe-site .subscribe {
+    flex-direction: column;
+  }
+  .subscribe-site .subscribe__heading {
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
 }
 
 .show__bar {
@@ -1298,6 +1378,33 @@ strike {
   .nav__hambur {
     top: 38px;
     right: 32px;
+  }
+  .subscribe-site {
+    padding: 100px 0 100px 0;
+  }
+  .subscribe-site .subscribe {
+    flex-direction: column;
+  }
+  .subscribe-site .subscribe__heading {
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+  .subscribe-site .subscribe__heading > h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .subscribe-site .subscribe__heading > h2 {
+    font-size: 28px;
+    line-height: 20px;
+  }
+  .subscribe-site .subscribe__input > input {
+    width: 230px;
+    height: 45px;
+    padding: 8px 0 10px 25px;
+  }
+  .subscribe-site .subscribe__input > a {
+    height: 45px;
+    padding: 15px 15px;
   }
 }
 
