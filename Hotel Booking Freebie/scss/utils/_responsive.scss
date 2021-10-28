@@ -270,6 +270,9 @@
 
   .think-site {
 
+    &__heading {
+      text-align: left;
+    }
     .think {
 
       &__info {
@@ -306,6 +309,27 @@
       &__heading {
         text-align: center;
         margin: 0 0 20px 0;
+      }
+    }
+  }
+  .activity-site {
+    
+    .activity {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      &__item {
+        width: 200px;
+        height: 200px;
+        margin: 10px 10px 10px 10px;
+        padding: 0px 15px 20px 20px;
+
+        >h4 {
+          font-size: $font-s-12;
+        }
+        > a {
+          margin-top: 10px;
+        }
       }
     }
   }

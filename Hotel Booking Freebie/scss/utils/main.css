@@ -170,6 +170,12 @@ strike {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
 .top__header {
   display: flex;
   justify-content: space-between;
@@ -1102,6 +1108,71 @@ strike {
   background-color: #ed4b69;
 }
 
+.activity-site {
+  margin-bottom: 50px;
+}
+
+.activity-site__heading {
+  margin: 60px 0 50px 0;
+  text-transform: uppercase;
+}
+
+.activity-site .activity {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.activity-site .activity__item {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  width: 23%;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 0px 20px 24px 26px;
+}
+
+.activity-site .activity__item > h4 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.activity-site .activity__item > a {
+  display: inline-block;
+  padding: 8px 20px;
+  width: 100px;
+  background-color: #EC1F46;
+  color: #FFFFFF;
+  border-radius: 4px;
+  margin-top: 18px;
+  transform-origin: all 0.3s ease;
+}
+
+.activity-site .activity__item > a:hover {
+  background-color: #ed4b69;
+}
+
+.activity-site .activity__first {
+  background: linear-gradient(rgba(196, 196, 196, 0) 0%, #0a223d 100%), url("/img/activities__first.png");
+}
+
+.activity-site .activity__second {
+  background: linear-gradient(rgba(196, 196, 196, 0) 5%, #0a223d 100%), url("/img/activities__second.png");
+}
+
+.activity-site .activity__third {
+  background: linear-gradient(rgba(196, 196, 196, 0) 5%, #0a223d 100%), url("/img/activities__third.png");
+}
+
+.activity-site .activity__fourth {
+  background: linear-gradient(rgba(196, 196, 196, 0) 5%, #0a223d 100%), url("/img/activities__fourth.png");
+}
+
 @media screen and (max-width: 1150px) {
   .bottom__header--inside {
     justify-content: center;
@@ -1279,6 +1350,9 @@ strike {
   .package__summary .summary__details--left__info, .package__summary .summary__details--center__info, .package__summary .summary__details--right__info {
     margin-top: 10px;
   }
+  .think-site__heading {
+    text-align: left;
+  }
   .think-site .think__info {
     width: 80%;
     padding: 12px 30px 20px 30px;
@@ -1309,6 +1383,22 @@ strike {
   .subscribe-site .subscribe__heading {
     text-align: center;
     margin: 0 0 20px 0;
+  }
+  .activity-site .activity {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .activity-site .activity__item {
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    padding: 0px 15px 20px 20px;
+  }
+  .activity-site .activity__item > h4 {
+    font-size: 12px;
+  }
+  .activity-site .activity__item > a {
+    margin-top: 10px;
   }
 }
 

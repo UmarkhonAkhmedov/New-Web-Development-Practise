@@ -88,3 +88,9 @@ strike {
   opacity: 0.8;
 }
 
+@include media-768 {
+  h2 {
+    font-size: 30px;
+  }
+}
+
