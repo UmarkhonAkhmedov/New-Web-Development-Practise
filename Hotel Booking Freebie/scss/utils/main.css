@@ -1358,6 +1358,40 @@ strike {
   color: #FFFFFF;
 }
 
+.payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.payment__empty {
+  width: 136px;
+}
+
+.payment__lists {
+  display: flex;
+  align-items: center;
+}
+
+.payment__lists li {
+  margin: 0 5px;
+}
+
+.payment__lists li a {
+  font-size: 12px;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.payment__lists li a:hover {
+  color: #EC1F46;
+}
+
+.payment img {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1150px) {
   .bottom__header--inside {
     justify-content: center;
@@ -1598,6 +1632,21 @@ strike {
   .contact__message {
     width: 100%;
     margin-top: 50px;
+  }
+  .payment {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .payment__empty {
+    display: none;
+    margin: 10px 10px;
+  }
+  .payment__lists {
+    margin: 10px 10px;
+  }
+  .payment img {
+    margin: 10px 10px;
   }
 }
 

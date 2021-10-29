@@ -1,0 +1,29 @@
+.payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+
+  &__empty {
+    width: 136px;
+  }
+  &__lists {
+    display: flex;
+    align-items: center;
+    li {
+      margin: 0 5px;
+      a {
+        font-size: $font-s-12;
+        color: $white;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $button-red;
+        }
+      }
+    }
+  }
+  img {
+    cursor: pointer;
+  }
+}
