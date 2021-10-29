@@ -1,0 +1,73 @@
+.footer-site {
+  background-color: $secondary-background;
+  padding: 108px 0 46px 0;
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    &__logo {
+      margin-right: 40px;
+      margin-top: 30px;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+      >h4 {
+        font-size: 16px;
+        color: $white;
+        margin-bottom: 25px;
+      }
+      > ul {
+
+        li {
+          margin-bottom: 8px;
+          > a {
+            font-size: $font-s-14;
+            color: #BDBDBD;
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: $white;
+            }
+          }  
+        }
+      }
+    }
+    &__categories {
+      margin-right: 30px;
+    }
+
+    &__add {
+      margin-right: 20px;
+      &--social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        h4 {
+          font-size: 16px;
+          color: $white;
+          margin: 0 20px 0 0;
+          text-transform: uppercase;
+        }
+        >ul {
+          display: flex;
+          align-items: center;
+          >li {
+            margin: 0 5px 0 5px;
+            >a {
+              
+              >img {
+                opacity: 0.8;
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

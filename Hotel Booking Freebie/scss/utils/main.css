@@ -1173,6 +1173,85 @@ strike {
   background: linear-gradient(rgba(196, 196, 196, 0) 5%, #0a223d 100%), url("/img/activities__fourth.png");
 }
 
+.footer-site {
+  background-color: #0A223D;
+  padding: 108px 0 46px 0;
+}
+
+.footer-site .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.footer-site .footer__logo {
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+.footer-site .footer__item {
+  margin-bottom: 30px;
+}
+
+.footer-site .footer__item > h4 {
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.footer-site .footer__item > ul li {
+  margin-bottom: 8px;
+}
+
+.footer-site .footer__item > ul li > a {
+  font-size: 14px;
+  color: #BDBDBD;
+  transition: all 0.3s ease;
+}
+
+.footer-site .footer__item > ul li > a:hover {
+  color: #FFFFFF;
+}
+
+.footer-site .footer__categories {
+  margin-right: 30px;
+}
+
+.footer-site .footer__add {
+  margin-right: 20px;
+}
+
+.footer-site .footer__add--social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer-site .footer__add--social h4 {
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 0 20px 0 0;
+  text-transform: uppercase;
+}
+
+.footer-site .footer__add--social > ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer-site .footer__add--social > ul > li {
+  margin: 0 5px 0 5px;
+}
+
+.footer-site .footer__add--social > ul > li > a > img {
+  opacity: 0.8;
+}
+
+.footer-site .footer__add--social > ul > li > a > img:hover {
+  opacity: 1;
+}
+
 @media screen and (max-width: 1150px) {
   .bottom__header--inside {
     justify-content: center;
@@ -1196,6 +1275,10 @@ strike {
   .package__header .header ul li {
     padding: 10px;
     margin: 0 10px 20px 10px;
+  }
+  .footer-site .footer {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -1458,6 +1541,34 @@ strike {
   }
   .package__middle .package__details {
     width: 100%;
+  }
+  .footer-site {
+    padding: 40px 0 30px 0;
+  }
+  .footer-site .footer {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-site .footer__logo, .footer-site .footer__categories, .footer-site .footer__add, .footer-site .footer__legal {
+    padding: 0 30px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .footer-site .footer__logo {
+    margin-bottom: 40px;
+  }
+  .footer-site .footer__logo img {
+    transform: scale(0.8);
+  }
+  .footer-site .footer__add--social {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-site .footer__add--social > h4 {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 
