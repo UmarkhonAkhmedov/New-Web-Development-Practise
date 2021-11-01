@@ -1,7 +1,56 @@
+// Changing img of select option menu
+const selectImg = document.getElementById('header__info--select__img');
+const selectSelect = document.getElementById('header__info--select__select');
+const nathan = document.getElementById('nathan');
+const smith = document.getElementById('smith');
+const adam = document.getElementById('adam');
+
+const selectElems = [
+  {
+    id: 1,
+    img: "../img/top__option-men.svg",
+  },
+  {
+    id: 2,
+    img: "https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg",
+  },
+  {
+    id: 3,
+    img: "../img/about__main-woman.svg",
+  }
+];
+
+
+// nathan.addEventListener("click", ()=>{
+//   selectImg.src = selectElems[0].img;
+// });
+
+// smith.addEventListener("click", ()=>{
+//   selectImg.src = selectElems[1].img;
+// });
+
+// adam.addEventListener("click", ()=>{
+//   selectImg.src = selectElems[2].img;
+// });
+
+selectSelect.addEventListener("select", ()=>{
+  selectImg.src = "https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg";
+})
+// selectSelect.option[0].addEventListener("select", ()=>{
+//   selectImg.src = selectElems[0].img;
+// })
+// selectSelect.option[2].addEventListener("select", ()=>{
+//   selectImg.src = selectElems[1].img;
+// })
+
+
+
+
+
+// Adding Hamburger Menu
 const navList = document.querySelector(".nav");
 const closeBtn = document.querySelector(".nav__list--close");
 const navHambur = document.querySelector(".nav__hambur");
-
 
 
 if(navHambur){
@@ -22,19 +71,19 @@ if(closeBtn){
 
 
 // Changing the selection option image
-const nathan = document.querySelector(".nathan");
-const smith = document.querySelector(".smith");
-const adam = document.querySelector(".adam");
-const image = document.querySelector(".header__info--select");
+// const nathan = document.querySelector(".nathan");
+// const smith = document.querySelector(".smith");
+// const adam = document.querySelector(".adam");
+// const image = document.querySelector(".header__info--select");
 
-if(nathan){
-  nathan.addEventListener('option', () => {
-    var img = document.createElement('img');
-    img.src = "../img/top__option-men.svg";
-    document.getElementById('header__info--select').appendChild(img);
-    console.log("clicked")
-  })
-}
+// if(nathan){
+//   nathan.addEventListener('option', () => {
+//     var img = document.createElement('img');
+//     img.src = "../img/top__option-men.svg";
+//     document.getElementById('header__info--select').appendChild(img);
+//     console.log("clicked")
+//   })
+// }
 
 
 // Think about us
