@@ -756,6 +756,11 @@ strike {
   border-bottom: 3px solid #EC1F46;
 }
 
+.package__header .header ul .active {
+  color: #EC1F46;
+  border-bottom: 3px solid #EC1F46;
+}
+
 .package__middle .package__heading {
   margin-top: 20px;
   margin-bottom: 29px;
