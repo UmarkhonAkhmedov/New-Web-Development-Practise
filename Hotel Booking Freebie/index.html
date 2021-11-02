@@ -34,7 +34,7 @@
       <!---->
     </div>
     <section class="bottom__header">
-     <div class="container">  
+      <div class="container">  
         <div class="bottom__header--inside">
           <div class="header__main">
             <div class="header__main--logo">
@@ -52,19 +52,20 @@
             </span>
             <span class="header__info--select">
               <img id="header__info--select__img" src="img/top__option-men.svg" alt="">
-              <select name="" id="header__info--select__select">
-                <option id="nathan" class="nathan" value="nathan" >Nathan</option>
-                <option id="smith" class="smith" value="smith">Smith</option>
-                <option id="adam" class="adam" value="adam">Adam</option>
+              <select name="" id="header__info--select__select" onchange="document.getElementById('header__info--select__img').src = this.options[this.selectedIndex].value">
+                <option id="adam" class="adam" value="../img/top__option-men.svg">Adam</option>
+                <option id="nathan" class="nathan" value="https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg" >Nathan</option>
+                <option id="smith" class="smith" value="../img/about__main-woman.svg">Lopes</option>
+                
               </select>
             </span>
           </div>
         </div>
-     </div>
+      </div>
     </section>
   </header>
 
- <!---------- NAV ---------->
+  <!---------- NAV ---------->
   <nav class="nav">
     <div class="container">
       <ul class="nav__list">

@@ -33,9 +33,9 @@ const selectElems = [
 //   selectImg.src = selectElems[2].img;
 // });
 
-selectSelect.addEventListener("select", ()=>{
-  selectImg.src = "https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg";
-})
+// selectSelect.addEventListener("select", ()=>{
+//   selectImg.src = this.options[this.selectedIndex].value
+// })
 // selectSelect.option[0].addEventListener("select", ()=>{
 //   selectImg.src = selectElems[0].img;
 // })
@@ -47,7 +47,7 @@ selectSelect.addEventListener("select", ()=>{
 
 
 
-// Adding Hamburger Menu
+// Adding Hamburger Men
 const navList = document.querySelector(".nav");
 const closeBtn = document.querySelector(".nav__list--close");
 const navHambur = document.querySelector(".nav__hambur");
