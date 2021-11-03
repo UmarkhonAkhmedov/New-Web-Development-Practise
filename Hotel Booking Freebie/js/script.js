@@ -162,6 +162,14 @@ const five = document.querySelector('.header__item-five');
 const six = document.querySelector('.header__item-six');
 const seven = document.querySelector('.header__item-seven');
 
+const packOne = document.querySelector(".package__summary");
+const packOneMid = document.querySelector(".package__middle");
+const packTwo = document.querySelector(".hotel__package");
+const packThree = document.querySelector(".room__package");
+const packFour = document.querySelector(".enter__package");
+const packFive = document.querySelector(".dining__package");
+const packSix = document.querySelector(".review__package");
+const packSeven = document.querySelector(".faq__package");
 
 // document.querySelectorAll('.header__item').forEach(item => {
 //   item.addEventListener('click', event => {    
@@ -181,6 +189,15 @@ one.addEventListener("click", ()=>{
   five.classList.remove('active');
   six.classList.remove('active');
   seven.classList.remove('active');
+  
+  packOne.style.display = "block";
+  packOneMid.style.display = "block" 
+  packTwo.style.display = "none";
+  packThree.style.display = "none";
+  packFour.style.display = "none";
+  packFive.style.display = "none";
+  packSix.style.display = "none";
+  packSeven.style.display = "none";
 });
 two.addEventListener("click", ()=>{
   two.classList.add("active");
@@ -190,6 +207,15 @@ two.addEventListener("click", ()=>{
   five.classList.remove('active');
   six.classList.remove('active');
   seven.classList.remove('active');
+
+  packTwo.style.display = "block";
+  packOne.style.display = "none";
+  packOneMid.style.display = "none" 
+  packThree.style.display = "none";
+  packFour.style.display = "none";
+  packFive.style.display = "none";
+  packSix.style.display = "none";
+  packSeven.style.display = "none";
 });
 
 three.addEventListener("click", ()=>{
@@ -200,6 +226,15 @@ three.addEventListener("click", ()=>{
   five.classList.remove('active');
   six.classList.remove('active');
   seven.classList.remove('active');
+
+  packThree.style.display = "block";
+  packOne.style.display = "none";
+  packOneMid.style.display = "none" 
+  packTwo.style.display = "none";
+  packFour.style.display = "none";
+  packFive.style.display = "none";
+  packSix.style.display = "none";
+  packSeven.style.display = "none";
 });
 four.addEventListener("click", ()=>{
   four.classList.add("active");
@@ -209,6 +244,15 @@ four.addEventListener("click", ()=>{
   five.classList.remove('active');
   six.classList.remove('active');
   seven.classList.remove('active');
+
+  packFour.style.display = "block";
+  packOne.style.display = "none";
+  packOneMid.style.display = "none" 
+  packThree.style.display = "none";
+  packTwo.style.display = "none";
+  packFive.style.display = "none";
+  packSix.style.display = "none";
+  packSeven.style.display = "none";
 });
 five.addEventListener("click", ()=>{
   five.classList.add("active");
@@ -218,6 +262,15 @@ five.addEventListener("click", ()=>{
   one.classList.remove('active');
   six.classList.remove('active');
   seven.classList.remove('active');
+
+  packFive.style.display = "block";
+  packOne.style.display = "none";
+  packOneMid.style.display = "none" 
+  packThree.style.display = "none";
+  packFour.style.display = "none";
+  packTwo.style.display = "none";
+  packSix.style.display = "none";
+  packSeven.style.display = "none";
 });
 six.addEventListener("click", ()=>{
   six.classList.add("active");
@@ -227,6 +280,15 @@ six.addEventListener("click", ()=>{
   five.classList.remove('active');
   two.classList.remove('active');
   seven.classList.remove('active');
+
+  packSix.style.display = "block";
+  packOne.style.display = "none";
+  packOneMid.style.display = "none" 
+  packThree.style.display = "none";
+  packFour.style.display = "none";
+  packFive.style.display = "none";
+  packTwo.style.display = "none";
+  packSeven.style.display = "none";
 });
 seven.addEventListener("click", ()=>{
   seven.classList.add("active");
@@ -236,6 +298,15 @@ seven.addEventListener("click", ()=>{
   five.classList.remove('active');
   six.classList.remove('active');
   one.classList.remove('active');
+
+  packSeven.style.display = "block";
+  packOne.style.display = "none";
+  packOneMid.style.display = "none" 
+  packThree.style.display = "none";
+  packFour.style.display = "none";
+  packFive.style.display = "none";
+  packSix.style.display = "none";
+  packTwo.style.display = "none";
 });
 
 // document.querySelector('header__item').addEventListener('click', handler())
@@ -246,6 +317,28 @@ seven.addEventListener("click", ()=>{
 //   }
 //   event.currentTarget.classList.add("active");
 // }
+
+
+// For The number of Shopping Items
+// const bookItem = document.querySelectorAll(".book__item");
+
+
+
+// bookItem.addEventListener("click", ()=>{
+//   count++;
+  
+// })
+
+let count = 0;
+
+document.querySelectorAll('.book__item').forEach(item => {
+  item.addEventListener('click', event => {
+    count++;
+    document.getElementById("numberItems").innerHTML = count;
+  })
+})
+
+
 
 
 
