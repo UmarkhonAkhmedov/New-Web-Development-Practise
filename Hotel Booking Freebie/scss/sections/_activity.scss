@@ -47,8 +47,8 @@
     }
 
     &__first {
-      background:linear-gradient(rgba(196, 196, 196, 0) 0%, rgba(10, 34, 61, 1.0)100%),
-      url('/img/activities__first.png');
+      background:url('/img/activities__first.png'), linear-gradient(rgba(196, 196, 196, 0) 0%, rgba(10, 34, 61, 1.0)100%),
+      ;
     }
 
     &__second {

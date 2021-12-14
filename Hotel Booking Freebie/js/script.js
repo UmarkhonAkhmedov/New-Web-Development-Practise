@@ -97,13 +97,6 @@ const reviews = [
   },
   {
     id: 2,
-    name: "Megan Fox",
-    img: "../img/about__main-woman.svg",
-    date: "Stayed 9 Aug, 2020",
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, accusamus dolor maiores iste sunt voluptates reprehenderit fugiat expedita ullam molestiae quae provident pariatur corporis aut, illum doloribus animi aliquid earum cupiditate unde odio. Ducimus ipsam delectus, quasi vitae obcaecati libero saepe adipisci! Odio esse beatae ratione cumque reprehenderit fugit distinctio illo ipsam repellendus optio laboriosam delectus, modi atque laborum incidunt velit commodi quasi consequatur magnam doloremque vel temporibus harum error. ",
-  },
-  {
-    id: 3,
     name: "Smith John",
     img: "https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859",
     date: "Stayed 18 Nov, 2019",
